@@ -7,6 +7,7 @@ Semua perubahan penting ReCall dicatat di file ini.
 ### Fixed
 
 - Menu **Keluar** pada system tray kini benar-benar menghentikan aplikasi dan tidak lagi dicegat oleh handler tutup-ke-tray.
+- Area waktu kalender kini dapat digulir vertikal untuk melihat seluruh jam dan horizontal pada layar sempit.
 
 ## [0.1.0] - 2026-07-26
 

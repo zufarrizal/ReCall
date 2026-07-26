@@ -4,7 +4,7 @@ ReCall adalah aplikasi desktop Windows berbasis Go + Wails untuk menyusun agenda
 
 ## Fitur
 
-- Kalender waktu dengan tampilan 1 hari, 3 hari, atau 1 minggu.
+- Kalender waktu yang dapat digulir untuk melihat seluruh 24 jam, dengan tampilan 1 hari, 3 hari, atau 1 minggu.
 - Buat, ubah, dan hapus agenda melalui modal aplikasi.
 - Alarm Windows, bunyi notifikasi, dan dialog pengingat di aplikasi.
 - Berjalan di background melalui system tray; menu tray dapat membuka atau keluar dari aplikasi.
