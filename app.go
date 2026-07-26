@@ -4,6 +4,7 @@ import (
 	"context"
 	"errors"
 	"fmt"
+	"log"
 	"os"
 	"path/filepath"
 	"sync/atomic"
@@ -125,13 +126,32 @@ func (a *App) Quit() {
 	runtime.Quit(a.ctx)
 }
 
+// TestAlarmSound lets the user verify the Windows output device before relying
+// on a scheduled reminder.
+func (a *App) TestAlarmSound() error {
+	return service.PlayAlarmSound()
+}
+
 func (a *App) notify(agenda model.Agenda) {
 	start, _ := time.Parse(time.RFC3339, agenda.StartAt)
 	message := fmt.Sprintf("Dimulai pukul %s", start.Local().Format("15:04"))
 	if agenda.Description != "" {
 		message += " — " + agenda.Description
 	}
-	notification := toast.Notification{AppID: "ReCall", Title: agenda.Title, Body: message, Audio: toast.Default}
-	_ = notification.Push()
+	go func() {
+		if err := service.PlayAlarmSound(); err != nil {
+			log.Printf("memutar suara alarm: %v", err)
+		}
+	}()
+	notification := toast.Notification{
+		AppID:    "ReCall",
+		Title:    agenda.Title,
+		Body:     message,
+		Audio:    toast.Reminder,
+		Duration: "long",
+	}
+	if err := notification.Push(); err != nil {
+		log.Printf("menampilkan notifikasi alarm: %v", err)
+	}
 	runtime.EventsEmit(a.ctx, "agenda:alarm", agenda)
 }

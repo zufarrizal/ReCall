@@ -25,3 +25,7 @@ export function SaveAgenda(arg1) {
 export function ShowWindow() {
   return window['go']['main']['App']['ShowWindow']();
 }
+
+export function TestAlarmSound() {
+  return window['go']['main']['App']['TestAlarmSound']();
+}

@@ -4,28 +4,6 @@
   "graph": {},
   "nodes": [
     {
-      "label": "AGENTS.md",
-      "file_type": "document",
-      "source_file": "AGENTS.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "agents",
-      "community": 18,
-      "community_name": "AGENTS.md",
-      "norm_label": "agents.md"
-    },
-    {
-      "label": "graphify",
-      "file_type": "document",
-      "source_file": "AGENTS.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "agents_graphify",
-      "community": 18,
-      "community_name": "AGENTS.md",
-      "norm_label": "graphify"
-    },
-    {
       "label": "CHANGELOG.md",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
@@ -48,15 +26,15 @@
       "norm_label": "changelog"
     },
     {
-      "label": "[Unreleased]",
+      "label": "[0.1.2] - 2026-07-26",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
       "source_location": "L5",
       "_origin": "ast",
-      "id": "changelog_unreleased",
+      "id": "changelog_0_1_2_2026_07_26",
       "community": 17,
       "community_name": "Changelog",
-      "norm_label": "[unreleased]"
+      "norm_label": "[0.1.2] - 2026-07-26"
     },
     {
       "label": "Added",
@@ -70,10 +48,21 @@
       "norm_label": "added"
     },
     {
-      "label": "[0.1.1] - 2026-07-26",
+      "label": "Fixed",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
       "source_location": "L11",
+      "_origin": "ast",
+      "id": "changelog_fixed",
+      "community": 17,
+      "community_name": "Changelog",
+      "norm_label": "fixed"
+    },
+    {
+      "label": "[0.1.1] - 2026-07-26",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L15",
       "_origin": "ast",
       "id": "changelog_0_1_1_2026_07_26",
       "community": 17,
@@ -84,9 +73,9 @@
       "label": "Fixed",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
-      "source_location": "L13",
+      "source_location": "L17",
       "_origin": "ast",
-      "id": "changelog_fixed",
+      "id": "changelog_fixed_17",
       "community": 17,
       "community_name": "Changelog",
       "norm_label": "fixed"
@@ -95,7 +84,7 @@
       "label": "[0.1.0] - 2026-07-26",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
-      "source_location": "L18",
+      "source_location": "L22",
       "_origin": "ast",
       "id": "changelog_0_1_0_2026_07_26",
       "community": 17,
@@ -106,9 +95,9 @@
       "label": "Added",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
-      "source_location": "L20",
+      "source_location": "L24",
       "_origin": "ast",
-      "id": "changelog_added_20",
+      "id": "changelog_added_24",
       "community": 17,
       "community_name": "Changelog",
       "norm_label": "added"
@@ -218,21 +207,21 @@
       "source_file": "app.go",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 2,
-      "norm_label": "app.go",
       "id": "app",
-      "community_name": "App"
+      "community": 2,
+      "community_name": "App",
+      "norm_label": "app.go"
     },
     {
       "label": "App",
       "file_type": "code",
       "source_file": "app.go",
-      "source_location": "L19",
+      "source_location": "L20",
       "_origin": "ast",
-      "community": 2,
-      "norm_label": "app",
       "id": "recall_app",
-      "community_name": "App"
+      "community": 2,
+      "community_name": "App",
+      "norm_label": "app"
     },
     {
       "label": "Context",
@@ -240,10 +229,32 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
+      "id": "context",
       "community": 2,
-      "norm_label": "context",
-      "id": "app_go_context",
-      "community_name": "App"
+      "community_name": "App",
+      "norm_label": "context"
+    },
+    {
+      "label": "SQLiteRepository",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "sqliterepository",
+      "community": 2,
+      "community_name": "App",
+      "norm_label": "sqliterepository"
+    },
+    {
+      "label": "Scheduler",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "scheduler",
+      "community": 2,
+      "community_name": "App",
+      "norm_label": "scheduler"
     },
     {
       "label": "Bool",
@@ -251,65 +262,703 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 2,
-      "norm_label": "bool",
       "id": "bool",
-      "community_name": "App"
+      "community": 2,
+      "community_name": "App",
+      "norm_label": "bool"
     },
     {
       "label": "NewApp()",
       "file_type": "code",
       "source_file": "app.go",
-      "source_location": "L27",
+      "source_location": "L28",
       "_origin": "ast",
-      "community": 2,
-      "norm_label": "newapp()",
       "id": "app_newapp",
-      "community_name": "App"
+      "community": 2,
+      "community_name": "App",
+      "norm_label": "newapp()"
     },
     {
       "label": ".startup()",
       "file_type": "code",
       "source_file": "app.go",
-      "source_location": "L29",
+      "source_location": "L30",
       "_origin": "ast",
-      "community": 2,
-      "norm_label": ".startup()",
       "id": "recall_app_startup",
-      "community_name": "App"
+      "community": 2,
+      "community_name": "App",
+      "norm_label": ".startup()"
     },
     {
       "label": ".shutdown()",
       "file_type": "code",
       "source_file": "app.go",
-      "source_location": "L45",
+      "source_location": "L46",
       "_origin": "ast",
-      "community": 2,
-      "norm_label": ".shutdown()",
       "id": "recall_app_shutdown",
-      "community_name": "App"
+      "community": 2,
+      "community_name": "App",
+      "norm_label": ".shutdown()"
     },
     {
       "label": ".ready()",
       "file_type": "code",
       "source_file": "app.go",
-      "source_location": "L54",
+      "source_location": "L55",
       "_origin": "ast",
-      "community": 2,
-      "norm_label": ".ready()",
       "id": "recall_app_ready",
-      "community_name": "App"
+      "community": 2,
+      "community_name": "App",
+      "norm_label": ".ready()"
     },
     {
       "label": ".ListAgendas()",
       "file_type": "code",
       "source_file": "app.go",
-      "source_location": "L64",
+      "source_location": "L65",
       "_origin": "ast",
-      "community": 2,
-      "norm_label": ".listagendas()",
       "id": "recall_app_listagendas",
-      "community_name": "App"
+      "community": 2,
+      "community_name": "App",
+      "norm_label": ".listagendas()"
+    },
+    {
+      "label": ".SaveAgenda()",
+      "file_type": "code",
+      "source_file": "app.go",
+      "source_location": "L83",
+      "_origin": "ast",
+      "id": "recall_app_saveagenda",
+      "community": 2,
+      "community_name": "App",
+      "norm_label": ".saveagenda()"
+    },
+    {
+      "label": ".DeleteAgenda()",
+      "file_type": "code",
+      "source_file": "app.go",
+      "source_location": "L94",
+      "_origin": "ast",
+      "id": "recall_app_deleteagenda",
+      "community": 2,
+      "community_name": "App",
+      "norm_label": ".deleteagenda()"
+    },
+    {
+      "label": ".HideWindow()",
+      "file_type": "code",
+      "source_file": "app.go",
+      "source_location": "L105",
+      "_origin": "ast",
+      "id": "recall_app_hidewindow",
+      "community": 2,
+      "community_name": "App",
+      "norm_label": ".hidewindow()"
+    },
+    {
+      "label": ".ShowWindow()",
+      "file_type": "code",
+      "source_file": "app.go",
+      "source_location": "L109",
+      "_origin": "ast",
+      "id": "recall_app_showwindow",
+      "community": 2,
+      "community_name": "App",
+      "norm_label": ".showwindow()"
+    },
+    {
+      "label": ".beforeClose()",
+      "file_type": "code",
+      "source_file": "app.go",
+      "source_location": "L116",
+      "_origin": "ast",
+      "id": "recall_app_beforeclose",
+      "community": 2,
+      "community_name": "App",
+      "norm_label": ".beforeclose()"
+    },
+    {
+      "label": ".Quit()",
+      "file_type": "code",
+      "source_file": "app.go",
+      "source_location": "L124",
+      "_origin": "ast",
+      "id": "recall_app_quit",
+      "community": 2,
+      "community_name": "App",
+      "norm_label": ".quit()"
+    },
+    {
+      "label": ".TestAlarmSound()",
+      "file_type": "code",
+      "source_file": "app.go",
+      "source_location": "L131",
+      "_origin": "ast",
+      "id": "recall_app_testalarmsound",
+      "community": 2,
+      "community_name": "App",
+      "norm_label": ".testalarmsound()"
+    },
+    {
+      "label": ".notify()",
+      "file_type": "code",
+      "source_file": "app.go",
+      "source_location": "L135",
+      "_origin": "ast",
+      "id": "recall_app_notify",
+      "community": 2,
+      "community_name": "App",
+      "norm_label": ".notify()"
+    },
+    {
+      "label": "v0.1.2.md",
+      "file_type": "document",
+      "source_file": "docs/releases/v0.1.2.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_releases_v0_1_2",
+      "community": 20,
+      "community_name": "ReCall v0.1.2",
+      "norm_label": "v0.1.2.md"
+    },
+    {
+      "label": "ReCall v0.1.2",
+      "file_type": "document",
+      "source_file": "docs/releases/v0.1.2.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_releases_v0_1_2_recall_v0_1_2",
+      "community": 20,
+      "community_name": "ReCall v0.1.2",
+      "norm_label": "recall v0.1.2"
+    },
+    {
+      "label": "Perbaikan",
+      "file_type": "document",
+      "source_file": "docs/releases/v0.1.2.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "docs_releases_v0_1_2_perbaikan",
+      "community": 20,
+      "community_name": "ReCall v0.1.2",
+      "norm_label": "perbaikan"
+    },
+    {
+      "label": "Pengembangan",
+      "file_type": "document",
+      "source_file": "docs/releases/v0.1.2.md",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "docs_releases_v0_1_2_pengembangan",
+      "community": 20,
+      "community_name": "ReCall v0.1.2",
+      "norm_label": "pengembangan"
+    },
+    {
+      "label": "main.ts",
+      "file_type": "code",
+      "source_file": "frontend/src/main.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "frontend_src_main",
+      "community": 1,
+      "community_name": "main.ts",
+      "norm_label": "main.ts"
+    },
+    {
+      "label": "Agenda",
+      "file_type": "code",
+      "source_file": "frontend/src/main.ts",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "frontend_src_main_agenda",
+      "community": 1,
+      "community_name": "main.ts",
+      "norm_label": "agenda"
+    },
+    {
+      "label": "state",
+      "file_type": "code",
+      "source_file": "frontend/src/main.ts",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "frontend_src_main_state",
+      "community": 1,
+      "community_name": "main.ts",
+      "norm_label": "state"
+    },
+    {
+      "label": "value()",
+      "file_type": "code",
+      "source_file": "frontend/src/main.ts",
+      "source_location": "L30",
+      "_origin": "ast",
+      "id": "frontend_src_main_value",
+      "community": 1,
+      "community_name": "main.ts",
+      "norm_label": "value()"
+    },
+    {
+      "label": "dayStart()",
+      "file_type": "code",
+      "source_file": "frontend/src/main.ts",
+      "source_location": "L31",
+      "_origin": "ast",
+      "id": "frontend_src_main_daystart",
+      "community": 1,
+      "community_name": "main.ts",
+      "norm_label": "daystart()"
+    },
+    {
+      "label": "addDays()",
+      "file_type": "code",
+      "source_file": "frontend/src/main.ts",
+      "source_location": "L32",
+      "_origin": "ast",
+      "id": "frontend_src_main_adddays",
+      "community": 1,
+      "community_name": "main.ts",
+      "norm_label": "adddays()"
+    },
+    {
+      "label": "key()",
+      "file_type": "code",
+      "source_file": "frontend/src/main.ts",
+      "source_location": "L33",
+      "_origin": "ast",
+      "id": "frontend_src_main_key",
+      "community": 1,
+      "community_name": "main.ts",
+      "norm_label": "key()"
+    },
+    {
+      "label": "iso()",
+      "file_type": "code",
+      "source_file": "frontend/src/main.ts",
+      "source_location": "L34",
+      "_origin": "ast",
+      "id": "frontend_src_main_iso",
+      "community": 1,
+      "community_name": "main.ts",
+      "norm_label": "iso()"
+    },
+    {
+      "label": "fmt()",
+      "file_type": "code",
+      "source_file": "frontend/src/main.ts",
+      "source_location": "L35",
+      "_origin": "ast",
+      "id": "frontend_src_main_fmt",
+      "community": 1,
+      "community_name": "main.ts",
+      "norm_label": "fmt()"
+    },
+    {
+      "label": "esc()",
+      "file_type": "code",
+      "source_file": "frontend/src/main.ts",
+      "source_location": "L36",
+      "_origin": "ast",
+      "id": "frontend_src_main_esc",
+      "community": 1,
+      "community_name": "main.ts",
+      "norm_label": "esc()"
+    },
+    {
+      "label": "load()",
+      "file_type": "code",
+      "source_file": "frontend/src/main.ts",
+      "source_location": "L37",
+      "_origin": "ast",
+      "id": "frontend_src_main_load",
+      "community": 1,
+      "community_name": "main.ts",
+      "norm_label": "load()"
+    },
+    {
+      "label": "render()",
+      "file_type": "code",
+      "source_file": "frontend/src/main.ts",
+      "source_location": "L38",
+      "_origin": "ast",
+      "id": "frontend_src_main_render",
+      "community": 1,
+      "community_name": "main.ts",
+      "norm_label": "render()"
+    },
+    {
+      "label": "renderMonth()",
+      "file_type": "code",
+      "source_file": "frontend/src/main.ts",
+      "source_location": "L39",
+      "_origin": "ast",
+      "id": "frontend_src_main_rendermonth",
+      "community": 1,
+      "community_name": "main.ts",
+      "norm_label": "rendermonth()"
+    },
+    {
+      "label": "renderCalendar()",
+      "file_type": "code",
+      "source_file": "frontend/src/main.ts",
+      "source_location": "L40",
+      "_origin": "ast",
+      "id": "frontend_src_main_rendercalendar",
+      "community": 1,
+      "community_name": "main.ts",
+      "norm_label": "rendercalendar()"
+    },
+    {
+      "label": "blocks()",
+      "file_type": "code",
+      "source_file": "frontend/src/main.ts",
+      "source_location": "L41",
+      "_origin": "ast",
+      "id": "frontend_src_main_blocks",
+      "community": 1,
+      "community_name": "main.ts",
+      "norm_label": "blocks()"
+    },
+    {
+      "label": "nowLine()",
+      "file_type": "code",
+      "source_file": "frontend/src/main.ts",
+      "source_location": "L42",
+      "_origin": "ast",
+      "id": "frontend_src_main_nowline",
+      "community": 1,
+      "community_name": "main.ts",
+      "norm_label": "nowline()"
+    },
+    {
+      "label": "openEditor()",
+      "file_type": "code",
+      "source_file": "frontend/src/main.ts",
+      "source_location": "L43",
+      "_origin": "ast",
+      "id": "frontend_src_main_openeditor",
+      "community": 1,
+      "community_name": "main.ts",
+      "norm_label": "openeditor()"
+    },
+    {
+      "label": "close()",
+      "file_type": "code",
+      "source_file": "frontend/src/main.ts",
+      "source_location": "L44",
+      "_origin": "ast",
+      "id": "frontend_src_main_close",
+      "community": 1,
+      "community_name": "main.ts",
+      "norm_label": "close()"
+    },
+    {
+      "label": "toast()",
+      "file_type": "code",
+      "source_file": "frontend/src/main.ts",
+      "source_location": "L52",
+      "_origin": "ast",
+      "id": "frontend_src_main_toast",
+      "community": 1,
+      "community_name": "main.ts",
+      "norm_label": "toast()"
+    },
+    {
+      "label": "App.d.ts",
+      "file_type": "code",
+      "source_file": "frontend/wailsjs/go/main/App.d.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "frontend_wailsjs_go_main_app_d",
+      "community": 25,
+      "community_name": "App.d.ts",
+      "norm_label": "app.d.ts"
+    },
+    {
+      "label": "App.js",
+      "file_type": "code",
+      "source_file": "frontend/wailsjs/go/main/App.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "frontend_wailsjs_go_main_app",
+      "community": 1,
+      "community_name": "main.ts",
+      "norm_label": "app.js"
+    },
+    {
+      "label": "DeleteAgenda()",
+      "file_type": "code",
+      "source_file": "frontend/wailsjs/go/main/App.js",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "frontend_wailsjs_go_main_app_deleteagenda",
+      "community": 1,
+      "community_name": "main.ts",
+      "norm_label": "deleteagenda()"
+    },
+    {
+      "label": "HideWindow()",
+      "file_type": "code",
+      "source_file": "frontend/wailsjs/go/main/App.js",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "frontend_wailsjs_go_main_app_hidewindow",
+      "community": 1,
+      "community_name": "main.ts",
+      "norm_label": "hidewindow()"
+    },
+    {
+      "label": "ListAgendas()",
+      "file_type": "code",
+      "source_file": "frontend/wailsjs/go/main/App.js",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "frontend_wailsjs_go_main_app_listagendas",
+      "community": 1,
+      "community_name": "main.ts",
+      "norm_label": "listagendas()"
+    },
+    {
+      "label": "Quit()",
+      "file_type": "code",
+      "source_file": "frontend/wailsjs/go/main/App.js",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "frontend_wailsjs_go_main_app_quit",
+      "community": 1,
+      "community_name": "main.ts",
+      "norm_label": "quit()"
+    },
+    {
+      "label": "SaveAgenda()",
+      "file_type": "code",
+      "source_file": "frontend/wailsjs/go/main/App.js",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "frontend_wailsjs_go_main_app_saveagenda",
+      "community": 1,
+      "community_name": "main.ts",
+      "norm_label": "saveagenda()"
+    },
+    {
+      "label": "ShowWindow()",
+      "file_type": "code",
+      "source_file": "frontend/wailsjs/go/main/App.js",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "frontend_wailsjs_go_main_app_showwindow",
+      "community": 1,
+      "community_name": "main.ts",
+      "norm_label": "showwindow()"
+    },
+    {
+      "label": "TestAlarmSound()",
+      "file_type": "code",
+      "source_file": "frontend/wailsjs/go/main/App.js",
+      "source_location": "L29",
+      "_origin": "ast",
+      "id": "frontend_wailsjs_go_main_app_testalarmsound",
+      "community": 1,
+      "community_name": "main.ts",
+      "norm_label": "testalarmsound()"
+    },
+    {
+      "label": "alarm_sound_other.go",
+      "file_type": "code",
+      "source_file": "internal/service/alarm_sound_other.go",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "internal_service_alarm_sound_other",
+      "community": 22,
+      "community_name": "alarm_sound_other.go",
+      "norm_label": "alarm_sound_other.go"
+    },
+    {
+      "label": "PlayAlarmSound()",
+      "file_type": "code",
+      "source_file": "internal/service/alarm_sound_other.go",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "internal_service_alarm_sound_other_playalarmsound",
+      "community": 22,
+      "community_name": "alarm_sound_other.go",
+      "norm_label": "playalarmsound()"
+    },
+    {
+      "label": "alarm_sound_windows.go",
+      "file_type": "code",
+      "source_file": "internal/service/alarm_sound_windows.go",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "internal_service_alarm_sound_windows",
+      "community": 21,
+      "community_name": "alarm_sound_windows.go",
+      "norm_label": "alarm_sound_windows.go"
+    },
+    {
+      "label": "alarmTone",
+      "file_type": "code",
+      "source_file": "internal/service/alarm_sound_windows.go",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "service_alarmtone",
+      "community": 21,
+      "community_name": "alarm_sound_windows.go",
+      "norm_label": "alarmtone"
+    },
+    {
+      "label": "PlayAlarmSound()",
+      "file_type": "code",
+      "source_file": "internal/service/alarm_sound_windows.go",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "internal_service_alarm_sound_windows_playalarmsound",
+      "community": 21,
+      "community_name": "alarm_sound_windows.go",
+      "norm_label": "playalarmsound()"
+    },
+    {
+      "label": "wails.json",
+      "file_type": "code",
+      "source_file": "wails.json",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "wails",
+      "community": 7,
+      "community_name": "wails.json",
+      "norm_label": "wails.json"
+    },
+    {
+      "label": "$schema",
+      "file_type": "code",
+      "source_file": "wails.json",
+      "source_location": "L2",
+      "_origin": "ast",
+      "id": "wails_schema",
+      "community": 7,
+      "community_name": "wails.json",
+      "norm_label": "$schema"
+    },
+    {
+      "label": "name",
+      "file_type": "code",
+      "source_file": "wails.json",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "wails_name",
+      "community": 7,
+      "community_name": "wails.json",
+      "norm_label": "name"
+    },
+    {
+      "label": "outputfilename",
+      "file_type": "code",
+      "source_file": "wails.json",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "wails_outputfilename",
+      "community": 7,
+      "community_name": "wails.json",
+      "norm_label": "outputfilename"
+    },
+    {
+      "label": "productVersion",
+      "file_type": "code",
+      "source_file": "wails.json",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "wails_productversion",
+      "community": 7,
+      "community_name": "wails.json",
+      "norm_label": "productversion"
+    },
+    {
+      "label": "frontend:install",
+      "file_type": "code",
+      "source_file": "wails.json",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "wails_frontend_install",
+      "community": 7,
+      "community_name": "wails.json",
+      "norm_label": "frontend:install"
+    },
+    {
+      "label": "frontend:build",
+      "file_type": "code",
+      "source_file": "wails.json",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "wails_frontend_build",
+      "community": 7,
+      "community_name": "wails.json",
+      "norm_label": "frontend:build"
+    },
+    {
+      "label": "frontend:dev:watcher",
+      "file_type": "code",
+      "source_file": "wails.json",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "wails_frontend_dev_watcher",
+      "community": 7,
+      "community_name": "wails.json",
+      "norm_label": "frontend:dev:watcher"
+    },
+    {
+      "label": "frontend:dev:serverUrl",
+      "file_type": "code",
+      "source_file": "wails.json",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "wails_frontend_dev_serverurl",
+      "community": 7,
+      "community_name": "wails.json",
+      "norm_label": "frontend:dev:serverurl"
+    },
+    {
+      "label": "author",
+      "file_type": "code",
+      "source_file": "wails.json",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "wails_author",
+      "community": 7,
+      "community_name": "wails.json",
+      "norm_label": "author"
+    },
+    {
+      "label": "name",
+      "file_type": "code",
+      "source_file": "wails.json",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "wails_author_name",
+      "community": 7,
+      "community_name": "wails.json",
+      "norm_label": "name"
+    },
+    {
+      "label": "email",
+      "file_type": "code",
+      "source_file": "wails.json",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "wails_author_email",
+      "community": 7,
+      "community_name": "wails.json",
+      "norm_label": "email"
+    },
+    {
+      "label": "Context",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "Context",
+      "norm_label": "context",
+      "id": "app_go_context"
     },
     {
       "label": "Agenda",
@@ -317,87 +966,10 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 2,
+      "community": 23,
+      "community_name": "Agenda",
       "norm_label": "agenda",
-      "id": "app_go_agenda",
-      "community_name": "App"
-    },
-    {
-      "label": ".SaveAgenda()",
-      "file_type": "code",
-      "source_file": "app.go",
-      "source_location": "L82",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": ".saveagenda()",
-      "id": "recall_app_saveagenda",
-      "community_name": "App"
-    },
-    {
-      "label": ".DeleteAgenda()",
-      "file_type": "code",
-      "source_file": "app.go",
-      "source_location": "L93",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": ".deleteagenda()",
-      "id": "recall_app_deleteagenda",
-      "community_name": "App"
-    },
-    {
-      "label": ".HideWindow()",
-      "file_type": "code",
-      "source_file": "app.go",
-      "source_location": "L104",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": ".hidewindow()",
-      "id": "recall_app_hidewindow",
-      "community_name": "App"
-    },
-    {
-      "label": ".ShowWindow()",
-      "file_type": "code",
-      "source_file": "app.go",
-      "source_location": "L108",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": ".showwindow()",
-      "id": "recall_app_showwindow",
-      "community_name": "App"
-    },
-    {
-      "label": ".beforeClose()",
-      "file_type": "code",
-      "source_file": "app.go",
-      "source_location": "L115",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": ".beforeclose()",
-      "id": "recall_app_beforeclose",
-      "community_name": "App"
-    },
-    {
-      "label": ".Quit()",
-      "file_type": "code",
-      "source_file": "app.go",
-      "source_location": "L123",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": ".quit()",
-      "id": "recall_app_quit",
-      "community_name": "App"
-    },
-    {
-      "label": ".notify()",
-      "file_type": "code",
-      "source_file": "app.go",
-      "source_location": "L128",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": ".notify()",
-      "id": "recall_app_notify",
-      "community_name": "App"
+      "id": "app_go_agenda"
     },
     {
       "label": "app_test.go",
@@ -406,9 +978,9 @@
       "source_location": "L1",
       "_origin": "ast",
       "community": 2,
+      "community_name": "App",
       "norm_label": "app_test.go",
-      "id": "app_test",
-      "community_name": "App"
+      "id": "app_test"
     },
     {
       "label": "TestBeforeCloseAllowsExplicitQuit()",
@@ -417,9 +989,9 @@
       "source_location": "L8",
       "_origin": "ast",
       "community": 2,
+      "community_name": "App",
       "norm_label": "testbeforecloseallowsexplicitquit()",
-      "id": "app_test_testbeforecloseallowsexplicitquit",
-      "community_name": "App"
+      "id": "app_test_testbeforecloseallowsexplicitquit"
     },
     {
       "label": "T",
@@ -428,9 +1000,9 @@
       "source_location": "",
       "_origin": "ast",
       "community": 2,
+      "community_name": "App",
       "norm_label": "t",
-      "id": "app_test_go_t",
-      "community_name": "App"
+      "id": "app_test_go_t"
     },
     {
       "label": "frontend/package.json",
@@ -439,9 +1011,9 @@
       "source_location": "L1",
       "_origin": "ast",
       "community": 6,
+      "community_name": "frontend/package.json",
       "norm_label": "frontend/package.json",
-      "id": "frontend_package",
-      "community_name": "frontend/package.json"
+      "id": "frontend_package"
     },
     {
       "label": "name",
@@ -450,9 +1022,9 @@
       "source_location": "L2",
       "_origin": "ast",
       "community": 6,
+      "community_name": "frontend/package.json",
       "norm_label": "name",
-      "id": "frontend_package_name",
-      "community_name": "frontend/package.json"
+      "id": "frontend_package_name"
     },
     {
       "label": "private",
@@ -461,9 +1033,9 @@
       "source_location": "L3",
       "_origin": "ast",
       "community": 6,
+      "community_name": "frontend/package.json",
       "norm_label": "private",
-      "id": "frontend_package_private",
-      "community_name": "frontend/package.json"
+      "id": "frontend_package_private"
     },
     {
       "label": "version",
@@ -472,9 +1044,9 @@
       "source_location": "L4",
       "_origin": "ast",
       "community": 6,
+      "community_name": "frontend/package.json",
       "norm_label": "version",
-      "id": "frontend_package_version",
-      "community_name": "frontend/package.json"
+      "id": "frontend_package_version"
     },
     {
       "label": "scripts",
@@ -483,9 +1055,9 @@
       "source_location": "L5",
       "_origin": "ast",
       "community": 6,
+      "community_name": "frontend/package.json",
       "norm_label": "scripts",
-      "id": "frontend_package_scripts",
-      "community_name": "frontend/package.json"
+      "id": "frontend_package_scripts"
     },
     {
       "label": "dev",
@@ -494,9 +1066,9 @@
       "source_location": "L6",
       "_origin": "ast",
       "community": 6,
+      "community_name": "frontend/package.json",
       "norm_label": "dev",
-      "id": "frontend_package_scripts_dev",
-      "community_name": "frontend/package.json"
+      "id": "frontend_package_scripts_dev"
     },
     {
       "label": "build",
@@ -505,9 +1077,9 @@
       "source_location": "L7",
       "_origin": "ast",
       "community": 6,
+      "community_name": "frontend/package.json",
       "norm_label": "build",
-      "id": "frontend_package_scripts_build",
-      "community_name": "frontend/package.json"
+      "id": "frontend_package_scripts_build"
     },
     {
       "label": "preview",
@@ -516,9 +1088,9 @@
       "source_location": "L8",
       "_origin": "ast",
       "community": 6,
+      "community_name": "frontend/package.json",
       "norm_label": "preview",
-      "id": "frontend_package_scripts_preview",
-      "community_name": "frontend/package.json"
+      "id": "frontend_package_scripts_preview"
     },
     {
       "label": "devDependencies",
@@ -527,9 +1099,9 @@
       "source_location": "L10",
       "_origin": "ast",
       "community": 6,
+      "community_name": "frontend/package.json",
       "norm_label": "devdependencies",
-      "id": "frontend_package_devdependencies",
-      "community_name": "frontend/package.json"
+      "id": "frontend_package_devdependencies"
     },
     {
       "label": "typescript",
@@ -538,9 +1110,9 @@
       "source_location": "L11",
       "_origin": "ast",
       "community": 6,
+      "community_name": "frontend/package.json",
       "norm_label": "typescript",
-      "id": "frontend_package_devdependencies_typescript",
-      "community_name": "frontend/package.json"
+      "id": "frontend_package_devdependencies_typescript"
     },
     {
       "label": "typescript",
@@ -549,9 +1121,9 @@
       "source_location": "L11",
       "_origin": "ast",
       "community": 6,
+      "community_name": "frontend/package.json",
       "norm_label": "typescript",
-      "id": "typescript",
-      "community_name": "frontend/package.json"
+      "id": "typescript"
     },
     {
       "label": "vite",
@@ -560,9 +1132,9 @@
       "source_location": "L12",
       "_origin": "ast",
       "community": 6,
+      "community_name": "frontend/package.json",
       "norm_label": "vite",
-      "id": "frontend_package_devdependencies_vite",
-      "community_name": "frontend/package.json"
+      "id": "frontend_package_devdependencies_vite"
     },
     {
       "label": "vite",
@@ -571,218 +1143,9 @@
       "source_location": "L12",
       "_origin": "ast",
       "community": 6,
+      "community_name": "frontend/package.json",
       "norm_label": "vite",
-      "id": "vite",
-      "community_name": "frontend/package.json"
-    },
-    {
-      "label": "main.ts",
-      "file_type": "code",
-      "source_file": "frontend/src/main.ts",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 1,
-      "norm_label": "main.ts",
-      "id": "frontend_src_main",
-      "community_name": "main.ts"
-    },
-    {
-      "label": "Agenda",
-      "file_type": "code",
-      "source_file": "frontend/src/main.ts",
-      "source_location": "L6",
-      "_origin": "ast",
-      "community": 1,
-      "norm_label": "agenda",
-      "id": "frontend_src_main_agenda",
-      "community_name": "main.ts"
-    },
-    {
-      "label": "state",
-      "file_type": "code",
-      "source_file": "frontend/src/main.ts",
-      "source_location": "L7",
-      "_origin": "ast",
-      "community": 1,
-      "norm_label": "state",
-      "id": "frontend_src_main_state",
-      "community_name": "main.ts"
-    },
-    {
-      "label": "value()",
-      "file_type": "code",
-      "source_file": "frontend/src/main.ts",
-      "source_location": "L30",
-      "_origin": "ast",
-      "community": 1,
-      "norm_label": "value()",
-      "id": "frontend_src_main_value",
-      "community_name": "main.ts"
-    },
-    {
-      "label": "dayStart()",
-      "file_type": "code",
-      "source_file": "frontend/src/main.ts",
-      "source_location": "L31",
-      "_origin": "ast",
-      "community": 1,
-      "norm_label": "daystart()",
-      "id": "frontend_src_main_daystart",
-      "community_name": "main.ts"
-    },
-    {
-      "label": "addDays()",
-      "file_type": "code",
-      "source_file": "frontend/src/main.ts",
-      "source_location": "L32",
-      "_origin": "ast",
-      "community": 1,
-      "norm_label": "adddays()",
-      "id": "frontend_src_main_adddays",
-      "community_name": "main.ts"
-    },
-    {
-      "label": "key()",
-      "file_type": "code",
-      "source_file": "frontend/src/main.ts",
-      "source_location": "L33",
-      "_origin": "ast",
-      "community": 1,
-      "norm_label": "key()",
-      "id": "frontend_src_main_key",
-      "community_name": "main.ts"
-    },
-    {
-      "label": "iso()",
-      "file_type": "code",
-      "source_file": "frontend/src/main.ts",
-      "source_location": "L34",
-      "_origin": "ast",
-      "community": 1,
-      "norm_label": "iso()",
-      "id": "frontend_src_main_iso",
-      "community_name": "main.ts"
-    },
-    {
-      "label": "fmt()",
-      "file_type": "code",
-      "source_file": "frontend/src/main.ts",
-      "source_location": "L35",
-      "_origin": "ast",
-      "community": 1,
-      "norm_label": "fmt()",
-      "id": "frontend_src_main_fmt",
-      "community_name": "main.ts"
-    },
-    {
-      "label": "esc()",
-      "file_type": "code",
-      "source_file": "frontend/src/main.ts",
-      "source_location": "L36",
-      "_origin": "ast",
-      "community": 1,
-      "norm_label": "esc()",
-      "id": "frontend_src_main_esc",
-      "community_name": "main.ts"
-    },
-    {
-      "label": "load()",
-      "file_type": "code",
-      "source_file": "frontend/src/main.ts",
-      "source_location": "L37",
-      "_origin": "ast",
-      "community": 1,
-      "norm_label": "load()",
-      "id": "frontend_src_main_load",
-      "community_name": "main.ts"
-    },
-    {
-      "label": "render()",
-      "file_type": "code",
-      "source_file": "frontend/src/main.ts",
-      "source_location": "L38",
-      "_origin": "ast",
-      "community": 1,
-      "norm_label": "render()",
-      "id": "frontend_src_main_render",
-      "community_name": "main.ts"
-    },
-    {
-      "label": "renderMonth()",
-      "file_type": "code",
-      "source_file": "frontend/src/main.ts",
-      "source_location": "L39",
-      "_origin": "ast",
-      "community": 1,
-      "norm_label": "rendermonth()",
-      "id": "frontend_src_main_rendermonth",
-      "community_name": "main.ts"
-    },
-    {
-      "label": "renderCalendar()",
-      "file_type": "code",
-      "source_file": "frontend/src/main.ts",
-      "source_location": "L40",
-      "_origin": "ast",
-      "community": 1,
-      "norm_label": "rendercalendar()",
-      "id": "frontend_src_main_rendercalendar",
-      "community_name": "main.ts"
-    },
-    {
-      "label": "blocks()",
-      "file_type": "code",
-      "source_file": "frontend/src/main.ts",
-      "source_location": "L41",
-      "_origin": "ast",
-      "community": 1,
-      "norm_label": "blocks()",
-      "id": "frontend_src_main_blocks",
-      "community_name": "main.ts"
-    },
-    {
-      "label": "nowLine()",
-      "file_type": "code",
-      "source_file": "frontend/src/main.ts",
-      "source_location": "L42",
-      "_origin": "ast",
-      "community": 1,
-      "norm_label": "nowline()",
-      "id": "frontend_src_main_nowline",
-      "community_name": "main.ts"
-    },
-    {
-      "label": "openEditor()",
-      "file_type": "code",
-      "source_file": "frontend/src/main.ts",
-      "source_location": "L43",
-      "_origin": "ast",
-      "community": 1,
-      "norm_label": "openeditor()",
-      "id": "frontend_src_main_openeditor",
-      "community_name": "main.ts"
-    },
-    {
-      "label": "close()",
-      "file_type": "code",
-      "source_file": "frontend/src/main.ts",
-      "source_location": "L44",
-      "_origin": "ast",
-      "community": 1,
-      "norm_label": "close()",
-      "id": "frontend_src_main_close",
-      "community_name": "main.ts"
-    },
-    {
-      "label": "toast()",
-      "file_type": "code",
-      "source_file": "frontend/src/main.ts",
-      "source_location": "L51",
-      "_origin": "ast",
-      "community": 1,
-      "norm_label": "toast()",
-      "id": "frontend_src_main_toast",
-      "community_name": "main.ts"
+      "id": "vite"
     },
     {
       "label": "vite-env.d.ts",
@@ -791,9 +1154,9 @@
       "source_location": "L1",
       "_origin": "ast",
       "community": 14,
+      "community_name": "vite-env.d.ts",
       "norm_label": "vite-env.d.ts",
-      "id": "frontend_src_vite_env_d",
-      "community_name": "vite-env.d.ts"
+      "id": "frontend_src_vite_env_d"
     },
     {
       "label": "tsconfig.json",
@@ -802,9 +1165,9 @@
       "source_location": "L1",
       "_origin": "ast",
       "community": 3,
+      "community_name": "compilerOptions",
       "norm_label": "tsconfig.json",
-      "id": "frontend_tsconfig",
-      "community_name": "compilerOptions"
+      "id": "frontend_tsconfig"
     },
     {
       "label": "compilerOptions",
@@ -813,9 +1176,9 @@
       "source_location": "L2",
       "_origin": "ast",
       "community": 3,
+      "community_name": "compilerOptions",
       "norm_label": "compileroptions",
-      "id": "frontend_tsconfig_compileroptions",
-      "community_name": "compilerOptions"
+      "id": "frontend_tsconfig_compileroptions"
     },
     {
       "label": "target",
@@ -824,9 +1187,9 @@
       "source_location": "L3",
       "_origin": "ast",
       "community": 3,
+      "community_name": "compilerOptions",
       "norm_label": "target",
-      "id": "frontend_tsconfig_compileroptions_target",
-      "community_name": "compilerOptions"
+      "id": "frontend_tsconfig_compileroptions_target"
     },
     {
       "label": "useDefineForClassFields",
@@ -835,9 +1198,9 @@
       "source_location": "L4",
       "_origin": "ast",
       "community": 3,
+      "community_name": "compilerOptions",
       "norm_label": "usedefineforclassfields",
-      "id": "frontend_tsconfig_compileroptions_usedefineforclassfields",
-      "community_name": "compilerOptions"
+      "id": "frontend_tsconfig_compileroptions_usedefineforclassfields"
     },
     {
       "label": "module",
@@ -846,9 +1209,9 @@
       "source_location": "L5",
       "_origin": "ast",
       "community": 3,
+      "community_name": "compilerOptions",
       "norm_label": "module",
-      "id": "frontend_tsconfig_compileroptions_module",
-      "community_name": "compilerOptions"
+      "id": "frontend_tsconfig_compileroptions_module"
     },
     {
       "label": "lib",
@@ -857,9 +1220,9 @@
       "source_location": "L6",
       "_origin": "ast",
       "community": 3,
+      "community_name": "compilerOptions",
       "norm_label": "lib",
-      "id": "frontend_tsconfig_compileroptions_lib",
-      "community_name": "compilerOptions"
+      "id": "frontend_tsconfig_compileroptions_lib"
     },
     {
       "label": "ESNext",
@@ -868,9 +1231,9 @@
       "source_location": "L6",
       "_origin": "ast",
       "community": 3,
+      "community_name": "compilerOptions",
       "norm_label": "esnext",
-      "id": "ref_esnext",
-      "community_name": "compilerOptions"
+      "id": "ref_esnext"
     },
     {
       "label": "DOM",
@@ -879,9 +1242,9 @@
       "source_location": "L6",
       "_origin": "ast",
       "community": 3,
+      "community_name": "compilerOptions",
       "norm_label": "dom",
-      "id": "ref_dom",
-      "community_name": "compilerOptions"
+      "id": "ref_dom"
     },
     {
       "label": "moduleResolution",
@@ -890,9 +1253,9 @@
       "source_location": "L10",
       "_origin": "ast",
       "community": 3,
+      "community_name": "compilerOptions",
       "norm_label": "moduleresolution",
-      "id": "frontend_tsconfig_compileroptions_moduleresolution",
-      "community_name": "compilerOptions"
+      "id": "frontend_tsconfig_compileroptions_moduleresolution"
     },
     {
       "label": "strict",
@@ -901,9 +1264,9 @@
       "source_location": "L11",
       "_origin": "ast",
       "community": 3,
+      "community_name": "compilerOptions",
       "norm_label": "strict",
-      "id": "frontend_tsconfig_compileroptions_strict",
-      "community_name": "compilerOptions"
+      "id": "frontend_tsconfig_compileroptions_strict"
     },
     {
       "label": "sourceMap",
@@ -912,9 +1275,9 @@
       "source_location": "L12",
       "_origin": "ast",
       "community": 3,
+      "community_name": "compilerOptions",
       "norm_label": "sourcemap",
-      "id": "frontend_tsconfig_compileroptions_sourcemap",
-      "community_name": "compilerOptions"
+      "id": "frontend_tsconfig_compileroptions_sourcemap"
     },
     {
       "label": "resolveJsonModule",
@@ -923,9 +1286,9 @@
       "source_location": "L13",
       "_origin": "ast",
       "community": 3,
+      "community_name": "compilerOptions",
       "norm_label": "resolvejsonmodule",
-      "id": "frontend_tsconfig_compileroptions_resolvejsonmodule",
-      "community_name": "compilerOptions"
+      "id": "frontend_tsconfig_compileroptions_resolvejsonmodule"
     },
     {
       "label": "isolatedModules",
@@ -934,9 +1297,9 @@
       "source_location": "L14",
       "_origin": "ast",
       "community": 3,
+      "community_name": "compilerOptions",
       "norm_label": "isolatedmodules",
-      "id": "frontend_tsconfig_compileroptions_isolatedmodules",
-      "community_name": "compilerOptions"
+      "id": "frontend_tsconfig_compileroptions_isolatedmodules"
     },
     {
       "label": "esModuleInterop",
@@ -945,9 +1308,9 @@
       "source_location": "L15",
       "_origin": "ast",
       "community": 3,
+      "community_name": "compilerOptions",
       "norm_label": "esmoduleinterop",
-      "id": "frontend_tsconfig_compileroptions_esmoduleinterop",
-      "community_name": "compilerOptions"
+      "id": "frontend_tsconfig_compileroptions_esmoduleinterop"
     },
     {
       "label": "noEmit",
@@ -956,9 +1319,9 @@
       "source_location": "L16",
       "_origin": "ast",
       "community": 3,
+      "community_name": "compilerOptions",
       "norm_label": "noemit",
-      "id": "frontend_tsconfig_compileroptions_noemit",
-      "community_name": "compilerOptions"
+      "id": "frontend_tsconfig_compileroptions_noemit"
     },
     {
       "label": "noUnusedLocals",
@@ -967,9 +1330,9 @@
       "source_location": "L17",
       "_origin": "ast",
       "community": 3,
+      "community_name": "compilerOptions",
       "norm_label": "nounusedlocals",
-      "id": "frontend_tsconfig_compileroptions_nounusedlocals",
-      "community_name": "compilerOptions"
+      "id": "frontend_tsconfig_compileroptions_nounusedlocals"
     },
     {
       "label": "noUnusedParameters",
@@ -978,9 +1341,9 @@
       "source_location": "L18",
       "_origin": "ast",
       "community": 3,
+      "community_name": "compilerOptions",
       "norm_label": "nounusedparameters",
-      "id": "frontend_tsconfig_compileroptions_nounusedparameters",
-      "community_name": "compilerOptions"
+      "id": "frontend_tsconfig_compileroptions_nounusedparameters"
     },
     {
       "label": "noImplicitReturns",
@@ -989,9 +1352,9 @@
       "source_location": "L19",
       "_origin": "ast",
       "community": 3,
+      "community_name": "compilerOptions",
       "norm_label": "noimplicitreturns",
-      "id": "frontend_tsconfig_compileroptions_noimplicitreturns",
-      "community_name": "compilerOptions"
+      "id": "frontend_tsconfig_compileroptions_noimplicitreturns"
     },
     {
       "label": "skipLibCheck",
@@ -1000,9 +1363,9 @@
       "source_location": "L20",
       "_origin": "ast",
       "community": 3,
+      "community_name": "compilerOptions",
       "norm_label": "skiplibcheck",
-      "id": "frontend_tsconfig_compileroptions_skiplibcheck",
-      "community_name": "compilerOptions"
+      "id": "frontend_tsconfig_compileroptions_skiplibcheck"
     },
     {
       "label": "include",
@@ -1011,9 +1374,9 @@
       "source_location": "L22",
       "_origin": "ast",
       "community": 3,
+      "community_name": "compilerOptions",
       "norm_label": "include",
-      "id": "frontend_tsconfig_include",
-      "community_name": "compilerOptions"
+      "id": "frontend_tsconfig_include"
     },
     {
       "label": "src",
@@ -1022,97 +1385,9 @@
       "source_location": "L22",
       "_origin": "ast",
       "community": 3,
+      "community_name": "compilerOptions",
       "norm_label": "src",
-      "id": "ref_src",
-      "community_name": "compilerOptions"
-    },
-    {
-      "label": "App.d.ts",
-      "file_type": "code",
-      "source_file": "frontend/wailsjs/go/main/App.d.ts",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 10,
-      "norm_label": "app.d.ts",
-      "id": "frontend_wailsjs_go_main_app_d",
-      "community_name": "models.ts"
-    },
-    {
-      "label": "App.js",
-      "file_type": "code",
-      "source_file": "frontend/wailsjs/go/main/App.js",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 1,
-      "norm_label": "app.js",
-      "id": "frontend_wailsjs_go_main_app",
-      "community_name": "main.ts"
-    },
-    {
-      "label": "DeleteAgenda()",
-      "file_type": "code",
-      "source_file": "frontend/wailsjs/go/main/App.js",
-      "source_location": "L5",
-      "_origin": "ast",
-      "community": 1,
-      "norm_label": "deleteagenda()",
-      "id": "frontend_wailsjs_go_main_app_deleteagenda",
-      "community_name": "main.ts"
-    },
-    {
-      "label": "HideWindow()",
-      "file_type": "code",
-      "source_file": "frontend/wailsjs/go/main/App.js",
-      "source_location": "L9",
-      "_origin": "ast",
-      "community": 1,
-      "norm_label": "hidewindow()",
-      "id": "frontend_wailsjs_go_main_app_hidewindow",
-      "community_name": "main.ts"
-    },
-    {
-      "label": "ListAgendas()",
-      "file_type": "code",
-      "source_file": "frontend/wailsjs/go/main/App.js",
-      "source_location": "L13",
-      "_origin": "ast",
-      "community": 1,
-      "norm_label": "listagendas()",
-      "id": "frontend_wailsjs_go_main_app_listagendas",
-      "community_name": "main.ts"
-    },
-    {
-      "label": "Quit()",
-      "file_type": "code",
-      "source_file": "frontend/wailsjs/go/main/App.js",
-      "source_location": "L17",
-      "_origin": "ast",
-      "community": 1,
-      "norm_label": "quit()",
-      "id": "frontend_wailsjs_go_main_app_quit",
-      "community_name": "main.ts"
-    },
-    {
-      "label": "SaveAgenda()",
-      "file_type": "code",
-      "source_file": "frontend/wailsjs/go/main/App.js",
-      "source_location": "L21",
-      "_origin": "ast",
-      "community": 1,
-      "norm_label": "saveagenda()",
-      "id": "frontend_wailsjs_go_main_app_saveagenda",
-      "community_name": "main.ts"
-    },
-    {
-      "label": "ShowWindow()",
-      "file_type": "code",
-      "source_file": "frontend/wailsjs/go/main/App.js",
-      "source_location": "L25",
-      "_origin": "ast",
-      "community": 1,
-      "norm_label": "showwindow()",
-      "id": "frontend_wailsjs_go_main_app_showwindow",
-      "community_name": "main.ts"
+      "id": "ref_src"
     },
     {
       "label": "models.ts",
@@ -1121,9 +1396,9 @@
       "source_location": "L1",
       "_origin": "ast",
       "community": 10,
+      "community_name": "models.ts",
       "norm_label": "models.ts",
-      "id": "frontend_wailsjs_go_models",
-      "community_name": "models.ts"
+      "id": "frontend_wailsjs_go_models"
     },
     {
       "label": "model",
@@ -1132,9 +1407,9 @@
       "source_location": "L1",
       "_origin": "ast",
       "community": 10,
+      "community_name": "models.ts",
       "norm_label": "model",
-      "id": "frontend_wailsjs_go_models_model",
-      "community_name": "models.ts"
+      "id": "frontend_wailsjs_go_models_model"
     },
     {
       "label": "Agenda",
@@ -1143,9 +1418,9 @@
       "source_location": "L3",
       "_origin": "ast",
       "community": 10,
+      "community_name": "models.ts",
       "norm_label": "agenda",
-      "id": "frontend_wailsjs_go_models_agenda",
-      "community_name": "models.ts"
+      "id": "frontend_wailsjs_go_models_agenda"
     },
     {
       "label": ".createFrom()",
@@ -1154,9 +1429,9 @@
       "source_location": "L16",
       "_origin": "ast",
       "community": 10,
+      "community_name": "models.ts",
       "norm_label": ".createfrom()",
-      "id": "frontend_wailsjs_go_models_agenda_createfrom",
-      "community_name": "models.ts"
+      "id": "frontend_wailsjs_go_models_agenda_createfrom"
     },
     {
       "label": ".constructor()",
@@ -1165,9 +1440,9 @@
       "source_location": "L20",
       "_origin": "ast",
       "community": 10,
+      "community_name": "models.ts",
       "norm_label": ".constructor()",
-      "id": "frontend_wailsjs_go_models_agenda_constructor",
-      "community_name": "models.ts"
+      "id": "frontend_wailsjs_go_models_agenda_constructor"
     },
     {
       "label": "runtime/package.json",
@@ -1176,9 +1451,9 @@
       "source_location": "L1",
       "_origin": "ast",
       "community": 4,
+      "community_name": "runtime/package.json",
       "norm_label": "runtime/package.json",
-      "id": "frontend_wailsjs_runtime_package",
-      "community_name": "runtime/package.json"
+      "id": "frontend_wailsjs_runtime_package"
     },
     {
       "label": "name",
@@ -1187,9 +1462,9 @@
       "source_location": "L2",
       "_origin": "ast",
       "community": 4,
+      "community_name": "runtime/package.json",
       "norm_label": "name",
-      "id": "frontend_wailsjs_runtime_package_name",
-      "community_name": "runtime/package.json"
+      "id": "frontend_wailsjs_runtime_package_name"
     },
     {
       "label": "version",
@@ -1198,9 +1473,9 @@
       "source_location": "L3",
       "_origin": "ast",
       "community": 4,
+      "community_name": "runtime/package.json",
       "norm_label": "version",
-      "id": "frontend_wailsjs_runtime_package_version",
-      "community_name": "runtime/package.json"
+      "id": "frontend_wailsjs_runtime_package_version"
     },
     {
       "label": "description",
@@ -1209,9 +1484,9 @@
       "source_location": "L4",
       "_origin": "ast",
       "community": 4,
+      "community_name": "runtime/package.json",
       "norm_label": "description",
-      "id": "frontend_wailsjs_runtime_package_description",
-      "community_name": "runtime/package.json"
+      "id": "frontend_wailsjs_runtime_package_description"
     },
     {
       "label": "main",
@@ -1220,9 +1495,9 @@
       "source_location": "L5",
       "_origin": "ast",
       "community": 4,
+      "community_name": "runtime/package.json",
       "norm_label": "main",
-      "id": "frontend_wailsjs_runtime_package_main",
-      "community_name": "runtime/package.json"
+      "id": "frontend_wailsjs_runtime_package_main"
     },
     {
       "label": "types",
@@ -1231,9 +1506,9 @@
       "source_location": "L6",
       "_origin": "ast",
       "community": 4,
+      "community_name": "runtime/package.json",
       "norm_label": "types",
-      "id": "frontend_wailsjs_runtime_package_types",
-      "community_name": "runtime/package.json"
+      "id": "frontend_wailsjs_runtime_package_types"
     },
     {
       "label": "scripts",
@@ -1242,9 +1517,9 @@
       "source_location": "L7",
       "_origin": "ast",
       "community": 4,
+      "community_name": "runtime/package.json",
       "norm_label": "scripts",
-      "id": "frontend_wailsjs_runtime_package_scripts",
-      "community_name": "runtime/package.json"
+      "id": "frontend_wailsjs_runtime_package_scripts"
     },
     {
       "label": "repository",
@@ -1253,9 +1528,9 @@
       "source_location": "L9",
       "_origin": "ast",
       "community": 4,
+      "community_name": "runtime/package.json",
       "norm_label": "repository",
-      "id": "frontend_wailsjs_runtime_package_repository",
-      "community_name": "runtime/package.json"
+      "id": "frontend_wailsjs_runtime_package_repository"
     },
     {
       "label": "type",
@@ -1264,9 +1539,9 @@
       "source_location": "L10",
       "_origin": "ast",
       "community": 4,
+      "community_name": "runtime/package.json",
       "norm_label": "type",
-      "id": "frontend_wailsjs_runtime_package_repository_type",
-      "community_name": "runtime/package.json"
+      "id": "frontend_wailsjs_runtime_package_repository_type"
     },
     {
       "label": "url",
@@ -1275,9 +1550,9 @@
       "source_location": "L11",
       "_origin": "ast",
       "community": 4,
+      "community_name": "runtime/package.json",
       "norm_label": "url",
-      "id": "frontend_wailsjs_runtime_package_repository_url",
-      "community_name": "runtime/package.json"
+      "id": "frontend_wailsjs_runtime_package_repository_url"
     },
     {
       "label": "keywords",
@@ -1286,9 +1561,9 @@
       "source_location": "L13",
       "_origin": "ast",
       "community": 4,
+      "community_name": "runtime/package.json",
       "norm_label": "keywords",
-      "id": "frontend_wailsjs_runtime_package_keywords",
-      "community_name": "runtime/package.json"
+      "id": "frontend_wailsjs_runtime_package_keywords"
     },
     {
       "label": "Wails",
@@ -1297,9 +1572,9 @@
       "source_location": "L13",
       "_origin": "ast",
       "community": 4,
+      "community_name": "runtime/package.json",
       "norm_label": "wails",
-      "id": "ref_wails",
-      "community_name": "runtime/package.json"
+      "id": "ref_wails"
     },
     {
       "label": "Javascript",
@@ -1308,9 +1583,9 @@
       "source_location": "L13",
       "_origin": "ast",
       "community": 4,
+      "community_name": "runtime/package.json",
       "norm_label": "javascript",
-      "id": "ref_javascript",
-      "community_name": "runtime/package.json"
+      "id": "ref_javascript"
     },
     {
       "label": "Go",
@@ -1319,9 +1594,9 @@
       "source_location": "L13",
       "_origin": "ast",
       "community": 4,
+      "community_name": "runtime/package.json",
       "norm_label": "go",
-      "id": "ref_go",
-      "community_name": "runtime/package.json"
+      "id": "ref_go"
     },
     {
       "label": "author",
@@ -1330,9 +1605,9 @@
       "source_location": "L18",
       "_origin": "ast",
       "community": 4,
+      "community_name": "runtime/package.json",
       "norm_label": "author",
-      "id": "frontend_wailsjs_runtime_package_author",
-      "community_name": "runtime/package.json"
+      "id": "frontend_wailsjs_runtime_package_author"
     },
     {
       "label": "license",
@@ -1341,9 +1616,9 @@
       "source_location": "L19",
       "_origin": "ast",
       "community": 4,
+      "community_name": "runtime/package.json",
       "norm_label": "license",
-      "id": "frontend_wailsjs_runtime_package_license",
-      "community_name": "runtime/package.json"
+      "id": "frontend_wailsjs_runtime_package_license"
     },
     {
       "label": "bugs",
@@ -1352,9 +1627,9 @@
       "source_location": "L20",
       "_origin": "ast",
       "community": 4,
+      "community_name": "runtime/package.json",
       "norm_label": "bugs",
-      "id": "frontend_wailsjs_runtime_package_bugs",
-      "community_name": "runtime/package.json"
+      "id": "frontend_wailsjs_runtime_package_bugs"
     },
     {
       "label": "url",
@@ -1363,9 +1638,9 @@
       "source_location": "L21",
       "_origin": "ast",
       "community": 4,
+      "community_name": "runtime/package.json",
       "norm_label": "url",
-      "id": "frontend_wailsjs_runtime_package_bugs_url",
-      "community_name": "runtime/package.json"
+      "id": "frontend_wailsjs_runtime_package_bugs_url"
     },
     {
       "label": "homepage",
@@ -1374,9 +1649,9 @@
       "source_location": "L23",
       "_origin": "ast",
       "community": 4,
+      "community_name": "runtime/package.json",
       "norm_label": "homepage",
-      "id": "frontend_wailsjs_runtime_package_homepage",
-      "community_name": "runtime/package.json"
+      "id": "frontend_wailsjs_runtime_package_homepage"
     },
     {
       "label": "runtime.d.ts",
@@ -1385,9 +1660,9 @@
       "source_location": "L1",
       "_origin": "ast",
       "community": 8,
+      "community_name": "runtime.d.ts",
       "norm_label": "runtime.d.ts",
-      "id": "frontend_wailsjs_runtime_runtime_d",
-      "community_name": "runtime.d.ts"
+      "id": "frontend_wailsjs_runtime_runtime_d"
     },
     {
       "label": "Position",
@@ -1396,9 +1671,9 @@
       "source_location": "L11",
       "_origin": "ast",
       "community": 8,
+      "community_name": "runtime.d.ts",
       "norm_label": "position",
-      "id": "frontend_wailsjs_runtime_runtime_d_position",
-      "community_name": "runtime.d.ts"
+      "id": "frontend_wailsjs_runtime_runtime_d_position"
     },
     {
       "label": "Size",
@@ -1407,9 +1682,9 @@
       "source_location": "L16",
       "_origin": "ast",
       "community": 8,
+      "community_name": "runtime.d.ts",
       "norm_label": "size",
-      "id": "frontend_wailsjs_runtime_runtime_d_size",
-      "community_name": "runtime.d.ts"
+      "id": "frontend_wailsjs_runtime_runtime_d_size"
     },
     {
       "label": "Screen",
@@ -1418,9 +1693,9 @@
       "source_location": "L21",
       "_origin": "ast",
       "community": 8,
+      "community_name": "runtime.d.ts",
       "norm_label": "screen",
-      "id": "frontend_wailsjs_runtime_runtime_d_screen",
-      "community_name": "runtime.d.ts"
+      "id": "frontend_wailsjs_runtime_runtime_d_screen"
     },
     {
       "label": "EnvironmentInfo",
@@ -1429,9 +1704,9 @@
       "source_location": "L29",
       "_origin": "ast",
       "community": 8,
+      "community_name": "runtime.d.ts",
       "norm_label": "environmentinfo",
-      "id": "frontend_wailsjs_runtime_runtime_d_environmentinfo",
-      "community_name": "runtime.d.ts"
+      "id": "frontend_wailsjs_runtime_runtime_d_environmentinfo"
     },
     {
       "label": "NotificationOptions",
@@ -1440,9 +1715,9 @@
       "source_location": "L252",
       "_origin": "ast",
       "community": 8,
+      "community_name": "runtime.d.ts",
       "norm_label": "notificationoptions",
-      "id": "frontend_wailsjs_runtime_runtime_d_notificationoptions",
-      "community_name": "runtime.d.ts"
+      "id": "frontend_wailsjs_runtime_runtime_d_notificationoptions"
     },
     {
       "label": "NotificationAction",
@@ -1451,9 +1726,9 @@
       "source_location": "L261",
       "_origin": "ast",
       "community": 8,
+      "community_name": "runtime.d.ts",
       "norm_label": "notificationaction",
-      "id": "frontend_wailsjs_runtime_runtime_d_notificationaction",
-      "community_name": "runtime.d.ts"
+      "id": "frontend_wailsjs_runtime_runtime_d_notificationaction"
     },
     {
       "label": "NotificationCategory",
@@ -1462,9 +1737,9 @@
       "source_location": "L267",
       "_origin": "ast",
       "community": 8,
+      "community_name": "runtime.d.ts",
       "norm_label": "notificationcategory",
-      "id": "frontend_wailsjs_runtime_runtime_d_notificationcategory",
-      "community_name": "runtime.d.ts"
+      "id": "frontend_wailsjs_runtime_runtime_d_notificationcategory"
     },
     {
       "label": "runtime.js",
@@ -1473,9 +1748,9 @@
       "source_location": "L1",
       "_origin": "ast",
       "community": 0,
+      "community_name": "runtime.js",
       "norm_label": "runtime.js",
-      "id": "frontend_wailsjs_runtime_runtime",
-      "community_name": "runtime.js"
+      "id": "frontend_wailsjs_runtime_runtime"
     },
     {
       "label": "LogPrint()",
@@ -1484,9 +1759,9 @@
       "source_location": "L11",
       "_origin": "ast",
       "community": 0,
+      "community_name": "runtime.js",
       "norm_label": "logprint()",
-      "id": "frontend_wailsjs_runtime_runtime_logprint",
-      "community_name": "runtime.js"
+      "id": "frontend_wailsjs_runtime_runtime_logprint"
     },
     {
       "label": "LogTrace()",
@@ -1495,9 +1770,9 @@
       "source_location": "L15",
       "_origin": "ast",
       "community": 0,
+      "community_name": "runtime.js",
       "norm_label": "logtrace()",
-      "id": "frontend_wailsjs_runtime_runtime_logtrace",
-      "community_name": "runtime.js"
+      "id": "frontend_wailsjs_runtime_runtime_logtrace"
     },
     {
       "label": "LogDebug()",
@@ -1506,9 +1781,9 @@
       "source_location": "L19",
       "_origin": "ast",
       "community": 0,
+      "community_name": "runtime.js",
       "norm_label": "logdebug()",
-      "id": "frontend_wailsjs_runtime_runtime_logdebug",
-      "community_name": "runtime.js"
+      "id": "frontend_wailsjs_runtime_runtime_logdebug"
     },
     {
       "label": "LogInfo()",
@@ -1517,9 +1792,9 @@
       "source_location": "L23",
       "_origin": "ast",
       "community": 0,
+      "community_name": "runtime.js",
       "norm_label": "loginfo()",
-      "id": "frontend_wailsjs_runtime_runtime_loginfo",
-      "community_name": "runtime.js"
+      "id": "frontend_wailsjs_runtime_runtime_loginfo"
     },
     {
       "label": "LogWarning()",
@@ -1528,9 +1803,9 @@
       "source_location": "L27",
       "_origin": "ast",
       "community": 0,
+      "community_name": "runtime.js",
       "norm_label": "logwarning()",
-      "id": "frontend_wailsjs_runtime_runtime_logwarning",
-      "community_name": "runtime.js"
+      "id": "frontend_wailsjs_runtime_runtime_logwarning"
     },
     {
       "label": "LogError()",
@@ -1539,9 +1814,9 @@
       "source_location": "L31",
       "_origin": "ast",
       "community": 0,
+      "community_name": "runtime.js",
       "norm_label": "logerror()",
-      "id": "frontend_wailsjs_runtime_runtime_logerror",
-      "community_name": "runtime.js"
+      "id": "frontend_wailsjs_runtime_runtime_logerror"
     },
     {
       "label": "LogFatal()",
@@ -1550,9 +1825,9 @@
       "source_location": "L35",
       "_origin": "ast",
       "community": 0,
+      "community_name": "runtime.js",
       "norm_label": "logfatal()",
-      "id": "frontend_wailsjs_runtime_runtime_logfatal",
-      "community_name": "runtime.js"
+      "id": "frontend_wailsjs_runtime_runtime_logfatal"
     },
     {
       "label": "EventsOnMultiple()",
@@ -1561,9 +1836,9 @@
       "source_location": "L39",
       "_origin": "ast",
       "community": 11,
+      "community_name": "EventsOn",
       "norm_label": "eventsonmultiple()",
-      "id": "frontend_wailsjs_runtime_runtime_eventsonmultiple",
-      "community_name": "EventsOn"
+      "id": "frontend_wailsjs_runtime_runtime_eventsonmultiple"
     },
     {
       "label": "EventsOn()",
@@ -1572,9 +1847,9 @@
       "source_location": "L43",
       "_origin": "ast",
       "community": 11,
+      "community_name": "EventsOn",
       "norm_label": "eventson()",
-      "id": "frontend_wailsjs_runtime_runtime_eventson",
-      "community_name": "EventsOn"
+      "id": "frontend_wailsjs_runtime_runtime_eventson"
     },
     {
       "label": "EventsOff()",
@@ -1583,9 +1858,9 @@
       "source_location": "L47",
       "_origin": "ast",
       "community": 0,
+      "community_name": "runtime.js",
       "norm_label": "eventsoff()",
-      "id": "frontend_wailsjs_runtime_runtime_eventsoff",
-      "community_name": "runtime.js"
+      "id": "frontend_wailsjs_runtime_runtime_eventsoff"
     },
     {
       "label": "EventsOffAll()",
@@ -1594,9 +1869,9 @@
       "source_location": "L51",
       "_origin": "ast",
       "community": 0,
+      "community_name": "runtime.js",
       "norm_label": "eventsoffall()",
-      "id": "frontend_wailsjs_runtime_runtime_eventsoffall",
-      "community_name": "runtime.js"
+      "id": "frontend_wailsjs_runtime_runtime_eventsoffall"
     },
     {
       "label": "EventsOnce()",
@@ -1605,9 +1880,9 @@
       "source_location": "L55",
       "_origin": "ast",
       "community": 11,
+      "community_name": "EventsOn",
       "norm_label": "eventsonce()",
-      "id": "frontend_wailsjs_runtime_runtime_eventsonce",
-      "community_name": "EventsOn"
+      "id": "frontend_wailsjs_runtime_runtime_eventsonce"
     },
     {
       "label": "EventsEmit()",
@@ -1616,9 +1891,9 @@
       "source_location": "L59",
       "_origin": "ast",
       "community": 0,
+      "community_name": "runtime.js",
       "norm_label": "eventsemit()",
-      "id": "frontend_wailsjs_runtime_runtime_eventsemit",
-      "community_name": "runtime.js"
+      "id": "frontend_wailsjs_runtime_runtime_eventsemit"
     },
     {
       "label": "WindowReload()",
@@ -1627,9 +1902,9 @@
       "source_location": "L64",
       "_origin": "ast",
       "community": 0,
+      "community_name": "runtime.js",
       "norm_label": "windowreload()",
-      "id": "frontend_wailsjs_runtime_runtime_windowreload",
-      "community_name": "runtime.js"
+      "id": "frontend_wailsjs_runtime_runtime_windowreload"
     },
     {
       "label": "WindowReloadApp()",
@@ -1638,9 +1913,9 @@
       "source_location": "L68",
       "_origin": "ast",
       "community": 0,
+      "community_name": "runtime.js",
       "norm_label": "windowreloadapp()",
-      "id": "frontend_wailsjs_runtime_runtime_windowreloadapp",
-      "community_name": "runtime.js"
+      "id": "frontend_wailsjs_runtime_runtime_windowreloadapp"
     },
     {
       "label": "WindowSetAlwaysOnTop()",
@@ -1649,9 +1924,9 @@
       "source_location": "L72",
       "_origin": "ast",
       "community": 0,
+      "community_name": "runtime.js",
       "norm_label": "windowsetalwaysontop()",
-      "id": "frontend_wailsjs_runtime_runtime_windowsetalwaysontop",
-      "community_name": "runtime.js"
+      "id": "frontend_wailsjs_runtime_runtime_windowsetalwaysontop"
     },
     {
       "label": "WindowSetSystemDefaultTheme()",
@@ -1660,9 +1935,9 @@
       "source_location": "L76",
       "_origin": "ast",
       "community": 0,
+      "community_name": "runtime.js",
       "norm_label": "windowsetsystemdefaulttheme()",
-      "id": "frontend_wailsjs_runtime_runtime_windowsetsystemdefaulttheme",
-      "community_name": "runtime.js"
+      "id": "frontend_wailsjs_runtime_runtime_windowsetsystemdefaulttheme"
     },
     {
       "label": "WindowSetLightTheme()",
@@ -1671,9 +1946,9 @@
       "source_location": "L80",
       "_origin": "ast",
       "community": 0,
+      "community_name": "runtime.js",
       "norm_label": "windowsetlighttheme()",
-      "id": "frontend_wailsjs_runtime_runtime_windowsetlighttheme",
-      "community_name": "runtime.js"
+      "id": "frontend_wailsjs_runtime_runtime_windowsetlighttheme"
     },
     {
       "label": "WindowSetDarkTheme()",
@@ -1682,9 +1957,9 @@
       "source_location": "L84",
       "_origin": "ast",
       "community": 0,
+      "community_name": "runtime.js",
       "norm_label": "windowsetdarktheme()",
-      "id": "frontend_wailsjs_runtime_runtime_windowsetdarktheme",
-      "community_name": "runtime.js"
+      "id": "frontend_wailsjs_runtime_runtime_windowsetdarktheme"
     },
     {
       "label": "WindowCenter()",
@@ -1693,9 +1968,9 @@
       "source_location": "L88",
       "_origin": "ast",
       "community": 0,
+      "community_name": "runtime.js",
       "norm_label": "windowcenter()",
-      "id": "frontend_wailsjs_runtime_runtime_windowcenter",
-      "community_name": "runtime.js"
+      "id": "frontend_wailsjs_runtime_runtime_windowcenter"
     },
     {
       "label": "WindowSetTitle()",
@@ -1704,9 +1979,9 @@
       "source_location": "L92",
       "_origin": "ast",
       "community": 0,
+      "community_name": "runtime.js",
       "norm_label": "windowsettitle()",
-      "id": "frontend_wailsjs_runtime_runtime_windowsettitle",
-      "community_name": "runtime.js"
+      "id": "frontend_wailsjs_runtime_runtime_windowsettitle"
     },
     {
       "label": "WindowFullscreen()",
@@ -1715,9 +1990,9 @@
       "source_location": "L96",
       "_origin": "ast",
       "community": 0,
+      "community_name": "runtime.js",
       "norm_label": "windowfullscreen()",
-      "id": "frontend_wailsjs_runtime_runtime_windowfullscreen",
-      "community_name": "runtime.js"
+      "id": "frontend_wailsjs_runtime_runtime_windowfullscreen"
     },
     {
       "label": "WindowUnfullscreen()",
@@ -1726,9 +2001,9 @@
       "source_location": "L100",
       "_origin": "ast",
       "community": 0,
+      "community_name": "runtime.js",
       "norm_label": "windowunfullscreen()",
-      "id": "frontend_wailsjs_runtime_runtime_windowunfullscreen",
-      "community_name": "runtime.js"
+      "id": "frontend_wailsjs_runtime_runtime_windowunfullscreen"
     },
     {
       "label": "WindowIsFullscreen()",
@@ -1737,9 +2012,9 @@
       "source_location": "L104",
       "_origin": "ast",
       "community": 0,
+      "community_name": "runtime.js",
       "norm_label": "windowisfullscreen()",
-      "id": "frontend_wailsjs_runtime_runtime_windowisfullscreen",
-      "community_name": "runtime.js"
+      "id": "frontend_wailsjs_runtime_runtime_windowisfullscreen"
     },
     {
       "label": "WindowGetSize()",
@@ -1748,9 +2023,9 @@
       "source_location": "L108",
       "_origin": "ast",
       "community": 0,
+      "community_name": "runtime.js",
       "norm_label": "windowgetsize()",
-      "id": "frontend_wailsjs_runtime_runtime_windowgetsize",
-      "community_name": "runtime.js"
+      "id": "frontend_wailsjs_runtime_runtime_windowgetsize"
     },
     {
       "label": "WindowSetSize()",
@@ -1759,9 +2034,9 @@
       "source_location": "L112",
       "_origin": "ast",
       "community": 0,
+      "community_name": "runtime.js",
       "norm_label": "windowsetsize()",
-      "id": "frontend_wailsjs_runtime_runtime_windowsetsize",
-      "community_name": "runtime.js"
+      "id": "frontend_wailsjs_runtime_runtime_windowsetsize"
     },
     {
       "label": "WindowSetMaxSize()",
@@ -1770,9 +2045,9 @@
       "source_location": "L116",
       "_origin": "ast",
       "community": 0,
+      "community_name": "runtime.js",
       "norm_label": "windowsetmaxsize()",
-      "id": "frontend_wailsjs_runtime_runtime_windowsetmaxsize",
-      "community_name": "runtime.js"
+      "id": "frontend_wailsjs_runtime_runtime_windowsetmaxsize"
     },
     {
       "label": "WindowSetMinSize()",
@@ -1781,9 +2056,9 @@
       "source_location": "L120",
       "_origin": "ast",
       "community": 0,
+      "community_name": "runtime.js",
       "norm_label": "windowsetminsize()",
-      "id": "frontend_wailsjs_runtime_runtime_windowsetminsize",
-      "community_name": "runtime.js"
+      "id": "frontend_wailsjs_runtime_runtime_windowsetminsize"
     },
     {
       "label": "WindowSetPosition()",
@@ -1792,9 +2067,9 @@
       "source_location": "L124",
       "_origin": "ast",
       "community": 0,
+      "community_name": "runtime.js",
       "norm_label": "windowsetposition()",
-      "id": "frontend_wailsjs_runtime_runtime_windowsetposition",
-      "community_name": "runtime.js"
+      "id": "frontend_wailsjs_runtime_runtime_windowsetposition"
     },
     {
       "label": "WindowGetPosition()",
@@ -1803,9 +2078,9 @@
       "source_location": "L128",
       "_origin": "ast",
       "community": 0,
+      "community_name": "runtime.js",
       "norm_label": "windowgetposition()",
-      "id": "frontend_wailsjs_runtime_runtime_windowgetposition",
-      "community_name": "runtime.js"
+      "id": "frontend_wailsjs_runtime_runtime_windowgetposition"
     },
     {
       "label": "WindowHide()",
@@ -1814,9 +2089,9 @@
       "source_location": "L132",
       "_origin": "ast",
       "community": 0,
+      "community_name": "runtime.js",
       "norm_label": "windowhide()",
-      "id": "frontend_wailsjs_runtime_runtime_windowhide",
-      "community_name": "runtime.js"
+      "id": "frontend_wailsjs_runtime_runtime_windowhide"
     },
     {
       "label": "WindowShow()",
@@ -1825,9 +2100,9 @@
       "source_location": "L136",
       "_origin": "ast",
       "community": 0,
+      "community_name": "runtime.js",
       "norm_label": "windowshow()",
-      "id": "frontend_wailsjs_runtime_runtime_windowshow",
-      "community_name": "runtime.js"
+      "id": "frontend_wailsjs_runtime_runtime_windowshow"
     },
     {
       "label": "WindowMaximise()",
@@ -1836,9 +2111,9 @@
       "source_location": "L140",
       "_origin": "ast",
       "community": 0,
+      "community_name": "runtime.js",
       "norm_label": "windowmaximise()",
-      "id": "frontend_wailsjs_runtime_runtime_windowmaximise",
-      "community_name": "runtime.js"
+      "id": "frontend_wailsjs_runtime_runtime_windowmaximise"
     },
     {
       "label": "WindowToggleMaximise()",
@@ -1847,9 +2122,9 @@
       "source_location": "L144",
       "_origin": "ast",
       "community": 0,
+      "community_name": "runtime.js",
       "norm_label": "windowtogglemaximise()",
-      "id": "frontend_wailsjs_runtime_runtime_windowtogglemaximise",
-      "community_name": "runtime.js"
+      "id": "frontend_wailsjs_runtime_runtime_windowtogglemaximise"
     },
     {
       "label": "WindowUnmaximise()",
@@ -1858,9 +2133,9 @@
       "source_location": "L148",
       "_origin": "ast",
       "community": 0,
+      "community_name": "runtime.js",
       "norm_label": "windowunmaximise()",
-      "id": "frontend_wailsjs_runtime_runtime_windowunmaximise",
-      "community_name": "runtime.js"
+      "id": "frontend_wailsjs_runtime_runtime_windowunmaximise"
     },
     {
       "label": "WindowIsMaximised()",
@@ -1869,9 +2144,9 @@
       "source_location": "L152",
       "_origin": "ast",
       "community": 0,
+      "community_name": "runtime.js",
       "norm_label": "windowismaximised()",
-      "id": "frontend_wailsjs_runtime_runtime_windowismaximised",
-      "community_name": "runtime.js"
+      "id": "frontend_wailsjs_runtime_runtime_windowismaximised"
     },
     {
       "label": "WindowMinimise()",
@@ -1880,9 +2155,9 @@
       "source_location": "L156",
       "_origin": "ast",
       "community": 0,
+      "community_name": "runtime.js",
       "norm_label": "windowminimise()",
-      "id": "frontend_wailsjs_runtime_runtime_windowminimise",
-      "community_name": "runtime.js"
+      "id": "frontend_wailsjs_runtime_runtime_windowminimise"
     },
     {
       "label": "WindowUnminimise()",
@@ -1891,9 +2166,9 @@
       "source_location": "L160",
       "_origin": "ast",
       "community": 0,
+      "community_name": "runtime.js",
       "norm_label": "windowunminimise()",
-      "id": "frontend_wailsjs_runtime_runtime_windowunminimise",
-      "community_name": "runtime.js"
+      "id": "frontend_wailsjs_runtime_runtime_windowunminimise"
     },
     {
       "label": "WindowSetBackgroundColour()",
@@ -1902,9 +2177,9 @@
       "source_location": "L164",
       "_origin": "ast",
       "community": 0,
+      "community_name": "runtime.js",
       "norm_label": "windowsetbackgroundcolour()",
-      "id": "frontend_wailsjs_runtime_runtime_windowsetbackgroundcolour",
-      "community_name": "runtime.js"
+      "id": "frontend_wailsjs_runtime_runtime_windowsetbackgroundcolour"
     },
     {
       "label": "ScreenGetAll()",
@@ -1913,9 +2188,9 @@
       "source_location": "L168",
       "_origin": "ast",
       "community": 0,
+      "community_name": "runtime.js",
       "norm_label": "screengetall()",
-      "id": "frontend_wailsjs_runtime_runtime_screengetall",
-      "community_name": "runtime.js"
+      "id": "frontend_wailsjs_runtime_runtime_screengetall"
     },
     {
       "label": "WindowIsMinimised()",
@@ -1924,9 +2199,9 @@
       "source_location": "L172",
       "_origin": "ast",
       "community": 0,
+      "community_name": "runtime.js",
       "norm_label": "windowisminimised()",
-      "id": "frontend_wailsjs_runtime_runtime_windowisminimised",
-      "community_name": "runtime.js"
+      "id": "frontend_wailsjs_runtime_runtime_windowisminimised"
     },
     {
       "label": "WindowIsNormal()",
@@ -1935,9 +2210,9 @@
       "source_location": "L176",
       "_origin": "ast",
       "community": 0,
+      "community_name": "runtime.js",
       "norm_label": "windowisnormal()",
-      "id": "frontend_wailsjs_runtime_runtime_windowisnormal",
-      "community_name": "runtime.js"
+      "id": "frontend_wailsjs_runtime_runtime_windowisnormal"
     },
     {
       "label": "BrowserOpenURL()",
@@ -1946,9 +2221,9 @@
       "source_location": "L180",
       "_origin": "ast",
       "community": 0,
+      "community_name": "runtime.js",
       "norm_label": "browseropenurl()",
-      "id": "frontend_wailsjs_runtime_runtime_browseropenurl",
-      "community_name": "runtime.js"
+      "id": "frontend_wailsjs_runtime_runtime_browseropenurl"
     },
     {
       "label": "Environment()",
@@ -1957,9 +2232,9 @@
       "source_location": "L184",
       "_origin": "ast",
       "community": 0,
+      "community_name": "runtime.js",
       "norm_label": "environment()",
-      "id": "frontend_wailsjs_runtime_runtime_environment",
-      "community_name": "runtime.js"
+      "id": "frontend_wailsjs_runtime_runtime_environment"
     },
     {
       "label": "Quit()",
@@ -1968,9 +2243,9 @@
       "source_location": "L188",
       "_origin": "ast",
       "community": 0,
+      "community_name": "runtime.js",
       "norm_label": "quit()",
-      "id": "frontend_wailsjs_runtime_runtime_quit",
-      "community_name": "runtime.js"
+      "id": "frontend_wailsjs_runtime_runtime_quit"
     },
     {
       "label": "Hide()",
@@ -1979,9 +2254,9 @@
       "source_location": "L192",
       "_origin": "ast",
       "community": 0,
+      "community_name": "runtime.js",
       "norm_label": "hide()",
-      "id": "frontend_wailsjs_runtime_runtime_hide",
-      "community_name": "runtime.js"
+      "id": "frontend_wailsjs_runtime_runtime_hide"
     },
     {
       "label": "Show()",
@@ -1990,9 +2265,9 @@
       "source_location": "L196",
       "_origin": "ast",
       "community": 0,
+      "community_name": "runtime.js",
       "norm_label": "show()",
-      "id": "frontend_wailsjs_runtime_runtime_show",
-      "community_name": "runtime.js"
+      "id": "frontend_wailsjs_runtime_runtime_show"
     },
     {
       "label": "ClipboardGetText()",
@@ -2001,9 +2276,9 @@
       "source_location": "L200",
       "_origin": "ast",
       "community": 0,
+      "community_name": "runtime.js",
       "norm_label": "clipboardgettext()",
-      "id": "frontend_wailsjs_runtime_runtime_clipboardgettext",
-      "community_name": "runtime.js"
+      "id": "frontend_wailsjs_runtime_runtime_clipboardgettext"
     },
     {
       "label": "ClipboardSetText()",
@@ -2012,9 +2287,9 @@
       "source_location": "L204",
       "_origin": "ast",
       "community": 0,
+      "community_name": "runtime.js",
       "norm_label": "clipboardsettext()",
-      "id": "frontend_wailsjs_runtime_runtime_clipboardsettext",
-      "community_name": "runtime.js"
+      "id": "frontend_wailsjs_runtime_runtime_clipboardsettext"
     },
     {
       "label": "OnFileDrop()",
@@ -2023,9 +2298,9 @@
       "source_location": "L225",
       "_origin": "ast",
       "community": 0,
+      "community_name": "runtime.js",
       "norm_label": "onfiledrop()",
-      "id": "frontend_wailsjs_runtime_runtime_onfiledrop",
-      "community_name": "runtime.js"
+      "id": "frontend_wailsjs_runtime_runtime_onfiledrop"
     },
     {
       "label": "OnFileDropOff()",
@@ -2034,9 +2309,9 @@
       "source_location": "L232",
       "_origin": "ast",
       "community": 0,
+      "community_name": "runtime.js",
       "norm_label": "onfiledropoff()",
-      "id": "frontend_wailsjs_runtime_runtime_onfiledropoff",
-      "community_name": "runtime.js"
+      "id": "frontend_wailsjs_runtime_runtime_onfiledropoff"
     },
     {
       "label": "CanResolveFilePaths()",
@@ -2045,9 +2320,9 @@
       "source_location": "L236",
       "_origin": "ast",
       "community": 0,
+      "community_name": "runtime.js",
       "norm_label": "canresolvefilepaths()",
-      "id": "frontend_wailsjs_runtime_runtime_canresolvefilepaths",
-      "community_name": "runtime.js"
+      "id": "frontend_wailsjs_runtime_runtime_canresolvefilepaths"
     },
     {
       "label": "ResolveFilePaths()",
@@ -2056,9 +2331,9 @@
       "source_location": "L240",
       "_origin": "ast",
       "community": 0,
+      "community_name": "runtime.js",
       "norm_label": "resolvefilepaths()",
-      "id": "frontend_wailsjs_runtime_runtime_resolvefilepaths",
-      "community_name": "runtime.js"
+      "id": "frontend_wailsjs_runtime_runtime_resolvefilepaths"
     },
     {
       "label": "InitializeNotifications()",
@@ -2067,9 +2342,9 @@
       "source_location": "L244",
       "_origin": "ast",
       "community": 0,
+      "community_name": "runtime.js",
       "norm_label": "initializenotifications()",
-      "id": "frontend_wailsjs_runtime_runtime_initializenotifications",
-      "community_name": "runtime.js"
+      "id": "frontend_wailsjs_runtime_runtime_initializenotifications"
     },
     {
       "label": "CleanupNotifications()",
@@ -2078,9 +2353,9 @@
       "source_location": "L248",
       "_origin": "ast",
       "community": 0,
+      "community_name": "runtime.js",
       "norm_label": "cleanupnotifications()",
-      "id": "frontend_wailsjs_runtime_runtime_cleanupnotifications",
-      "community_name": "runtime.js"
+      "id": "frontend_wailsjs_runtime_runtime_cleanupnotifications"
     },
     {
       "label": "IsNotificationAvailable()",
@@ -2089,9 +2364,9 @@
       "source_location": "L252",
       "_origin": "ast",
       "community": 0,
+      "community_name": "runtime.js",
       "norm_label": "isnotificationavailable()",
-      "id": "frontend_wailsjs_runtime_runtime_isnotificationavailable",
-      "community_name": "runtime.js"
+      "id": "frontend_wailsjs_runtime_runtime_isnotificationavailable"
     },
     {
       "label": "RequestNotificationAuthorization()",
@@ -2100,9 +2375,9 @@
       "source_location": "L256",
       "_origin": "ast",
       "community": 0,
+      "community_name": "runtime.js",
       "norm_label": "requestnotificationauthorization()",
-      "id": "frontend_wailsjs_runtime_runtime_requestnotificationauthorization",
-      "community_name": "runtime.js"
+      "id": "frontend_wailsjs_runtime_runtime_requestnotificationauthorization"
     },
     {
       "label": "CheckNotificationAuthorization()",
@@ -2111,9 +2386,9 @@
       "source_location": "L260",
       "_origin": "ast",
       "community": 0,
+      "community_name": "runtime.js",
       "norm_label": "checknotificationauthorization()",
-      "id": "frontend_wailsjs_runtime_runtime_checknotificationauthorization",
-      "community_name": "runtime.js"
+      "id": "frontend_wailsjs_runtime_runtime_checknotificationauthorization"
     },
     {
       "label": "SendNotification()",
@@ -2122,9 +2397,9 @@
       "source_location": "L264",
       "_origin": "ast",
       "community": 0,
+      "community_name": "runtime.js",
       "norm_label": "sendnotification()",
-      "id": "frontend_wailsjs_runtime_runtime_sendnotification",
-      "community_name": "runtime.js"
+      "id": "frontend_wailsjs_runtime_runtime_sendnotification"
     },
     {
       "label": "SendNotificationWithActions()",
@@ -2133,9 +2408,9 @@
       "source_location": "L268",
       "_origin": "ast",
       "community": 0,
+      "community_name": "runtime.js",
       "norm_label": "sendnotificationwithactions()",
-      "id": "frontend_wailsjs_runtime_runtime_sendnotificationwithactions",
-      "community_name": "runtime.js"
+      "id": "frontend_wailsjs_runtime_runtime_sendnotificationwithactions"
     },
     {
       "label": "RegisterNotificationCategory()",
@@ -2144,9 +2419,9 @@
       "source_location": "L272",
       "_origin": "ast",
       "community": 0,
+      "community_name": "runtime.js",
       "norm_label": "registernotificationcategory()",
-      "id": "frontend_wailsjs_runtime_runtime_registernotificationcategory",
-      "community_name": "runtime.js"
+      "id": "frontend_wailsjs_runtime_runtime_registernotificationcategory"
     },
     {
       "label": "RemoveNotificationCategory()",
@@ -2155,9 +2430,9 @@
       "source_location": "L276",
       "_origin": "ast",
       "community": 0,
+      "community_name": "runtime.js",
       "norm_label": "removenotificationcategory()",
-      "id": "frontend_wailsjs_runtime_runtime_removenotificationcategory",
-      "community_name": "runtime.js"
+      "id": "frontend_wailsjs_runtime_runtime_removenotificationcategory"
     },
     {
       "label": "RemoveAllPendingNotifications()",
@@ -2166,9 +2441,9 @@
       "source_location": "L280",
       "_origin": "ast",
       "community": 0,
+      "community_name": "runtime.js",
       "norm_label": "removeallpendingnotifications()",
-      "id": "frontend_wailsjs_runtime_runtime_removeallpendingnotifications",
-      "community_name": "runtime.js"
+      "id": "frontend_wailsjs_runtime_runtime_removeallpendingnotifications"
     },
     {
       "label": "RemovePendingNotification()",
@@ -2177,9 +2452,9 @@
       "source_location": "L284",
       "_origin": "ast",
       "community": 0,
+      "community_name": "runtime.js",
       "norm_label": "removependingnotification()",
-      "id": "frontend_wailsjs_runtime_runtime_removependingnotification",
-      "community_name": "runtime.js"
+      "id": "frontend_wailsjs_runtime_runtime_removependingnotification"
     },
     {
       "label": "RemoveAllDeliveredNotifications()",
@@ -2188,9 +2463,9 @@
       "source_location": "L288",
       "_origin": "ast",
       "community": 0,
+      "community_name": "runtime.js",
       "norm_label": "removealldeliverednotifications()",
-      "id": "frontend_wailsjs_runtime_runtime_removealldeliverednotifications",
-      "community_name": "runtime.js"
+      "id": "frontend_wailsjs_runtime_runtime_removealldeliverednotifications"
     },
     {
       "label": "RemoveDeliveredNotification()",
@@ -2199,9 +2474,9 @@
       "source_location": "L292",
       "_origin": "ast",
       "community": 0,
+      "community_name": "runtime.js",
       "norm_label": "removedeliverednotification()",
-      "id": "frontend_wailsjs_runtime_runtime_removedeliverednotification",
-      "community_name": "runtime.js"
+      "id": "frontend_wailsjs_runtime_runtime_removedeliverednotification"
     },
     {
       "label": "RemoveNotification()",
@@ -2210,9 +2485,9 @@
       "source_location": "L296",
       "_origin": "ast",
       "community": 0,
+      "community_name": "runtime.js",
       "norm_label": "removenotification()",
-      "id": "frontend_wailsjs_runtime_runtime_removenotification",
-      "community_name": "runtime.js"
+      "id": "frontend_wailsjs_runtime_runtime_removenotification"
     },
     {
       "label": "ReCall",
@@ -2223,9 +2498,9 @@
       "source_location": "L1",
       "_origin": "ast",
       "community": 15,
+      "community_name": "ReCall",
       "norm_label": "recall",
-      "id": "pkg_recall",
-      "community_name": "ReCall"
+      "id": "pkg_recall"
     },
     {
       "label": "agenda.go",
@@ -2234,9 +2509,9 @@
       "source_location": "L1",
       "_origin": "ast",
       "community": 12,
+      "community_name": "Agenda",
       "norm_label": "agenda.go",
-      "id": "internal_model_agenda",
-      "community_name": "Agenda"
+      "id": "internal_model_agenda"
     },
     {
       "label": "Agenda",
@@ -2245,9 +2520,9 @@
       "source_location": "L10",
       "_origin": "ast",
       "community": 12,
+      "community_name": "Agenda",
       "norm_label": "agenda",
-      "id": "model_agenda",
-      "community_name": "Agenda"
+      "id": "model_agenda"
     },
     {
       "label": ".Validate()",
@@ -2256,9 +2531,9 @@
       "source_location": "L24",
       "_origin": "ast",
       "community": 12,
+      "community_name": "Agenda",
       "norm_label": ".validate()",
-      "id": "model_agenda_validate",
-      "community_name": "Agenda"
+      "id": "model_agenda_validate"
     },
     {
       "label": "agenda_test.go",
@@ -2267,9 +2542,9 @@
       "source_location": "L1",
       "_origin": "ast",
       "community": 13,
+      "community_name": "TestAgendaValidate",
       "norm_label": "agenda_test.go",
-      "id": "internal_model_agenda_test",
-      "community_name": "TestAgendaValidate"
+      "id": "internal_model_agenda_test"
     },
     {
       "label": "TestAgendaValidate()",
@@ -2278,9 +2553,9 @@
       "source_location": "L8",
       "_origin": "ast",
       "community": 13,
+      "community_name": "TestAgendaValidate",
       "norm_label": "testagendavalidate()",
-      "id": "internal_model_agenda_test_testagendavalidate",
-      "community_name": "TestAgendaValidate"
+      "id": "internal_model_agenda_test_testagendavalidate"
     },
     {
       "label": "T",
@@ -2289,9 +2564,9 @@
       "source_location": "",
       "_origin": "ast",
       "community": 13,
+      "community_name": "TestAgendaValidate",
       "norm_label": "t",
-      "id": "internal_model_agenda_test_go_t",
-      "community_name": "TestAgendaValidate"
+      "id": "internal_model_agenda_test_go_t"
     },
     {
       "label": "sqlite.go",
@@ -2300,9 +2575,9 @@
       "source_location": "L1",
       "_origin": "ast",
       "community": 5,
+      "community_name": "SQLiteRepository",
       "norm_label": "sqlite.go",
-      "id": "internal_repository_sqlite",
-      "community_name": "SQLiteRepository"
+      "id": "internal_repository_sqlite"
     },
     {
       "label": "SQLiteRepository",
@@ -2311,9 +2586,9 @@
       "source_location": "L16",
       "_origin": "ast",
       "community": 5,
+      "community_name": "SQLiteRepository",
       "norm_label": "sqliterepository",
-      "id": "repository_sqliterepository",
-      "community_name": "SQLiteRepository"
+      "id": "repository_sqliterepository"
     },
     {
       "label": "DB",
@@ -2322,9 +2597,9 @@
       "source_location": "",
       "_origin": "ast",
       "community": 5,
+      "community_name": "SQLiteRepository",
       "norm_label": "db",
-      "id": "db",
-      "community_name": "SQLiteRepository"
+      "id": "db"
     },
     {
       "label": "Open()",
@@ -2333,9 +2608,9 @@
       "source_location": "L20",
       "_origin": "ast",
       "community": 5,
+      "community_name": "SQLiteRepository",
       "norm_label": "open()",
-      "id": "internal_repository_sqlite_open",
-      "community_name": "SQLiteRepository"
+      "id": "internal_repository_sqlite_open"
     },
     {
       "label": ".migrate()",
@@ -2344,9 +2619,9 @@
       "source_location": "L41",
       "_origin": "ast",
       "community": 5,
+      "community_name": "SQLiteRepository",
       "norm_label": ".migrate()",
-      "id": "repository_sqliterepository_migrate",
-      "community_name": "SQLiteRepository"
+      "id": "repository_sqliterepository_migrate"
     },
     {
       "label": ".ListRange()",
@@ -2355,9 +2630,9 @@
       "source_location": "L64",
       "_origin": "ast",
       "community": 5,
+      "community_name": "SQLiteRepository",
       "norm_label": ".listrange()",
-      "id": "repository_sqliterepository_listrange",
-      "community_name": "SQLiteRepository"
+      "id": "repository_sqliterepository_listrange"
     },
     {
       "label": "Context",
@@ -2366,9 +2641,9 @@
       "source_location": "",
       "_origin": "ast",
       "community": 5,
+      "community_name": "SQLiteRepository",
       "norm_label": "context",
-      "id": "internal_repository_sqlite_go_context",
-      "community_name": "SQLiteRepository"
+      "id": "internal_repository_sqlite_go_context"
     },
     {
       "label": "Time",
@@ -2377,9 +2652,9 @@
       "source_location": "",
       "_origin": "ast",
       "community": 5,
+      "community_name": "SQLiteRepository",
       "norm_label": "time",
-      "id": "time",
-      "community_name": "SQLiteRepository"
+      "id": "time"
     },
     {
       "label": "Agenda",
@@ -2388,9 +2663,9 @@
       "source_location": "",
       "_origin": "ast",
       "community": 5,
+      "community_name": "SQLiteRepository",
       "norm_label": "agenda",
-      "id": "internal_repository_sqlite_go_agenda",
-      "community_name": "SQLiteRepository"
+      "id": "internal_repository_sqlite_go_agenda"
     },
     {
       "label": ".Save()",
@@ -2399,9 +2674,9 @@
       "source_location": "L84",
       "_origin": "ast",
       "community": 5,
+      "community_name": "SQLiteRepository",
       "norm_label": ".save()",
-      "id": "repository_sqliterepository_save",
-      "community_name": "SQLiteRepository"
+      "id": "repository_sqliterepository_save"
     },
     {
       "label": ".Delete()",
@@ -2410,9 +2685,9 @@
       "source_location": "L114",
       "_origin": "ast",
       "community": 5,
+      "community_name": "SQLiteRepository",
       "norm_label": ".delete()",
-      "id": "repository_sqliterepository_delete",
-      "community_name": "SQLiteRepository"
+      "id": "repository_sqliterepository_delete"
     },
     {
       "label": ".Due()",
@@ -2421,9 +2696,9 @@
       "source_location": "L129",
       "_origin": "ast",
       "community": 5,
+      "community_name": "SQLiteRepository",
       "norm_label": ".due()",
-      "id": "repository_sqliterepository_due",
-      "community_name": "SQLiteRepository"
+      "id": "repository_sqliterepository_due"
     },
     {
       "label": ".MarkNotified()",
@@ -2432,9 +2707,9 @@
       "source_location": "L151",
       "_origin": "ast",
       "community": 5,
+      "community_name": "SQLiteRepository",
       "norm_label": ".marknotified()",
-      "id": "repository_sqliterepository_marknotified",
-      "community_name": "SQLiteRepository"
+      "id": "repository_sqliterepository_marknotified"
     },
     {
       "label": ".Close()",
@@ -2443,9 +2718,9 @@
       "source_location": "L156",
       "_origin": "ast",
       "community": 5,
+      "community_name": "SQLiteRepository",
       "norm_label": ".close()",
-      "id": "repository_sqliterepository_close",
-      "community_name": "SQLiteRepository"
+      "id": "repository_sqliterepository_close"
     },
     {
       "label": "sqlite_test.go",
@@ -2454,9 +2729,9 @@
       "source_location": "L1",
       "_origin": "ast",
       "community": 5,
+      "community_name": "SQLiteRepository",
       "norm_label": "sqlite_test.go",
-      "id": "internal_repository_sqlite_test",
-      "community_name": "SQLiteRepository"
+      "id": "internal_repository_sqlite_test"
     },
     {
       "label": "TestSQLiteCRUDAndDue()",
@@ -2465,9 +2740,9 @@
       "source_location": "L11",
       "_origin": "ast",
       "community": 5,
+      "community_name": "SQLiteRepository",
       "norm_label": "testsqlitecrudanddue()",
-      "id": "internal_repository_sqlite_test_testsqlitecrudanddue",
-      "community_name": "SQLiteRepository"
+      "id": "internal_repository_sqlite_test_testsqlitecrudanddue"
     },
     {
       "label": "T",
@@ -2476,9 +2751,9 @@
       "source_location": "",
       "_origin": "ast",
       "community": 5,
+      "community_name": "SQLiteRepository",
       "norm_label": "t",
-      "id": "internal_repository_sqlite_test_go_t",
-      "community_name": "SQLiteRepository"
+      "id": "internal_repository_sqlite_test_go_t"
     },
     {
       "label": "scheduler.go",
@@ -2487,9 +2762,9 @@
       "source_location": "L1",
       "_origin": "ast",
       "community": 9,
+      "community_name": "Scheduler",
       "norm_label": "scheduler.go",
-      "id": "internal_service_scheduler",
-      "community_name": "Scheduler"
+      "id": "internal_service_scheduler"
     },
     {
       "label": "Scheduler",
@@ -2498,9 +2773,9 @@
       "source_location": "L13",
       "_origin": "ast",
       "community": 9,
+      "community_name": "Scheduler",
       "norm_label": "scheduler",
-      "id": "service_scheduler",
-      "community_name": "Scheduler"
+      "id": "service_scheduler"
     },
     {
       "label": "Agenda",
@@ -2509,9 +2784,9 @@
       "source_location": "",
       "_origin": "ast",
       "community": 9,
+      "community_name": "Scheduler",
       "norm_label": "agenda",
-      "id": "internal_service_scheduler_go_agenda",
-      "community_name": "Scheduler"
+      "id": "internal_service_scheduler_go_agenda"
     },
     {
       "label": "Once",
@@ -2520,9 +2795,9 @@
       "source_location": "",
       "_origin": "ast",
       "community": 9,
+      "community_name": "Scheduler",
       "norm_label": "once",
-      "id": "once",
-      "community_name": "Scheduler"
+      "id": "once"
     },
     {
       "label": "NewScheduler()",
@@ -2531,9 +2806,9 @@
       "source_location": "L20",
       "_origin": "ast",
       "community": 9,
+      "community_name": "Scheduler",
       "norm_label": "newscheduler()",
-      "id": "internal_service_scheduler_newscheduler",
-      "community_name": "Scheduler"
+      "id": "internal_service_scheduler_newscheduler"
     },
     {
       "label": ".Start()",
@@ -2542,9 +2817,9 @@
       "source_location": "L24",
       "_origin": "ast",
       "community": 9,
+      "community_name": "Scheduler",
       "norm_label": ".start()",
-      "id": "service_scheduler_start",
-      "community_name": "Scheduler"
+      "id": "service_scheduler_start"
     },
     {
       "label": ".check()",
@@ -2553,9 +2828,9 @@
       "source_location": "L40",
       "_origin": "ast",
       "community": 9,
+      "community_name": "Scheduler",
       "norm_label": ".check()",
-      "id": "service_scheduler_check",
-      "community_name": "Scheduler"
+      "id": "service_scheduler_check"
     },
     {
       "label": ".Stop()",
@@ -2564,9 +2839,9 @@
       "source_location": "L57",
       "_origin": "ast",
       "community": 9,
+      "community_name": "Scheduler",
       "norm_label": ".stop()",
-      "id": "service_scheduler_stop",
-      "community_name": "Scheduler"
+      "id": "service_scheduler_stop"
     },
     {
       "label": "main.go",
@@ -2575,9 +2850,9 @@
       "source_location": "L1",
       "_origin": "ast",
       "community": 2,
+      "community_name": "App",
       "norm_label": "main.go",
-      "id": "main",
-      "community_name": "App"
+      "id": "main"
     },
     {
       "label": "main()",
@@ -2586,155 +2861,89 @@
       "source_location": "L19",
       "_origin": "ast",
       "community": 2,
+      "community_name": "App",
       "norm_label": "main()",
-      "id": "main_main",
-      "community_name": "App"
+      "id": "main_main"
     },
     {
-      "label": "wails.json",
-      "file_type": "code",
-      "source_file": "wails.json",
+      "label": "AGENTS.md",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 7,
-      "norm_label": "wails.json",
-      "id": "wails",
-      "community_name": "wails.json"
+      "community": 18,
+      "community_name": "AGENTS.md",
+      "norm_label": "agents.md",
+      "id": "agents"
     },
     {
-      "label": "$schema",
-      "file_type": "code",
-      "source_file": "wails.json",
-      "source_location": "L2",
+      "label": "graphify",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L1",
       "_origin": "ast",
-      "community": 7,
-      "norm_label": "$schema",
-      "id": "wails_schema",
-      "community_name": "wails.json"
+      "community": 18,
+      "community_name": "AGENTS.md",
+      "norm_label": "graphify",
+      "id": "agents_graphify"
     },
     {
-      "label": "name",
-      "file_type": "code",
-      "source_file": "wails.json",
-      "source_location": "L3",
+      "label": "v0.1.1.md",
+      "file_type": "document",
+      "source_file": "docs/releases/v0.1.1.md",
+      "source_location": "L1",
       "_origin": "ast",
-      "community": 7,
-      "norm_label": "name",
-      "id": "wails_name",
-      "community_name": "wails.json"
+      "community": 19,
+      "community_name": "ReCall v0.1.1",
+      "norm_label": "v0.1.1.md",
+      "id": "docs_releases_v0_1_1"
     },
     {
-      "label": "outputfilename",
-      "file_type": "code",
-      "source_file": "wails.json",
-      "source_location": "L4",
+      "label": "ReCall v0.1.1",
+      "file_type": "document",
+      "source_file": "docs/releases/v0.1.1.md",
+      "source_location": "L1",
       "_origin": "ast",
-      "community": 7,
-      "norm_label": "outputfilename",
-      "id": "wails_outputfilename",
-      "community_name": "wails.json"
+      "community": 19,
+      "community_name": "ReCall v0.1.1",
+      "norm_label": "recall v0.1.1",
+      "id": "docs_releases_v0_1_1_recall_v0_1_1"
     },
     {
-      "label": "productVersion",
-      "file_type": "code",
-      "source_file": "wails.json",
+      "label": "Fitur",
+      "file_type": "document",
+      "source_file": "docs/releases/v0.1.1.md",
       "source_location": "L5",
       "_origin": "ast",
-      "community": 7,
-      "norm_label": "productversion",
-      "id": "wails_productversion",
-      "community_name": "wails.json"
+      "community": 19,
+      "community_name": "ReCall v0.1.1",
+      "norm_label": "fitur",
+      "id": "docs_releases_v0_1_1_fitur"
     },
     {
-      "label": "frontend:install",
-      "file_type": "code",
-      "source_file": "wails.json",
-      "source_location": "L6",
+      "label": "Perbaikan",
+      "file_type": "document",
+      "source_file": "docs/releases/v0.1.1.md",
+      "source_location": "L13",
       "_origin": "ast",
-      "community": 7,
-      "norm_label": "frontend:install",
-      "id": "wails_frontend_install",
-      "community_name": "wails.json"
+      "community": 19,
+      "community_name": "ReCall v0.1.1",
+      "norm_label": "perbaikan",
+      "id": "docs_releases_v0_1_1_perbaikan"
     },
     {
-      "label": "frontend:build",
-      "file_type": "code",
-      "source_file": "wails.json",
-      "source_location": "L7",
+      "label": "Unduhan",
+      "file_type": "document",
+      "source_file": "docs/releases/v0.1.1.md",
+      "source_location": "L18",
       "_origin": "ast",
-      "community": 7,
-      "norm_label": "frontend:build",
-      "id": "wails_frontend_build",
-      "community_name": "wails.json"
-    },
-    {
-      "label": "frontend:dev:watcher",
-      "file_type": "code",
-      "source_file": "wails.json",
-      "source_location": "L8",
-      "_origin": "ast",
-      "community": 7,
-      "norm_label": "frontend:dev:watcher",
-      "id": "wails_frontend_dev_watcher",
-      "community_name": "wails.json"
-    },
-    {
-      "label": "frontend:dev:serverUrl",
-      "file_type": "code",
-      "source_file": "wails.json",
-      "source_location": "L9",
-      "_origin": "ast",
-      "community": 7,
-      "norm_label": "frontend:dev:serverurl",
-      "id": "wails_frontend_dev_serverurl",
-      "community_name": "wails.json"
-    },
-    {
-      "label": "author",
-      "file_type": "code",
-      "source_file": "wails.json",
-      "source_location": "L10",
-      "_origin": "ast",
-      "community": 7,
-      "norm_label": "author",
-      "id": "wails_author",
-      "community_name": "wails.json"
-    },
-    {
-      "label": "name",
-      "file_type": "code",
-      "source_file": "wails.json",
-      "source_location": "L11",
-      "_origin": "ast",
-      "community": 7,
-      "norm_label": "name",
-      "id": "wails_author_name",
-      "community_name": "wails.json"
-    },
-    {
-      "label": "email",
-      "file_type": "code",
-      "source_file": "wails.json",
-      "source_location": "L12",
-      "_origin": "ast",
-      "community": 7,
-      "norm_label": "email",
-      "id": "wails_author_email",
-      "community_name": "wails.json"
+      "community": 19,
+      "community_name": "ReCall v0.1.1",
+      "norm_label": "unduhan",
+      "id": "docs_releases_v0_1_1_unduhan"
     }
   ],
   "links": [
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "AGENTS.md",
-      "source_location": "L1",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "agents",
-      "target": "agents_graphify",
-      "confidence_score": 1.0
-    },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
@@ -2750,7 +2959,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CHANGELOG.md",
-      "source_location": "L18",
+      "source_location": "L22",
       "weight": 1.0,
       "_origin": "ast",
       "source": "changelog_changelog",
@@ -2761,7 +2970,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CHANGELOG.md",
-      "source_location": "L11",
+      "source_location": "L15",
       "weight": 1.0,
       "_origin": "ast",
       "source": "changelog_changelog",
@@ -2776,7 +2985,7 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "changelog_changelog",
-      "target": "changelog_unreleased",
+      "target": "changelog_0_1_2_2026_07_26",
       "confidence_score": 1.0
     },
     {
@@ -2786,7 +2995,7 @@
       "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "changelog_unreleased",
+      "source": "changelog_0_1_2_2026_07_26",
       "target": "changelog_added",
       "confidence_score": 1.0
     },
@@ -2794,10 +3003,10 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CHANGELOG.md",
-      "source_location": "L13",
+      "source_location": "L11",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "changelog_0_1_1_2026_07_26",
+      "source": "changelog_0_1_2_2026_07_26",
       "target": "changelog_fixed",
       "confidence_score": 1.0
     },
@@ -2805,11 +3014,22 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CHANGELOG.md",
-      "source_location": "L20",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "changelog_0_1_1_2026_07_26",
+      "target": "changelog_fixed_17",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L24",
       "weight": 1.0,
       "_origin": "ast",
       "source": "changelog_0_1_0_2026_07_26",
-      "target": "changelog_added_20",
+      "target": "changelog_added_24",
       "confidence_score": 1.0
     },
     {
@@ -2904,180 +3124,47 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app.go",
-      "source_location": "L27",
+      "source_location": "L28",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "app",
-      "target": "app_newapp"
+      "target": "app_newapp",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app.go",
-      "source_location": "L19",
+      "source_location": "L20",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "app",
-      "target": "recall_app"
+      "target": "recall_app",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "app.go",
-      "source_location": "L27",
+      "source_location": "L28",
       "weight": 1.0,
       "context": "return_type",
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "app_newapp",
-      "target": "recall_app"
+      "target": "recall_app",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "app.go",
-      "source_location": "L20",
+      "source_location": "L25",
       "weight": 1.0,
       "context": "field",
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "recall_app",
-      "target": "app_go_context"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "app.go",
-      "source_location": "L24",
-      "weight": 1.0,
-      "context": "field",
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "recall_app",
-      "target": "bool"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app.go",
-      "source_location": "L115",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "recall_app",
-      "target": "recall_app_beforeclose"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app.go",
-      "source_location": "L93",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "recall_app",
-      "target": "recall_app_deleteagenda"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app.go",
-      "source_location": "L104",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "recall_app",
-      "target": "recall_app_hidewindow"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app.go",
-      "source_location": "L64",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "recall_app",
-      "target": "recall_app_listagendas"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app.go",
-      "source_location": "L128",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "recall_app",
-      "target": "recall_app_notify"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app.go",
-      "source_location": "L123",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "recall_app",
-      "target": "recall_app_quit"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app.go",
-      "source_location": "L54",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "recall_app",
-      "target": "recall_app_ready"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app.go",
-      "source_location": "L82",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "recall_app",
-      "target": "recall_app_saveagenda"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app.go",
-      "source_location": "L108",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "recall_app",
-      "target": "recall_app_showwindow"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app.go",
-      "source_location": "L45",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "recall_app",
-      "target": "recall_app_shutdown"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app.go",
-      "source_location": "L29",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "recall_app",
-      "target": "recall_app_startup"
+      "target": "bool",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -3087,9 +3174,153 @@
       "weight": 1.0,
       "context": "field",
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "recall_app",
-      "target": "repository_sqliterepository"
+      "target": "context",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app.go",
+      "source_location": "L116",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "recall_app",
+      "target": "recall_app_beforeclose",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app.go",
+      "source_location": "L94",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "recall_app",
+      "target": "recall_app_deleteagenda",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app.go",
+      "source_location": "L105",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "recall_app",
+      "target": "recall_app_hidewindow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app.go",
+      "source_location": "L65",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "recall_app",
+      "target": "recall_app_listagendas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app.go",
+      "source_location": "L135",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "recall_app",
+      "target": "recall_app_notify",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app.go",
+      "source_location": "L124",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "recall_app",
+      "target": "recall_app_quit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app.go",
+      "source_location": "L55",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "recall_app",
+      "target": "recall_app_ready",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app.go",
+      "source_location": "L83",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "recall_app",
+      "target": "recall_app_saveagenda",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app.go",
+      "source_location": "L109",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "recall_app",
+      "target": "recall_app_showwindow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app.go",
+      "source_location": "L46",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "recall_app",
+      "target": "recall_app_shutdown",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app.go",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "recall_app",
+      "target": "recall_app_startup",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app.go",
+      "source_location": "L131",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "recall_app",
+      "target": "recall_app_testalarmsound",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app.go",
+      "source_location": "L23",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast",
+      "source": "recall_app",
+      "target": "scheduler",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -3099,45 +3330,45 @@
       "weight": 1.0,
       "context": "field",
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "recall_app",
-      "target": "service_scheduler"
+      "target": "sqliterepository",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "app.go",
-      "source_location": "L115",
+      "source_location": "L116",
       "weight": 1.0,
       "context": "parameter_type",
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "recall_app_beforeclose",
-      "target": "app_go_context"
+      "target": "context",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "app.go",
-      "source_location": "L45",
+      "source_location": "L46",
       "weight": 1.0,
       "context": "parameter_type",
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "recall_app_shutdown",
-      "target": "app_go_context"
+      "target": "context",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "app.go",
-      "source_location": "L29",
+      "source_location": "L30",
       "weight": 1.0,
       "context": "parameter_type",
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "recall_app_startup",
-      "target": "app_go_context"
+      "target": "context",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -3166,110 +3397,50 @@
     {
       "relation": "calls",
       "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "app.go",
-      "source_location": "L36",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "recall_app_startup",
-      "target": "internal_repository_sqlite_open"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "app.go",
-      "source_location": "L41",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "recall_app_startup",
-      "target": "internal_service_scheduler_newscheduler"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "app.go",
-      "source_location": "L94",
+      "source_location": "L95",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "recall_app_deleteagenda",
-      "target": "recall_app_ready"
+      "target": "recall_app_ready",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "app.go",
-      "source_location": "L65",
+      "source_location": "L66",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "recall_app_listagendas",
-      "target": "recall_app_ready"
+      "target": "recall_app_ready",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "app.go",
-      "source_location": "L83",
+      "source_location": "L84",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "recall_app_saveagenda",
-      "target": "recall_app_ready"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "app.go",
-      "source_location": "L64",
-      "weight": 1.0,
-      "context": "return_type",
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "recall_app_listagendas",
-      "target": "app_go_agenda"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "app.go",
-      "source_location": "L128",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "recall_app_notify",
-      "target": "app_go_agenda"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "app.go",
-      "source_location": "L82",
-      "weight": 1.0,
-      "context": "return_type",
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "recall_app_saveagenda",
-      "target": "app_go_agenda"
+      "target": "recall_app_ready",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "app.go",
-      "source_location": "L119",
+      "source_location": "L120",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "recall_app_beforeclose",
-      "target": "recall_app_hidewindow"
+      "target": "recall_app_hidewindow",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -3282,6 +3453,758 @@
       "_origin": "ast",
       "source": "main_main",
       "target": "recall_app_quit"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/releases/v0.1.2.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_releases_v0_1_2",
+      "target": "docs_releases_v0_1_2_recall_v0_1_2",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/releases/v0.1.2.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_releases_v0_1_2_recall_v0_1_2",
+      "target": "docs_releases_v0_1_2_pengembangan",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/releases/v0.1.2.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_releases_v0_1_2_recall_v0_1_2",
+      "target": "docs_releases_v0_1_2_perbaikan",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/main.ts",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_src_main",
+      "target": "frontend_src_main_adddays",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/main.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_src_main",
+      "target": "frontend_src_main_agenda",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/main.ts",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_src_main",
+      "target": "frontend_src_main_blocks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/main.ts",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_src_main",
+      "target": "frontend_src_main_close",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/main.ts",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_src_main",
+      "target": "frontend_src_main_daystart",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/main.ts",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_src_main",
+      "target": "frontend_src_main_esc",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/main.ts",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_src_main",
+      "target": "frontend_src_main_fmt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/main.ts",
+      "source_location": "L34",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_src_main",
+      "target": "frontend_src_main_iso",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/main.ts",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_src_main",
+      "target": "frontend_src_main_key",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "indirect_call",
+      "confidence": "INFERRED",
+      "source_file": "frontend/src/main.ts",
+      "source_location": "L51",
+      "weight": 1.0,
+      "_origin": "ast",
+      "context": "argument",
+      "source": "frontend_src_main",
+      "target": "frontend_src_main_load",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/main.ts",
+      "source_location": "L42",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_src_main",
+      "target": "frontend_src_main_nowline",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/main.ts",
+      "source_location": "L43",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_src_main",
+      "target": "frontend_src_main_openeditor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/main.ts",
+      "source_location": "L38",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_src_main",
+      "target": "frontend_src_main_render",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "indirect_call",
+      "confidence": "INFERRED",
+      "source_file": "frontend/src/main.ts",
+      "source_location": "L53",
+      "weight": 1.0,
+      "_origin": "ast",
+      "context": "argument",
+      "source": "frontend_src_main",
+      "target": "frontend_src_main_rendercalendar",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/main.ts",
+      "source_location": "L39",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_src_main",
+      "target": "frontend_src_main_rendermonth",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/main.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_src_main",
+      "target": "frontend_src_main_state",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/main.ts",
+      "source_location": "L52",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_src_main",
+      "target": "frontend_src_main_toast",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/main.ts",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_src_main",
+      "target": "frontend_src_main_value",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/main.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_src_main",
+      "target": "frontend_wailsjs_go_main_app",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/main.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_src_main",
+      "target": "frontend_wailsjs_go_main_app_deleteagenda",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/main.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_src_main",
+      "target": "frontend_wailsjs_go_main_app_hidewindow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/main.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_src_main",
+      "target": "frontend_wailsjs_go_main_app_listagendas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/main.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_src_main",
+      "target": "frontend_wailsjs_go_main_app_saveagenda",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/main.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_src_main",
+      "target": "frontend_wailsjs_go_main_app_testalarmsound",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/main.ts",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_src_main_load",
+      "target": "frontend_src_main_adddays",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/main.ts",
+      "source_location": "L40",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_src_main_rendercalendar",
+      "target": "frontend_src_main_adddays",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/main.ts",
+      "source_location": "L39",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_src_main_rendermonth",
+      "target": "frontend_src_main_adddays",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/main.ts",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_src_main_blocks",
+      "target": "frontend_src_main_key",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/main.ts",
+      "source_location": "L43",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_src_main_openeditor",
+      "target": "frontend_src_main_key",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/main.ts",
+      "source_location": "L40",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_src_main_rendercalendar",
+      "target": "frontend_src_main_key",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/main.ts",
+      "source_location": "L39",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_src_main_rendermonth",
+      "target": "frontend_src_main_key",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/main.ts",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_src_main_load",
+      "target": "frontend_src_main_iso",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/main.ts",
+      "source_location": "L40",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_src_main_rendercalendar",
+      "target": "frontend_src_main_fmt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/main.ts",
+      "source_location": "L39",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_src_main_rendermonth",
+      "target": "frontend_src_main_fmt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/main.ts",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_src_main_blocks",
+      "target": "frontend_src_main_esc",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/main.ts",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_src_main_load",
+      "target": "frontend_src_main_render",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/main.ts",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_src_main_load",
+      "target": "frontend_src_main_toast",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/main.ts",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_src_main_load",
+      "target": "frontend_wailsjs_go_main_app_listagendas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/main.ts",
+      "source_location": "L38",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_src_main_render",
+      "target": "frontend_src_main_rendercalendar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/main.ts",
+      "source_location": "L38",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_src_main_render",
+      "target": "frontend_src_main_rendermonth",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/main.ts",
+      "source_location": "L40",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_src_main_rendercalendar",
+      "target": "frontend_src_main_blocks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/main.ts",
+      "source_location": "L40",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_src_main_rendercalendar",
+      "target": "frontend_src_main_nowline",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/wailsjs/go/main/App.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_wailsjs_go_main_app",
+      "target": "frontend_wailsjs_go_main_app_deleteagenda",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/wailsjs/go/main/App.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_wailsjs_go_main_app",
+      "target": "frontend_wailsjs_go_main_app_hidewindow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/wailsjs/go/main/App.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_wailsjs_go_main_app",
+      "target": "frontend_wailsjs_go_main_app_listagendas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/wailsjs/go/main/App.js",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_wailsjs_go_main_app",
+      "target": "frontend_wailsjs_go_main_app_quit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/wailsjs/go/main/App.js",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_wailsjs_go_main_app",
+      "target": "frontend_wailsjs_go_main_app_saveagenda",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/wailsjs/go/main/App.js",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_wailsjs_go_main_app",
+      "target": "frontend_wailsjs_go_main_app_showwindow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/wailsjs/go/main/App.js",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_wailsjs_go_main_app",
+      "target": "frontend_wailsjs_go_main_app_testalarmsound",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/service/alarm_sound_other.go",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "internal_service_alarm_sound_other",
+      "target": "internal_service_alarm_sound_other_playalarmsound",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/service/alarm_sound_windows.go",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "internal_service_alarm_sound_windows",
+      "target": "internal_service_alarm_sound_windows_playalarmsound",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/service/alarm_sound_windows.go",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "internal_service_alarm_sound_windows",
+      "target": "service_alarmtone",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wails.json",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "wails",
+      "target": "wails_author",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wails.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "wails",
+      "target": "wails_frontend_build",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wails.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "wails",
+      "target": "wails_frontend_dev_serverurl",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wails.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "wails",
+      "target": "wails_frontend_dev_watcher",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wails.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "wails",
+      "target": "wails_frontend_install",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wails.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "wails",
+      "target": "wails_name",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wails.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "wails",
+      "target": "wails_outputfilename",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wails.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "wails",
+      "target": "wails_productversion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wails.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "wails",
+      "target": "wails_schema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wails.json",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "wails_author",
+      "target": "wails_author_email",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wails.json",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "wails_author",
+      "target": "wails_author_name",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3439,530 +4362,6 @@
       "confidence_score": 1.0,
       "source": "frontend_package_devdependencies_vite",
       "target": "vite"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/main.ts",
-      "source_location": "L32",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "frontend_src_main",
-      "target": "frontend_src_main_adddays"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/main.ts",
-      "source_location": "L6",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "frontend_src_main",
-      "target": "frontend_src_main_agenda"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/main.ts",
-      "source_location": "L41",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "frontend_src_main",
-      "target": "frontend_src_main_blocks"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/main.ts",
-      "source_location": "L44",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "frontend_src_main",
-      "target": "frontend_src_main_close"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/main.ts",
-      "source_location": "L31",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "frontend_src_main",
-      "target": "frontend_src_main_daystart"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/main.ts",
-      "source_location": "L36",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "frontend_src_main",
-      "target": "frontend_src_main_esc"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/main.ts",
-      "source_location": "L35",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "frontend_src_main",
-      "target": "frontend_src_main_fmt"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/main.ts",
-      "source_location": "L34",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "frontend_src_main",
-      "target": "frontend_src_main_iso"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/main.ts",
-      "source_location": "L33",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "frontend_src_main",
-      "target": "frontend_src_main_key"
-    },
-    {
-      "relation": "indirect_call",
-      "confidence": "INFERRED",
-      "source_file": "frontend/src/main.ts",
-      "source_location": "L50",
-      "weight": 1.0,
-      "_origin": "ast",
-      "context": "argument",
-      "confidence_score": 0.5,
-      "source": "frontend_src_main",
-      "target": "frontend_src_main_load"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/main.ts",
-      "source_location": "L42",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "frontend_src_main",
-      "target": "frontend_src_main_nowline"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/main.ts",
-      "source_location": "L43",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "frontend_src_main",
-      "target": "frontend_src_main_openeditor"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/main.ts",
-      "source_location": "L38",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "frontend_src_main",
-      "target": "frontend_src_main_render"
-    },
-    {
-      "relation": "indirect_call",
-      "confidence": "INFERRED",
-      "source_file": "frontend/src/main.ts",
-      "source_location": "L52",
-      "weight": 1.0,
-      "_origin": "ast",
-      "context": "argument",
-      "confidence_score": 0.5,
-      "source": "frontend_src_main",
-      "target": "frontend_src_main_rendercalendar"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/main.ts",
-      "source_location": "L39",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "frontend_src_main",
-      "target": "frontend_src_main_rendermonth"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/main.ts",
-      "source_location": "L7",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "frontend_src_main",
-      "target": "frontend_src_main_state"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/main.ts",
-      "source_location": "L51",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "frontend_src_main",
-      "target": "frontend_src_main_toast"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/main.ts",
-      "source_location": "L30",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "frontend_src_main",
-      "target": "frontend_src_main_value"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/main.ts",
-      "source_location": "L2",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "frontend_src_main",
-      "target": "frontend_wailsjs_go_main_app"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/main.ts",
-      "source_location": "L2",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "frontend_src_main",
-      "target": "frontend_wailsjs_go_main_app_deleteagenda"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/main.ts",
-      "source_location": "L2",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "frontend_src_main",
-      "target": "frontend_wailsjs_go_main_app_hidewindow"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/main.ts",
-      "source_location": "L2",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "frontend_src_main",
-      "target": "frontend_wailsjs_go_main_app_listagendas"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/main.ts",
-      "source_location": "L2",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "frontend_src_main",
-      "target": "frontend_wailsjs_go_main_app_saveagenda"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/main.ts",
-      "source_location": "L4",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "frontend_src_main",
-      "target": "frontend_wailsjs_go_models"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/main.ts",
-      "source_location": "L4",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "frontend_src_main",
-      "target": "frontend_wailsjs_go_models_model"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/main.ts",
-      "source_location": "L3",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "frontend_src_main",
-      "target": "frontend_wailsjs_runtime_runtime"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/main.ts",
-      "source_location": "L3",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "frontend_src_main",
-      "target": "frontend_wailsjs_runtime_runtime_eventson"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/main.ts",
-      "source_location": "L37",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "frontend_src_main_load",
-      "target": "frontend_src_main_adddays"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/main.ts",
-      "source_location": "L40",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "frontend_src_main_rendercalendar",
-      "target": "frontend_src_main_adddays"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/main.ts",
-      "source_location": "L39",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "frontend_src_main_rendermonth",
-      "target": "frontend_src_main_adddays"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/main.ts",
-      "source_location": "L41",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "frontend_src_main_blocks",
-      "target": "frontend_src_main_key"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/main.ts",
-      "source_location": "L43",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "frontend_src_main_openeditor",
-      "target": "frontend_src_main_key"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/main.ts",
-      "source_location": "L40",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "frontend_src_main_rendercalendar",
-      "target": "frontend_src_main_key"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/main.ts",
-      "source_location": "L39",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "frontend_src_main_rendermonth",
-      "target": "frontend_src_main_key"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/main.ts",
-      "source_location": "L37",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "frontend_src_main_load",
-      "target": "frontend_src_main_iso"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/main.ts",
-      "source_location": "L40",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "frontend_src_main_rendercalendar",
-      "target": "frontend_src_main_fmt"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/main.ts",
-      "source_location": "L39",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "frontend_src_main_rendermonth",
-      "target": "frontend_src_main_fmt"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/main.ts",
-      "source_location": "L41",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "frontend_src_main_blocks",
-      "target": "frontend_src_main_esc"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/main.ts",
-      "source_location": "L37",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "frontend_src_main_load",
-      "target": "frontend_src_main_render"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/main.ts",
-      "source_location": "L37",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "frontend_src_main_load",
-      "target": "frontend_src_main_toast"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/main.ts",
-      "source_location": "L37",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "frontend_src_main_load",
-      "target": "frontend_wailsjs_go_main_app_listagendas"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/main.ts",
-      "source_location": "L38",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "frontend_src_main_render",
-      "target": "frontend_src_main_rendercalendar"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/main.ts",
-      "source_location": "L38",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "frontend_src_main_render",
-      "target": "frontend_src_main_rendermonth"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/main.ts",
-      "source_location": "L40",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "frontend_src_main_rendercalendar",
-      "target": "frontend_src_main_blocks"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/main.ts",
-      "source_location": "L40",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "frontend_src_main_rendercalendar",
-      "target": "frontend_src_main_nowline"
     },
     {
       "relation": "contains",
@@ -4186,96 +4585,6 @@
       "confidence_score": 1.0,
       "source": "frontend_tsconfig_include",
       "target": "ref_src"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/wailsjs/go/main/App.d.ts",
-      "source_location": "L3",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "frontend_wailsjs_go_main_app_d",
-      "target": "frontend_wailsjs_go_models"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/wailsjs/go/main/App.d.ts",
-      "source_location": "L3",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "frontend_wailsjs_go_main_app_d",
-      "target": "frontend_wailsjs_go_models_model"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/wailsjs/go/main/App.js",
-      "source_location": "L5",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "frontend_wailsjs_go_main_app",
-      "target": "frontend_wailsjs_go_main_app_deleteagenda"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/wailsjs/go/main/App.js",
-      "source_location": "L9",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "frontend_wailsjs_go_main_app",
-      "target": "frontend_wailsjs_go_main_app_hidewindow"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/wailsjs/go/main/App.js",
-      "source_location": "L13",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "frontend_wailsjs_go_main_app",
-      "target": "frontend_wailsjs_go_main_app_listagendas"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/wailsjs/go/main/App.js",
-      "source_location": "L17",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "frontend_wailsjs_go_main_app",
-      "target": "frontend_wailsjs_go_main_app_quit"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/wailsjs/go/main/App.js",
-      "source_location": "L21",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "frontend_wailsjs_go_main_app",
-      "target": "frontend_wailsjs_go_main_app_saveagenda"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/wailsjs/go/main/App.js",
-      "source_location": "L25",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "frontend_wailsjs_go_main_app",
-      "target": "frontend_wailsjs_go_main_app_showwindow"
     },
     {
       "relation": "contains",
@@ -5908,125 +6217,59 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "wails.json",
-      "source_location": "L10",
+      "source_file": "AGENTS.md",
+      "source_location": "L1",
       "weight": 1.0,
       "_origin": "ast",
       "confidence_score": 1.0,
-      "source": "wails",
-      "target": "wails_author"
+      "source": "agents",
+      "target": "agents_graphify"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "wails.json",
-      "source_location": "L7",
+      "source_file": "docs/releases/v0.1.1.md",
+      "source_location": "L1",
       "weight": 1.0,
       "_origin": "ast",
       "confidence_score": 1.0,
-      "source": "wails",
-      "target": "wails_frontend_build"
+      "source": "docs_releases_v0_1_1",
+      "target": "docs_releases_v0_1_1_recall_v0_1_1"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "wails.json",
-      "source_location": "L9",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "wails",
-      "target": "wails_frontend_dev_serverurl"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "wails.json",
-      "source_location": "L8",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "wails",
-      "target": "wails_frontend_dev_watcher"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "wails.json",
-      "source_location": "L6",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "wails",
-      "target": "wails_frontend_install"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "wails.json",
-      "source_location": "L3",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "wails",
-      "target": "wails_name"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "wails.json",
-      "source_location": "L4",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "wails",
-      "target": "wails_outputfilename"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "wails.json",
+      "source_file": "docs/releases/v0.1.1.md",
       "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
       "confidence_score": 1.0,
-      "source": "wails",
-      "target": "wails_productversion"
+      "source": "docs_releases_v0_1_1_recall_v0_1_1",
+      "target": "docs_releases_v0_1_1_fitur"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "wails.json",
-      "source_location": "L2",
+      "source_file": "docs/releases/v0.1.1.md",
+      "source_location": "L13",
       "weight": 1.0,
       "_origin": "ast",
       "confidence_score": 1.0,
-      "source": "wails",
-      "target": "wails_schema"
+      "source": "docs_releases_v0_1_1_recall_v0_1_1",
+      "target": "docs_releases_v0_1_1_perbaikan"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "wails.json",
-      "source_location": "L12",
+      "source_file": "docs/releases/v0.1.1.md",
+      "source_location": "L18",
       "weight": 1.0,
       "_origin": "ast",
       "confidence_score": 1.0,
-      "source": "wails_author",
-      "target": "wails_author_email"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "wails.json",
-      "source_location": "L11",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "wails_author",
-      "target": "wails_author_name"
+      "source": "docs_releases_v0_1_1_recall_v0_1_1",
+      "target": "docs_releases_v0_1_1_unduhan"
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "31ae6e354ff4cf9edb0069693916ad6ffb7d82f5"
+  "built_at_commit": "90503aee40061cf3e308f03d5915faadd2f49b3c"
 }

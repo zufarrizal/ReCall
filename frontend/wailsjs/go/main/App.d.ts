@@ -13,3 +13,5 @@ export function Quit():Promise<void>;
 export function SaveAgenda(arg1:model.Agenda):Promise<model.Agenda>;
 
 export function ShowWindow():Promise<void>;
+
+export function TestAlarmSound():Promise<void>;

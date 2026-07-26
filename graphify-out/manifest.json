@@ -1,8 +1,8 @@
 {
   "app.go": {
-    "mtime": 1785036773.7550743,
-    "ast_hash": "4b17d1e76faa25c318931c60c13b55f2",
-    "semantic_hash": "4b17d1e76faa25c318931c60c13b55f2"
+    "mtime": 1785038609.3575304,
+    "ast_hash": "f653f8e19a613f2d627c2561127cbbd4",
+    "semantic_hash": ""
   },
   "app_test.go": {
     "mtime": 1785036763.790124,
@@ -15,9 +15,9 @@
     "semantic_hash": "cbe227ce39e1b741423fe7a399296852"
   },
   "frontend/src/main.ts": {
-    "mtime": 1785036297.559359,
-    "ast_hash": "b23831c30cadba484939120756b080d6",
-    "semantic_hash": "b23831c30cadba484939120756b080d6"
+    "mtime": 1785038609.3646815,
+    "ast_hash": "f048167134b47ce58720ab29cfbe94b5",
+    "semantic_hash": ""
   },
   "frontend/src/vite-env.d.ts": {
     "mtime": 1785035762.6816585,
@@ -30,32 +30,32 @@
     "semantic_hash": "0d6af7d72ca479005fc63f0f759c00b6"
   },
   "frontend/wailsjs/go/main/App.d.ts": {
-    "mtime": 1785037367.15847,
-    "ast_hash": "4ab7646d5a0970d27109631bc62c21f3",
-    "semantic_hash": "4ab7646d5a0970d27109631bc62c21f3"
+    "mtime": 1785038673.5300074,
+    "ast_hash": "0d36bfa11a35e0f57080fe288fdd84c8",
+    "semantic_hash": ""
   },
   "frontend/wailsjs/go/main/App.js": {
-    "mtime": 1785037367.1579237,
-    "ast_hash": "e977779eb82325bc4889a51da4754832",
-    "semantic_hash": "e977779eb82325bc4889a51da4754832"
+    "mtime": 1785038673.5294878,
+    "ast_hash": "a6c00ec2a702a8c41cb3ac75a3d55ac9",
+    "semantic_hash": ""
   },
   "frontend/wailsjs/go/models.ts": {
-    "mtime": 1785037367.160141,
+    "mtime": 1785038673.5316236,
     "ast_hash": "37bbb5ce5e4b96b037440d153fd24c98",
     "semantic_hash": "37bbb5ce5e4b96b037440d153fd24c98"
   },
   "frontend/wailsjs/runtime/package.json": {
-    "mtime": 1785037369.5763302,
+    "mtime": 1785038675.9534779,
     "ast_hash": "a79e9c39ebcda0fdeb14a44939bc489e",
     "semantic_hash": "a79e9c39ebcda0fdeb14a44939bc489e"
   },
   "frontend/wailsjs/runtime/runtime.d.ts": {
-    "mtime": 1785037369.5768547,
+    "mtime": 1785038675.953998,
     "ast_hash": "dcd9fca4af1912f552547c22f315c25e",
     "semantic_hash": "dcd9fca4af1912f552547c22f315c25e"
   },
   "frontend/wailsjs/runtime/runtime.js": {
-    "mtime": 1785037369.5773866,
+    "mtime": 1785038675.9545107,
     "ast_hash": "efc7f0ddc7f96e446ad0252df27b477f",
     "semantic_hash": "efc7f0ddc7f96e446ad0252df27b477f"
   },
@@ -95,9 +95,9 @@
     "semantic_hash": "296b3c38329e31f98030d348ad20936a"
   },
   "wails.json": {
-    "mtime": 1785037329.8105853,
-    "ast_hash": "a9803e293895c0930c24e31c3ba3a3bb",
-    "semantic_hash": "a9803e293895c0930c24e31c3ba3a3bb"
+    "mtime": 1785038508.1752613,
+    "ast_hash": "e23555d549bf1bd9768da2804d40084d",
+    "semantic_hash": ""
   },
   "AGENTS.md": {
     "mtime": 1785037637.2992651,
@@ -105,13 +105,13 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1785037689.5642493,
-    "ast_hash": "54c002c6292c1b3c9a51bfd8a947f9fd",
+    "mtime": 1785038644.9062066,
+    "ast_hash": "2d37007451b7fd601e9c0c632fab5598",
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1785037689.5642493,
-    "ast_hash": "736cd9a1c061c59cab180843901947e9",
+    "mtime": 1785038508.1752613,
+    "ast_hash": "09f31bdd03f66122e9e2ecde2d93a0d1",
     "semantic_hash": ""
   },
   "docs/releases/v0.1.1.md": {
@@ -132,6 +132,21 @@
   "frontend/src/assets/images/logo-universal.png": {
     "mtime": 1785035762.6795063,
     "ast_hash": "220624c4aaab58e09efdafbcd2f49c15",
+    "semantic_hash": ""
+  },
+  "internal/service/alarm_sound_other.go": {
+    "mtime": 1785038508.1691122,
+    "ast_hash": "0d7793b2b636381b959502c9ed9328be",
+    "semantic_hash": ""
+  },
+  "internal/service/alarm_sound_windows.go": {
+    "mtime": 1785038508.1691122,
+    "ast_hash": "8dc3d3da8fcb09fea1079e632948f5c7",
+    "semantic_hash": ""
+  },
+  "docs/releases/v0.1.2.md": {
+    "mtime": 1785038644.9072182,
+    "ast_hash": "7195d4f699131b70191108b2332ad8e0",
     "semantic_hash": ""
   }
 }

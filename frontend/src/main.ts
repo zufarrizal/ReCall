@@ -1,5 +1,5 @@
 import './style.css';
-import { DeleteAgenda, HideWindow, ListAgendas, SaveAgenda } from '../wailsjs/go/main/App';
+import { DeleteAgenda, HideWindow, ListAgendas, SaveAgenda, TestAlarmSound } from '../wailsjs/go/main/App';
 import { EventsOn } from '../wailsjs/runtime/runtime';
 import type { model } from '../wailsjs/go/models';
 
@@ -12,7 +12,7 @@ app.innerHTML = `
  <button class="primary wide" id="new">＋ Agenda baru</button>
  <section class="mini"><header><button id="mp">‹</button><strong id="ml"></strong><button id="mn">›</button></header><div class="week"><i>Sn</i><i>Sl</i><i>Rb</i><i>Km</i><i>Jm</i><i>Sb</i><i>Mg</i></div><div class="month" id="month"></div></section>
  <div class="legend"><span><i class="blue"></i>Kegiatan</span><span><i class="violet"></i>Pribadi</span><span><i class="green"></i>Fokus</span></div>
- <div class="tray"><b>◉</b><span><strong>Aktif di background</strong><small>Tutup jendela untuk sembunyikan ke tray.</small></span></div></aside>
+ <div class="tray"><b>◉</b><span><strong>Aktif di background</strong><small>Tutup jendela untuk sembunyikan ke tray.</small><button id="test-sound">Uji suara alarm</button></span></div></aside>
  <main><header class="toolbar"><div class="nav"><button class="secondary" id="today">Hari ini</button><button class="icon bordered" id="prev">‹</button><button class="icon bordered" id="next">›</button><span><h1 id="range"></h1><small id="count"></small></span></div><div class="actions"><div class="switch"><button data-days="1">Hari</button><button data-days="3" class="active">3 Hari</button><button data-days="7">Minggu</button></div><button class="icon bordered" id="hide">—</button></div></header>
  <section class="calendar-scroll"><div class="calendar" id="calendar"></div></section></main>
 </div>
@@ -44,6 +44,7 @@ function openEditor(a?:Agenda,date?:Date,h=9){state.editing=a??null;const s=a?ne
 function close(){ $('#editor').classList.add('hidden') }
 $<HTMLFormElement>('#form').addEventListener('submit',async e=>{e.preventDefault();const d=value('#date'),s=new Date(`${d}T${value('#start')}:00`),end=new Date(`${d}T${value('#end')}:00`),btn=$<HTMLButtonElement>('#save');btn.disabled=true;try{await SaveAgenda({id:state.editing?.id??0,title:value('#title'),description:value('#description'),startAt:iso(s),endAt:iso(end),color:value('#color'),alarm:$<HTMLInputElement>('#alarm').checked,alarmOffset:Number(value('#offset')),notifiedAt:'',createdAt:state.editing?.createdAt??'',updatedAt:state.editing?.updatedAt??''});close();toast(state.editing?'Agenda berhasil diperbarui.':'Agenda berhasil dibuat.','success');await load()}catch(x){toast(String(x),'error')}finally{btn.disabled=false}});
 $('#new').onclick=()=>openEditor();document.querySelectorAll('[data-close]').forEach(x=>x.addEventListener('click',close));$('#today').onclick=()=>{state.selectedDate=dayStart(new Date());load()};$('#prev').onclick=()=>{state.selectedDate=addDays(state.selectedDate,-state.days);load()};$('#next').onclick=()=>{state.selectedDate=addDays(state.selectedDate,state.days);load()};$('#mp').onclick=()=>{state.selectedDate=new Date(state.selectedDate.getFullYear(),state.selectedDate.getMonth()-1,state.selectedDate.getDate());load()};$('#mn').onclick=()=>{state.selectedDate=new Date(state.selectedDate.getFullYear(),state.selectedDate.getMonth()+1,state.selectedDate.getDate());load()};$('#hide').onclick=()=>HideWindow();document.querySelectorAll<HTMLButtonElement>('[data-days]').forEach(b=>b.onclick=()=>{state.days=Number(b.dataset.days);load()});
+$('#test-sound').onclick=async()=>{const b=$<HTMLButtonElement>('#test-sound');b.disabled=true;try{await TestAlarmSound();toast('Suara alarm berhasil diputar.','success')}catch(e){toast(String(e),'error')}finally{b.disabled=false}};
 $('#month').onclick=e=>{const b=(e.target as HTMLElement).closest<HTMLButtonElement>('[data-date]');if(b){state.selectedDate=dayStart(new Date(`${b.dataset.date}T00:00:00`));load()}};
 $('#calendar').onclick=e=>{const card=(e.target as HTMLElement).closest<HTMLButtonElement>('.agenda-card');if(card){const a=state.agendas.find(x=>x.id===Number(card.dataset.id));if(a)openEditor(a);return}const slot=(e.target as HTMLElement).closest<HTMLElement>('.slot'),col=(e.target as HTMLElement).closest<HTMLElement>('.day-col');if(slot&&col)openEditor(undefined,new Date(`${col.dataset.date}T00:00:00`),Number(slot.dataset.hour))};
 $('#delete').onclick=()=>$('#confirm').classList.remove('hidden');$('#cancel-delete').onclick=()=>$('#confirm').classList.add('hidden');$('#confirm-delete').onclick=async()=>{if(!state.editing)return;try{await DeleteAgenda(state.editing.id);$('#confirm').classList.add('hidden');close();toast('Agenda berhasil dihapus.','success');await load()}catch(e){toast(String(e),'error')}};
