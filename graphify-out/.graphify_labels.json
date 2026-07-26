@@ -1,0 +1,21 @@
+{
+  "0": "runtime.js",
+  "1": "main.ts",
+  "2": "App",
+  "3": "compilerOptions",
+  "4": "runtime/package.json",
+  "5": "SQLiteRepository",
+  "6": "frontend/package.json",
+  "7": "wails.json",
+  "8": "runtime.d.ts",
+  "9": "Scheduler",
+  "10": "models.ts",
+  "11": "EventsOn",
+  "12": "Agenda",
+  "13": "TestAgendaValidate",
+  "14": "vite-env.d.ts",
+  "15": "ReCall",
+  "16": "ReCall",
+  "17": "Changelog",
+  "18": "AGENTS.md"
+}

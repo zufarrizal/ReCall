@@ -41,6 +41,18 @@ npm run build
 
 Test mencakup validasi model serta alur SQLite create, list, alarm jatuh tempo, penandaan notifikasi, dan delete.
 
+## Peta kode Graphify
+
+Repository menyertakan knowledge graph pada `graphify-out/graph.json`. Gunakan query terarah sebelum membaca source secara luas:
+
+```powershell
+graphify query "alur penyimpanan agenda"
+graphify explain "SQLiteRepository"
+graphify path "App" "Scheduler"
+```
+
+Setelah mengubah kode, jalankan `graphify update .` agar mapping tetap sinkron.
+
 ## Build portable Windows
 
 ```powershell

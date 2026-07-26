@@ -1,0 +1,137 @@
+{
+  "app.go": {
+    "mtime": 1785036773.7550743,
+    "ast_hash": "4b17d1e76faa25c318931c60c13b55f2",
+    "semantic_hash": "4b17d1e76faa25c318931c60c13b55f2"
+  },
+  "app_test.go": {
+    "mtime": 1785036763.790124,
+    "ast_hash": "550a0c9b9ba09c30f249105b95582110",
+    "semantic_hash": "550a0c9b9ba09c30f249105b95582110"
+  },
+  "frontend/package.json": {
+    "mtime": 1785036265.0252886,
+    "ast_hash": "cbe227ce39e1b741423fe7a399296852",
+    "semantic_hash": "cbe227ce39e1b741423fe7a399296852"
+  },
+  "frontend/src/main.ts": {
+    "mtime": 1785036297.559359,
+    "ast_hash": "b23831c30cadba484939120756b080d6",
+    "semantic_hash": "b23831c30cadba484939120756b080d6"
+  },
+  "frontend/src/vite-env.d.ts": {
+    "mtime": 1785035762.6816585,
+    "ast_hash": "0352474ba2918efe13895edbc3780d94",
+    "semantic_hash": "0352474ba2918efe13895edbc3780d94"
+  },
+  "frontend/tsconfig.json": {
+    "mtime": 1785035762.6821983,
+    "ast_hash": "0d6af7d72ca479005fc63f0f759c00b6",
+    "semantic_hash": "0d6af7d72ca479005fc63f0f759c00b6"
+  },
+  "frontend/wailsjs/go/main/App.d.ts": {
+    "mtime": 1785037367.15847,
+    "ast_hash": "4ab7646d5a0970d27109631bc62c21f3",
+    "semantic_hash": "4ab7646d5a0970d27109631bc62c21f3"
+  },
+  "frontend/wailsjs/go/main/App.js": {
+    "mtime": 1785037367.1579237,
+    "ast_hash": "e977779eb82325bc4889a51da4754832",
+    "semantic_hash": "e977779eb82325bc4889a51da4754832"
+  },
+  "frontend/wailsjs/go/models.ts": {
+    "mtime": 1785037367.160141,
+    "ast_hash": "37bbb5ce5e4b96b037440d153fd24c98",
+    "semantic_hash": "37bbb5ce5e4b96b037440d153fd24c98"
+  },
+  "frontend/wailsjs/runtime/package.json": {
+    "mtime": 1785037369.5763302,
+    "ast_hash": "a79e9c39ebcda0fdeb14a44939bc489e",
+    "semantic_hash": "a79e9c39ebcda0fdeb14a44939bc489e"
+  },
+  "frontend/wailsjs/runtime/runtime.d.ts": {
+    "mtime": 1785037369.5768547,
+    "ast_hash": "dcd9fca4af1912f552547c22f315c25e",
+    "semantic_hash": "dcd9fca4af1912f552547c22f315c25e"
+  },
+  "frontend/wailsjs/runtime/runtime.js": {
+    "mtime": 1785037369.5773866,
+    "ast_hash": "efc7f0ddc7f96e446ad0252df27b477f",
+    "semantic_hash": "efc7f0ddc7f96e446ad0252df27b477f"
+  },
+  "go.mod": {
+    "mtime": 1785036173.651775,
+    "ast_hash": "78f54dd13c5b68ade5d16587c0d0600c",
+    "semantic_hash": "78f54dd13c5b68ade5d16587c0d0600c"
+  },
+  "internal/model/agenda.go": {
+    "mtime": 1785035889.8162684,
+    "ast_hash": "d78439602174a5e7e56b4a7ac4660ac5",
+    "semantic_hash": "d78439602174a5e7e56b4a7ac4660ac5"
+  },
+  "internal/model/agenda_test.go": {
+    "mtime": 1785036231.8711047,
+    "ast_hash": "6ff8404358497ecefe5bb7c4cf22014a",
+    "semantic_hash": "6ff8404358497ecefe5bb7c4cf22014a"
+  },
+  "internal/repository/sqlite.go": {
+    "mtime": 1785035889.8162684,
+    "ast_hash": "d56bdb07a5a35c3052e90a18ee17e26d",
+    "semantic_hash": "d56bdb07a5a35c3052e90a18ee17e26d"
+  },
+  "internal/repository/sqlite_test.go": {
+    "mtime": 1785036231.8711047,
+    "ast_hash": "65a4d56f0ba25f3d1ccc87ef61896cc3",
+    "semantic_hash": "65a4d56f0ba25f3d1ccc87ef61896cc3"
+  },
+  "internal/service/scheduler.go": {
+    "mtime": 1785035889.8162684,
+    "ast_hash": "ef3e0d0d722b02cf44c5d03ac7191758",
+    "semantic_hash": "ef3e0d0d722b02cf44c5d03ac7191758"
+  },
+  "main.go": {
+    "mtime": 1785036773.7556229,
+    "ast_hash": "296b3c38329e31f98030d348ad20936a",
+    "semantic_hash": "296b3c38329e31f98030d348ad20936a"
+  },
+  "wails.json": {
+    "mtime": 1785037329.8105853,
+    "ast_hash": "a9803e293895c0930c24e31c3ba3a3bb",
+    "semantic_hash": "a9803e293895c0930c24e31c3ba3a3bb"
+  },
+  "AGENTS.md": {
+    "mtime": 1785037637.2992651,
+    "ast_hash": "21ceb6533048be51308e69e7b74a35cf",
+    "semantic_hash": ""
+  },
+  "CHANGELOG.md": {
+    "mtime": 1785037689.5642493,
+    "ast_hash": "54c002c6292c1b3c9a51bfd8a947f9fd",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1785037689.5642493,
+    "ast_hash": "736cd9a1c061c59cab180843901947e9",
+    "semantic_hash": ""
+  },
+  "docs/releases/v0.1.1.md": {
+    "mtime": 1785037391.276127,
+    "ast_hash": "6f65325b205810b37baed873f23352f1",
+    "semantic_hash": ""
+  },
+  "frontend/index.html": {
+    "mtime": 1785036146.8443232,
+    "ast_hash": "4681ef930839411fd35be90e1c8e4f92",
+    "semantic_hash": ""
+  },
+  "frontend/src/assets/fonts/OFL.txt": {
+    "mtime": 1785035762.677899,
+    "ast_hash": "4e3d9becbf87c0341298fadf87ae4d36",
+    "semantic_hash": ""
+  },
+  "frontend/src/assets/images/logo-universal.png": {
+    "mtime": 1785035762.6795063,
+    "ast_hash": "220624c4aaab58e09efdafbcd2f49c15",
+    "semantic_hash": ""
+  }
+}

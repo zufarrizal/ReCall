@@ -1,0 +1,395 @@
+{
+  "communities": {
+    "0": [
+      "frontend_wailsjs_runtime_runtime",
+      "frontend_wailsjs_runtime_runtime_browseropenurl",
+      "frontend_wailsjs_runtime_runtime_canresolvefilepaths",
+      "frontend_wailsjs_runtime_runtime_checknotificationauthorization",
+      "frontend_wailsjs_runtime_runtime_cleanupnotifications",
+      "frontend_wailsjs_runtime_runtime_clipboardgettext",
+      "frontend_wailsjs_runtime_runtime_clipboardsettext",
+      "frontend_wailsjs_runtime_runtime_environment",
+      "frontend_wailsjs_runtime_runtime_eventsemit",
+      "frontend_wailsjs_runtime_runtime_eventsoff",
+      "frontend_wailsjs_runtime_runtime_eventsoffall",
+      "frontend_wailsjs_runtime_runtime_hide",
+      "frontend_wailsjs_runtime_runtime_initializenotifications",
+      "frontend_wailsjs_runtime_runtime_isnotificationavailable",
+      "frontend_wailsjs_runtime_runtime_logdebug",
+      "frontend_wailsjs_runtime_runtime_logerror",
+      "frontend_wailsjs_runtime_runtime_logfatal",
+      "frontend_wailsjs_runtime_runtime_loginfo",
+      "frontend_wailsjs_runtime_runtime_logprint",
+      "frontend_wailsjs_runtime_runtime_logtrace",
+      "frontend_wailsjs_runtime_runtime_logwarning",
+      "frontend_wailsjs_runtime_runtime_onfiledrop",
+      "frontend_wailsjs_runtime_runtime_onfiledropoff",
+      "frontend_wailsjs_runtime_runtime_quit",
+      "frontend_wailsjs_runtime_runtime_registernotificationcategory",
+      "frontend_wailsjs_runtime_runtime_removealldeliverednotifications",
+      "frontend_wailsjs_runtime_runtime_removeallpendingnotifications",
+      "frontend_wailsjs_runtime_runtime_removedeliverednotification",
+      "frontend_wailsjs_runtime_runtime_removenotification",
+      "frontend_wailsjs_runtime_runtime_removenotificationcategory",
+      "frontend_wailsjs_runtime_runtime_removependingnotification",
+      "frontend_wailsjs_runtime_runtime_requestnotificationauthorization",
+      "frontend_wailsjs_runtime_runtime_resolvefilepaths",
+      "frontend_wailsjs_runtime_runtime_screengetall",
+      "frontend_wailsjs_runtime_runtime_sendnotification",
+      "frontend_wailsjs_runtime_runtime_sendnotificationwithactions",
+      "frontend_wailsjs_runtime_runtime_show",
+      "frontend_wailsjs_runtime_runtime_windowcenter",
+      "frontend_wailsjs_runtime_runtime_windowfullscreen",
+      "frontend_wailsjs_runtime_runtime_windowgetposition",
+      "frontend_wailsjs_runtime_runtime_windowgetsize",
+      "frontend_wailsjs_runtime_runtime_windowhide",
+      "frontend_wailsjs_runtime_runtime_windowisfullscreen",
+      "frontend_wailsjs_runtime_runtime_windowismaximised",
+      "frontend_wailsjs_runtime_runtime_windowisminimised",
+      "frontend_wailsjs_runtime_runtime_windowisnormal",
+      "frontend_wailsjs_runtime_runtime_windowmaximise",
+      "frontend_wailsjs_runtime_runtime_windowminimise",
+      "frontend_wailsjs_runtime_runtime_windowreload",
+      "frontend_wailsjs_runtime_runtime_windowreloadapp",
+      "frontend_wailsjs_runtime_runtime_windowsetalwaysontop",
+      "frontend_wailsjs_runtime_runtime_windowsetbackgroundcolour",
+      "frontend_wailsjs_runtime_runtime_windowsetdarktheme",
+      "frontend_wailsjs_runtime_runtime_windowsetlighttheme",
+      "frontend_wailsjs_runtime_runtime_windowsetmaxsize",
+      "frontend_wailsjs_runtime_runtime_windowsetminsize",
+      "frontend_wailsjs_runtime_runtime_windowsetposition",
+      "frontend_wailsjs_runtime_runtime_windowsetsize",
+      "frontend_wailsjs_runtime_runtime_windowsetsystemdefaulttheme",
+      "frontend_wailsjs_runtime_runtime_windowsettitle",
+      "frontend_wailsjs_runtime_runtime_windowshow",
+      "frontend_wailsjs_runtime_runtime_windowtogglemaximise",
+      "frontend_wailsjs_runtime_runtime_windowunfullscreen",
+      "frontend_wailsjs_runtime_runtime_windowunmaximise",
+      "frontend_wailsjs_runtime_runtime_windowunminimise"
+    ],
+    "1": [
+      "frontend_src_main",
+      "frontend_src_main_adddays",
+      "frontend_src_main_agenda",
+      "frontend_src_main_blocks",
+      "frontend_src_main_close",
+      "frontend_src_main_daystart",
+      "frontend_src_main_esc",
+      "frontend_src_main_fmt",
+      "frontend_src_main_iso",
+      "frontend_src_main_key",
+      "frontend_src_main_load",
+      "frontend_src_main_nowline",
+      "frontend_src_main_openeditor",
+      "frontend_src_main_render",
+      "frontend_src_main_rendercalendar",
+      "frontend_src_main_rendermonth",
+      "frontend_src_main_state",
+      "frontend_src_main_toast",
+      "frontend_src_main_value",
+      "frontend_wailsjs_go_main_app",
+      "frontend_wailsjs_go_main_app_deleteagenda",
+      "frontend_wailsjs_go_main_app_hidewindow",
+      "frontend_wailsjs_go_main_app_listagendas",
+      "frontend_wailsjs_go_main_app_quit",
+      "frontend_wailsjs_go_main_app_saveagenda",
+      "frontend_wailsjs_go_main_app_showwindow"
+    ],
+    "2": [
+      "app",
+      "app_go_agenda",
+      "app_go_context",
+      "app_newapp",
+      "app_test",
+      "app_test_go_t",
+      "app_test_testbeforecloseallowsexplicitquit",
+      "bool",
+      "main",
+      "main_main",
+      "recall_app",
+      "recall_app_beforeclose",
+      "recall_app_deleteagenda",
+      "recall_app_hidewindow",
+      "recall_app_listagendas",
+      "recall_app_notify",
+      "recall_app_quit",
+      "recall_app_ready",
+      "recall_app_saveagenda",
+      "recall_app_showwindow",
+      "recall_app_shutdown",
+      "recall_app_startup"
+    ],
+    "3": [
+      "frontend_tsconfig",
+      "frontend_tsconfig_compileroptions",
+      "frontend_tsconfig_compileroptions_esmoduleinterop",
+      "frontend_tsconfig_compileroptions_isolatedmodules",
+      "frontend_tsconfig_compileroptions_lib",
+      "frontend_tsconfig_compileroptions_module",
+      "frontend_tsconfig_compileroptions_moduleresolution",
+      "frontend_tsconfig_compileroptions_noemit",
+      "frontend_tsconfig_compileroptions_noimplicitreturns",
+      "frontend_tsconfig_compileroptions_nounusedlocals",
+      "frontend_tsconfig_compileroptions_nounusedparameters",
+      "frontend_tsconfig_compileroptions_resolvejsonmodule",
+      "frontend_tsconfig_compileroptions_skiplibcheck",
+      "frontend_tsconfig_compileroptions_sourcemap",
+      "frontend_tsconfig_compileroptions_strict",
+      "frontend_tsconfig_compileroptions_target",
+      "frontend_tsconfig_compileroptions_usedefineforclassfields",
+      "frontend_tsconfig_include",
+      "ref_dom",
+      "ref_esnext",
+      "ref_src"
+    ],
+    "4": [
+      "frontend_wailsjs_runtime_package",
+      "frontend_wailsjs_runtime_package_author",
+      "frontend_wailsjs_runtime_package_bugs",
+      "frontend_wailsjs_runtime_package_bugs_url",
+      "frontend_wailsjs_runtime_package_description",
+      "frontend_wailsjs_runtime_package_homepage",
+      "frontend_wailsjs_runtime_package_keywords",
+      "frontend_wailsjs_runtime_package_license",
+      "frontend_wailsjs_runtime_package_main",
+      "frontend_wailsjs_runtime_package_name",
+      "frontend_wailsjs_runtime_package_repository",
+      "frontend_wailsjs_runtime_package_repository_type",
+      "frontend_wailsjs_runtime_package_repository_url",
+      "frontend_wailsjs_runtime_package_scripts",
+      "frontend_wailsjs_runtime_package_types",
+      "frontend_wailsjs_runtime_package_version",
+      "ref_go",
+      "ref_javascript",
+      "ref_wails"
+    ],
+    "5": [
+      "db",
+      "internal_repository_sqlite",
+      "internal_repository_sqlite_go_agenda",
+      "internal_repository_sqlite_go_context",
+      "internal_repository_sqlite_open",
+      "internal_repository_sqlite_test",
+      "internal_repository_sqlite_test_go_t",
+      "internal_repository_sqlite_test_testsqlitecrudanddue",
+      "repository_sqliterepository",
+      "repository_sqliterepository_close",
+      "repository_sqliterepository_delete",
+      "repository_sqliterepository_due",
+      "repository_sqliterepository_listrange",
+      "repository_sqliterepository_marknotified",
+      "repository_sqliterepository_migrate",
+      "repository_sqliterepository_save",
+      "time"
+    ],
+    "6": [
+      "frontend_package",
+      "frontend_package_devdependencies",
+      "frontend_package_devdependencies_typescript",
+      "frontend_package_devdependencies_vite",
+      "frontend_package_name",
+      "frontend_package_private",
+      "frontend_package_scripts",
+      "frontend_package_scripts_build",
+      "frontend_package_scripts_dev",
+      "frontend_package_scripts_preview",
+      "frontend_package_version",
+      "typescript",
+      "vite"
+    ],
+    "7": [
+      "wails",
+      "wails_author",
+      "wails_author_email",
+      "wails_author_name",
+      "wails_frontend_build",
+      "wails_frontend_dev_serverurl",
+      "wails_frontend_dev_watcher",
+      "wails_frontend_install",
+      "wails_name",
+      "wails_outputfilename",
+      "wails_productversion",
+      "wails_schema"
+    ],
+    "8": [
+      "frontend_wailsjs_runtime_runtime_d",
+      "frontend_wailsjs_runtime_runtime_d_environmentinfo",
+      "frontend_wailsjs_runtime_runtime_d_notificationaction",
+      "frontend_wailsjs_runtime_runtime_d_notificationcategory",
+      "frontend_wailsjs_runtime_runtime_d_notificationoptions",
+      "frontend_wailsjs_runtime_runtime_d_position",
+      "frontend_wailsjs_runtime_runtime_d_screen",
+      "frontend_wailsjs_runtime_runtime_d_size"
+    ],
+    "9": [
+      "internal_service_scheduler",
+      "internal_service_scheduler_go_agenda",
+      "internal_service_scheduler_newscheduler",
+      "once",
+      "service_scheduler",
+      "service_scheduler_check",
+      "service_scheduler_start",
+      "service_scheduler_stop"
+    ],
+    "10": [
+      "frontend_wailsjs_go_main_app_d",
+      "frontend_wailsjs_go_models",
+      "frontend_wailsjs_go_models_agenda",
+      "frontend_wailsjs_go_models_agenda_constructor",
+      "frontend_wailsjs_go_models_agenda_createfrom",
+      "frontend_wailsjs_go_models_model"
+    ],
+    "11": [
+      "frontend_wailsjs_runtime_runtime_eventson",
+      "frontend_wailsjs_runtime_runtime_eventsonce",
+      "frontend_wailsjs_runtime_runtime_eventsonmultiple"
+    ],
+    "12": [
+      "internal_model_agenda",
+      "model_agenda",
+      "model_agenda_validate"
+    ],
+    "13": [
+      "internal_model_agenda_test",
+      "internal_model_agenda_test_go_t",
+      "internal_model_agenda_test_testagendavalidate"
+    ],
+    "14": [
+      "frontend_src_vite_env_d"
+    ],
+    "15": [
+      "pkg_recall"
+    ]
+  },
+  "cohesion": {
+    "0": 0.03076923076923077,
+    "1": 0.14461538461538462,
+    "2": 0.13852813852813853,
+    "3": 0.09523809523809523,
+    "4": 0.10526315789473684,
+    "5": 0.21323529411764705,
+    "6": 0.15384615384615385,
+    "7": 0.16666666666666666,
+    "8": 0.25,
+    "9": 0.39285714285714285,
+    "10": 0.4,
+    "11": 0.6666666666666666,
+    "12": 0.6666666666666666,
+    "13": 0.6666666666666666,
+    "14": 1.0,
+    "15": 1.0
+  },
+  "gods": [
+    {
+      "id": "recall_app",
+      "label": "App",
+      "degree": 17
+    },
+    {
+      "id": "frontend_tsconfig_compileroptions",
+      "label": "compilerOptions",
+      "degree": 16
+    },
+    {
+      "id": "repository_sqliterepository",
+      "label": "SQLiteRepository",
+      "degree": 13
+    },
+    {
+      "id": "service_scheduler",
+      "label": "Scheduler",
+      "degree": 9
+    },
+    {
+      "id": "frontend_src_main_rendercalendar",
+      "label": "renderCalendar()",
+      "degree": 7
+    },
+    {
+      "id": "frontend_src_main_load",
+      "label": "load()",
+      "degree": 6
+    },
+    {
+      "id": "internal_repository_sqlite_open",
+      "label": "Open()",
+      "degree": 6
+    },
+    {
+      "id": "frontend_src_main_key",
+      "label": "key()",
+      "degree": 5
+    },
+    {
+      "id": "frontend_src_main_rendermonth",
+      "label": "renderMonth()",
+      "degree": 5
+    },
+    {
+      "id": "internal_service_scheduler_newscheduler",
+      "label": "NewScheduler()",
+      "degree": 5
+    }
+  ],
+  "surprises": [
+    {
+      "source": "App",
+      "target": "SQLiteRepository",
+      "source_files": [
+        "app.go",
+        "internal/repository/sqlite.go"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "App",
+      "target": "Scheduler",
+      "source_files": [
+        "app.go",
+        "internal/service/scheduler.go"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "TestBeforeCloseAllowsExplicitQuit()",
+      "target": "NewApp()",
+      "source_files": [
+        "app_test.go",
+        "app.go"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories"
+    },
+    {
+      "source": "main()",
+      "target": "NewApp()",
+      "source_files": [
+        "main.go",
+        "app.go"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories"
+    },
+    {
+      "source": "NewScheduler()",
+      "target": "SQLiteRepository",
+      "source_files": [
+        "internal/service/scheduler.go",
+        "internal/repository/sqlite.go"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "bridges separate communities"
+    }
+  ],
+  "tokens": {
+    "input": 0,
+    "output": 0
+  }
+}

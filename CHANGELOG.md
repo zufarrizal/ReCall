@@ -2,6 +2,12 @@
 
 Semua perubahan penting ReCall dicatat di file ini.
 
+## [Unreleased]
+
+### Added
+
+- Knowledge graph Graphify dan aturan query-first untuk navigasi codebase yang lebih efisien.
+
 ## [0.1.1] - 2026-07-26
 
 ### Fixed
