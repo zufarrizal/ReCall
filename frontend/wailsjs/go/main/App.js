@@ -14,12 +14,20 @@ export function ListAgendas(arg1, arg2) {
   return window['go']['main']['App']['ListAgendas'](arg1, arg2);
 }
 
+export function ListColorCategories() {
+  return window['go']['main']['App']['ListColorCategories']();
+}
+
 export function Quit() {
   return window['go']['main']['App']['Quit']();
 }
 
 export function SaveAgenda(arg1) {
   return window['go']['main']['App']['SaveAgenda'](arg1);
+}
+
+export function SaveColorCategories(arg1) {
+  return window['go']['main']['App']['SaveColorCategories'](arg1);
 }
 
 export function ShowWindow() {

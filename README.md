@@ -7,6 +7,7 @@ ReCall adalah aplikasi desktop Windows berbasis Go + Wails untuk menyusun agenda
 - Kalender waktu yang dapat digulir untuk melihat seluruh 24 jam, dengan tampilan 1 hari, 3 hari, atau 1 minggu.
 - Beberapa agenda pada waktu yang sama ditata berdampingan agar semuanya tetap terlihat dan dapat dipilih.
 - Buat, ubah, dan hapus agenda melalui modal aplikasi.
+- Sepuluh pilihan warna agenda dengan nama kategori yang dapat diubah melalui modal **Atur nama**.
 - Alarm dengan pola suara native Windows, bunyi toast pengingat, dan dialog pengingat di aplikasi.
 - Berjalan di background melalui system tray; menu tray dapat membuka atau keluar dari aplikasi.
 - Penyimpanan SQLite lokal, tanpa server dan tanpa akun.
@@ -20,7 +21,7 @@ ReCall adalah aplikasi desktop Windows berbasis Go + Wails untuk menyusun agenda
 - SQLite pure-Go (`modernc.org/sqlite`) untuk Model/repository.
 - Pola MVP: `internal/model` dan `internal/repository` menangani data, `app.go` menjadi Presenter/binding Wails, dan `frontend/src` menjadi View.
 
-Database dibuat otomatis di `%APPDATA%\ReCall\recall.db`. SQLite memakai mode WAL, busy timeout, index waktu mulai, dan query terparameterisasi.
+Database dibuat otomatis di `%APPDATA%\ReCall\recall.db`. SQLite memakai mode WAL, busy timeout, index waktu mulai, dan query terparameterisasi. Nama kategori disimpan pada tabel `color_categories`; migrasi menambahkan pilihan warna baru tanpa menimpa nama yang sudah dipersonalisasi.
 
 ## Menjalankan untuk pengembangan
 
@@ -41,7 +42,7 @@ npm test
 npm run build
 ```
 
-Test mencakup validasi model, layout agenda yang bertumpuk, serta alur SQLite create, list, alarm jatuh tempo, penandaan notifikasi, dan delete.
+Test mencakup validasi model, keamanan renderer nama kategori, layout agenda yang bertumpuk, serta alur SQLite create, list, pembaruan nama warna, alarm jatuh tempo, penandaan notifikasi, dan delete.
 
 ## Peta kode Graphify
 

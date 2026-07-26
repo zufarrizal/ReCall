@@ -7,6 +7,12 @@ Semua perubahan penting ReCall dicatat di file ini.
 ### Added
 
 - Agenda yang waktunya bertumpuk pada hari yang sama kini ditampilkan berdampingan dan tetap dapat dibuka satu per satu.
+- Pilihan warna agenda diperluas menjadi sepuluh kategori.
+- Nama setiap kategori warna kini dapat diubah melalui modal dan disimpan permanen di SQLite.
+
+### Changed
+
+- Pilihan warna pada formulir dan legenda kalender kini dibaca dari database, bukan nama yang ditulis langsung di frontend.
 
 ## [0.1.4] - 2026-07-26
 

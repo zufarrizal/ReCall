@@ -80,6 +80,24 @@ func (a *App) ListAgendas(from, to string) ([]model.Agenda, error) {
 	return a.repo.ListRange(a.ctx, start, end)
 }
 
+func (a *App) ListColorCategories() ([]model.ColorCategory, error) {
+	if err := a.ready(); err != nil {
+		return nil, err
+	}
+	return a.repo.ListColorCategories(a.ctx)
+}
+
+func (a *App) SaveColorCategories(categories []model.ColorCategory) ([]model.ColorCategory, error) {
+	if err := a.ready(); err != nil {
+		return nil, err
+	}
+	saved, err := a.repo.SaveColorCategories(a.ctx, categories)
+	if err == nil {
+		runtime.EventsEmit(a.ctx, "colors:changed")
+	}
+	return saved, err
+}
+
 func (a *App) SaveAgenda(agenda model.Agenda) (model.Agenda, error) {
 	if err := a.ready(); err != nil {
 		return model.Agenda{}, err

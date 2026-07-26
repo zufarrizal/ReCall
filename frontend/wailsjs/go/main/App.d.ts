@@ -8,9 +8,13 @@ export function HideWindow():Promise<void>;
 
 export function ListAgendas(arg1:string,arg2:string):Promise<Array<model.Agenda>>;
 
+export function ListColorCategories():Promise<Array<model.ColorCategory>>;
+
 export function Quit():Promise<void>;
 
 export function SaveAgenda(arg1:model.Agenda):Promise<model.Agenda>;
+
+export function SaveColorCategories(arg1:Array<model.ColorCategory>):Promise<Array<model.ColorCategory>>;
 
 export function ShowWindow():Promise<void>;
 

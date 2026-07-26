@@ -50,10 +50,9 @@ func (a *Agenda) Validate() error {
 	if a.AlarmOffset < 0 || a.AlarmOffset > 10080 {
 		return errors.New("pengingat harus antara 0 dan 10080 menit")
 	}
-	switch a.Color {
-	case "blue", "violet", "green", "amber", "rose":
-	default:
-		a.Color = "blue"
+	a.Color, err = NormalizeColorKey(a.Color)
+	if err != nil {
+		return err
 	}
 	return nil
 }

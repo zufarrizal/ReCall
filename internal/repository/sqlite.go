@@ -40,6 +40,22 @@ func Open(appDir string) (*SQLiteRepository, error) {
 
 func (r *SQLiteRepository) migrate() error {
 	_, err := r.db.Exec(`
+CREATE TABLE IF NOT EXISTS color_categories (
+	color_key TEXT PRIMARY KEY,
+	name TEXT NOT NULL CHECK(length(trim(name)) BETWEEN 1 AND 40),
+	sort_order INTEGER NOT NULL UNIQUE CHECK(sort_order >= 0)
+);
+INSERT OR IGNORE INTO color_categories(color_key,name,sort_order) VALUES
+	('blue','Kegiatan',10),
+	('violet','Pribadi',20),
+	('green','Fokus',30),
+	('amber','Penting',40),
+	('rose','Mendesak',50),
+	('cyan','Belajar',60),
+	('indigo','Proyek',70),
+	('orange','Acara',80),
+	('teal','Kesehatan',90),
+	('slate','Lainnya',100);
 CREATE TABLE IF NOT EXISTS agendas (
 	id INTEGER PRIMARY KEY AUTOINCREMENT,
 	title TEXT NOT NULL CHECK(length(title) BETWEEN 1 AND 120),
@@ -59,6 +75,65 @@ CREATE INDEX IF NOT EXISTS idx_agendas_alarm ON agendas(alarm, start_at, notifie
 		return fmt.Errorf("migrasi database: %w", err)
 	}
 	return nil
+}
+
+func (r *SQLiteRepository) ListColorCategories(ctx context.Context) ([]model.ColorCategory, error) {
+	rows, err := r.db.QueryContext(ctx, `SELECT color_key,name FROM color_categories ORDER BY sort_order,color_key`)
+	if err != nil {
+		return nil, err
+	}
+	defer rows.Close()
+
+	items := make([]model.ColorCategory, 0)
+	for rows.Next() {
+		var item model.ColorCategory
+		if err = rows.Scan(&item.Key, &item.Name); err != nil {
+			return nil, err
+		}
+		items = append(items, item)
+	}
+	return items, rows.Err()
+}
+
+func (r *SQLiteRepository) SaveColorCategories(ctx context.Context, categories []model.ColorCategory) ([]model.ColorCategory, error) {
+	if len(categories) == 0 {
+		return nil, errors.New("daftar warna tidak boleh kosong")
+	}
+	tx, err := r.db.BeginTx(ctx, nil)
+	if err != nil {
+		return nil, err
+	}
+	defer tx.Rollback()
+
+	seen := make(map[string]struct{}, len(categories))
+	for i := range categories {
+		if err = categories[i].Validate(); err != nil {
+			return nil, err
+		}
+		if _, exists := seen[categories[i].Key]; exists {
+			return nil, errors.New("kode warna tidak boleh duplikat")
+		}
+		seen[categories[i].Key] = struct{}{}
+
+		result, updateErr := tx.ExecContext(ctx,
+			`UPDATE color_categories SET name=? WHERE color_key=?`,
+			categories[i].Name, categories[i].Key,
+		)
+		if updateErr != nil {
+			return nil, updateErr
+		}
+		affected, updateErr := result.RowsAffected()
+		if updateErr != nil {
+			return nil, updateErr
+		}
+		if affected != 1 {
+			return nil, errors.New("warna tidak tersedia")
+		}
+	}
+	if err = tx.Commit(); err != nil {
+		return nil, err
+	}
+	return r.ListColorCategories(ctx)
 }
 
 func (r *SQLiteRepository) ListRange(ctx context.Context, from, to time.Time) ([]model.Agenda, error) {
@@ -84,6 +159,16 @@ WHERE start_at < ? AND end_at > ? ORDER BY start_at`, to.Format(time.RFC3339), f
 func (r *SQLiteRepository) Save(ctx context.Context, a *model.Agenda) (model.Agenda, error) {
 	if err := a.Validate(); err != nil {
 		return model.Agenda{}, err
+	}
+	var colorExists bool
+	if err := r.db.QueryRowContext(ctx,
+		`SELECT EXISTS(SELECT 1 FROM color_categories WHERE color_key=?)`,
+		a.Color,
+	).Scan(&colorExists); err != nil {
+		return model.Agenda{}, err
+	}
+	if !colorExists {
+		return model.Agenda{}, errors.New("warna agenda tidak tersedia")
 	}
 	now := time.Now().Format(time.RFC3339)
 	if a.ID == 0 {

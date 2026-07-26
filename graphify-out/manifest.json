@@ -1,7 +1,7 @@
 {
   "app.go": {
-    "mtime": 1785038609.3575304,
-    "ast_hash": "f653f8e19a613f2d627c2561127cbbd4",
+    "mtime": 1785042311.734455,
+    "ast_hash": "0be93b636e572b62a402530041698a85",
     "semantic_hash": ""
   },
   "app_test.go": {
@@ -10,13 +10,13 @@
     "semantic_hash": "550a0c9b9ba09c30f249105b95582110"
   },
   "frontend/package.json": {
-    "mtime": 1785041333.6015806,
-    "ast_hash": "37a0ff703d0ba3ae91ce58d44d498d54",
+    "mtime": 1785042472.8245268,
+    "ast_hash": "01f288088d213e1fc4b1094f8fcc6ddb",
     "semantic_hash": ""
   },
   "frontend/src/main.ts": {
-    "mtime": 1785041314.0486586,
-    "ast_hash": "228bb2e19ceb2ce4bf0f99300cd107a7",
+    "mtime": 1785042574.54209,
+    "ast_hash": "2076a3cf59ffaad686abadbac37424ae",
     "semantic_hash": ""
   },
   "frontend/src/vite-env.d.ts": {
@@ -30,32 +30,32 @@
     "semantic_hash": "0d6af7d72ca479005fc63f0f759c00b6"
   },
   "frontend/wailsjs/go/main/App.d.ts": {
-    "mtime": 1785041398.6926005,
-    "ast_hash": "0d36bfa11a35e0f57080fe288fdd84c8",
+    "mtime": 1785042702.9120498,
+    "ast_hash": "a44883b1a74c3463a27bcdc2877dddd4",
     "semantic_hash": ""
   },
   "frontend/wailsjs/go/main/App.js": {
-    "mtime": 1785041398.692064,
-    "ast_hash": "a6c00ec2a702a8c41cb3ac75a3d55ac9",
+    "mtime": 1785042702.9115334,
+    "ast_hash": "ef10bf67ab774ed3c204a9743b6bcf6e",
     "semantic_hash": ""
   },
   "frontend/wailsjs/go/models.ts": {
-    "mtime": 1785041398.6937501,
-    "ast_hash": "37bbb5ce5e4b96b037440d153fd24c98",
-    "semantic_hash": "37bbb5ce5e4b96b037440d153fd24c98"
+    "mtime": 1785042942.138129,
+    "ast_hash": "0ed1da5bf3a96a331b80206a11cb2c15",
+    "semantic_hash": ""
   },
   "frontend/wailsjs/runtime/package.json": {
-    "mtime": 1785041403.167446,
+    "mtime": 1785042705.4167085,
     "ast_hash": "a79e9c39ebcda0fdeb14a44939bc489e",
     "semantic_hash": "a79e9c39ebcda0fdeb14a44939bc489e"
   },
   "frontend/wailsjs/runtime/runtime.d.ts": {
-    "mtime": 1785041403.1679747,
+    "mtime": 1785042705.4172473,
     "ast_hash": "dcd9fca4af1912f552547c22f315c25e",
     "semantic_hash": "dcd9fca4af1912f552547c22f315c25e"
   },
   "frontend/wailsjs/runtime/runtime.js": {
-    "mtime": 1785041403.1684964,
+    "mtime": 1785042705.417781,
     "ast_hash": "efc7f0ddc7f96e446ad0252df27b477f",
     "semantic_hash": "efc7f0ddc7f96e446ad0252df27b477f"
   },
@@ -65,24 +65,24 @@
     "semantic_hash": "78f54dd13c5b68ade5d16587c0d0600c"
   },
   "internal/model/agenda.go": {
-    "mtime": 1785035889.8162684,
-    "ast_hash": "d78439602174a5e7e56b4a7ac4660ac5",
-    "semantic_hash": "d78439602174a5e7e56b4a7ac4660ac5"
+    "mtime": 1785042273.696455,
+    "ast_hash": "e44d0022195a6d6a00bbe45dccd8e8f1",
+    "semantic_hash": ""
   },
   "internal/model/agenda_test.go": {
-    "mtime": 1785036231.8711047,
-    "ast_hash": "6ff8404358497ecefe5bb7c4cf22014a",
-    "semantic_hash": "6ff8404358497ecefe5bb7c4cf22014a"
+    "mtime": 1785042273.697945,
+    "ast_hash": "e106f62070e808435d112be7e6052439",
+    "semantic_hash": ""
   },
   "internal/repository/sqlite.go": {
-    "mtime": 1785035889.8162684,
-    "ast_hash": "d56bdb07a5a35c3052e90a18ee17e26d",
-    "semantic_hash": "d56bdb07a5a35c3052e90a18ee17e26d"
+    "mtime": 1785042311.728386,
+    "ast_hash": "4a02a3b68a7183f9ae1196089743efda",
+    "semantic_hash": ""
   },
   "internal/repository/sqlite_test.go": {
-    "mtime": 1785036231.8711047,
-    "ast_hash": "65a4d56f0ba25f3d1ccc87ef61896cc3",
-    "semantic_hash": "65a4d56f0ba25f3d1ccc87ef61896cc3"
+    "mtime": 1785042942.138129,
+    "ast_hash": "5a0dd51e4f903d418efd0e36e7c66532",
+    "semantic_hash": ""
   },
   "internal/service/scheduler.go": {
     "mtime": 1785035889.8162684,
@@ -105,13 +105,13 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1785041314.0510006,
-    "ast_hash": "257224d19371579143be8a0da975b125",
+    "mtime": 1785042617.7968729,
+    "ast_hash": "8d66af3df155686feefe3185860f3cd2",
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1785041649.0739017,
-    "ast_hash": "241894cdad20ed58744c9be00e0f6010",
+    "mtime": 1785042617.7968729,
+    "ast_hash": "c23acae599adf407c9afbddefe4c9d13",
     "semantic_hash": ""
   },
   "docs/releases/v0.1.1.md": {
@@ -167,6 +167,26 @@
   "frontend/tests/calendar-layout.test.ts": {
     "mtime": 1785041314.0326395,
     "ast_hash": "fe2c1d2d60e5f189de8eb046d86b81b2",
+    "semantic_hash": ""
+  },
+  "frontend/src/color-categories.ts": {
+    "mtime": 1785042472.8141413,
+    "ast_hash": "78265f50d09a678bad5e6595f1a5659b",
+    "semantic_hash": ""
+  },
+  "frontend/tests/color-categories.test.ts": {
+    "mtime": 1785042472.8245268,
+    "ast_hash": "4410b23b0275c75e11cff6c8b5c0a15d",
+    "semantic_hash": ""
+  },
+  "internal/model/color_category.go": {
+    "mtime": 1785042273.6939561,
+    "ast_hash": "ed278202b687401e1fe040b2d4b1cd93",
+    "semantic_hash": ""
+  },
+  "internal/model/color_category_test.go": {
+    "mtime": 1785042273.700031,
+    "ast_hash": "e2647bdcdfdb303f12b5ceb164533f80",
     "semantic_hash": ""
   }
 }

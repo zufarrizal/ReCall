@@ -1,0 +1,162 @@
+.shell > aside {
+  overflow-y: auto;
+}
+
+.color-section {
+  min-height: 0;
+  display: grid;
+  gap: 9px;
+}
+
+.color-section > header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.color-section > header strong {
+  font-size: 12px;
+  color: #4f5368;
+}
+
+.color-section > header button {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: #5556d9;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.color-section .legend {
+  max-height: 154px;
+  padding-right: 4px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+.legend .empty {
+  color: #a2a5b4;
+}
+
+.color-swatch {
+  display: inline-block;
+  flex: 0 0 auto;
+  width: 11px;
+  height: 11px;
+  border-radius: 4px;
+}
+
+.color-swatch.blue {
+  background: #5b7bec;
+}
+
+.color-swatch.violet {
+  background: #916bea;
+}
+
+.color-swatch.green {
+  background: #44b58c;
+}
+
+.color-swatch.amber {
+  background: #e8a72a;
+}
+
+.color-swatch.rose {
+  background: #e65d75;
+}
+
+.color-swatch.cyan {
+  background: #22a8c7;
+}
+
+.color-swatch.indigo {
+  background: #5367d8;
+}
+
+.color-swatch.orange {
+  background: #e98138;
+}
+
+.color-swatch.teal {
+  background: #239b91;
+}
+
+.color-swatch.slate {
+  background: #748094;
+}
+
+.agenda-card.cyan {
+  background: #e2f7fb;
+  border-color: #22a8c7;
+}
+
+.agenda-card.indigo {
+  background: #e9ecff;
+  border-color: #5367d8;
+}
+
+.agenda-card.orange {
+  background: #fff0e4;
+  border-color: #e98138;
+}
+
+.agenda-card.teal {
+  background: #e1f6f3;
+  border-color: #239b91;
+}
+
+.agenda-card.slate {
+  background: #edf0f4;
+  border-color: #748094;
+}
+
+.color-modal > .helper {
+  margin: -8px 0 18px;
+  color: #74788d;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.color-editor-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 11px;
+  max-height: min(430px, 58vh);
+  padding: 2px 4px 2px 2px;
+  overflow-y: auto;
+}
+
+.color-name-row {
+  grid-template-columns: 12px 1fr;
+  align-items: center;
+  gap: 9px !important;
+  padding: 9px;
+  border: 1px solid #e6e8f0;
+  border-radius: 11px;
+  background: #fafbfe;
+}
+
+.color-name-row > span {
+  min-width: 0;
+}
+
+.color-name-row small {
+  display: block;
+  margin-bottom: 4px;
+  color: #999daf;
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+}
+
+.color-name-row input {
+  padding: 8px 9px;
+}
+
+@media (max-width: 560px) {
+  .color-editor-list {
+    grid-template-columns: 1fr;
+  }
+}

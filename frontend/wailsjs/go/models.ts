@@ -1,5 +1,5 @@
 export namespace model {
-	
+
 	export class Agenda {
 	    id: number;
 	    title: string;
@@ -12,7 +12,7 @@ export namespace model {
 	    notifiedAt?: string;
 	    createdAt: string;
 	    updatedAt: string;
-	
+
 	    static createFrom(source: any = {}) {
 	        return new Agenda(source);
 	    }
@@ -32,6 +32,19 @@ export namespace model {
 	        this.updatedAt = source["updatedAt"];
 	    }
 	}
+	export class ColorCategory {
+	    key: string;
+	    name: string;
+
+	    static createFrom(source: any = {}) {
+	        return new ColorCategory(source);
+	    }
+
+	    constructor(source: any = {}) {
+	        if ('string' === typeof source) source = JSON.parse(source);
+	        this.key = source["key"];
+	        this.name = source["name"];
+	    }
+	}
 
 }
-
