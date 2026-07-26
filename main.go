@@ -1,7 +1,6 @@
 package main
 
 import (
-	"context"
 	"embed"
 
 	"github.com/getlantern/systray"
@@ -50,10 +49,7 @@ func main() {
 		BackgroundColour: &options.RGBA{R: 246, G: 247, B: 251, A: 1},
 		OnStartup:        app.startup,
 		OnShutdown:       app.shutdown,
-		OnBeforeClose: func(ctx context.Context) bool {
-			app.HideWindow()
-			return true
-		},
+		OnBeforeClose:    app.beforeClose,
 		Windows: &windows.Options{
 			WebviewIsTransparent: false,
 			WindowIsTranslucent:  false,

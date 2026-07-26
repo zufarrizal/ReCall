@@ -2,6 +2,12 @@
 
 Semua perubahan penting ReCall dicatat di file ini.
 
+## [Unreleased]
+
+### Fixed
+
+- Menu **Keluar** pada system tray kini benar-benar menghentikan aplikasi dan tidak lagi dicegat oleh handler tutup-ke-tray.
+
 ## [0.1.0] - 2026-07-26
 
 ### Added

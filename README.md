@@ -51,4 +51,4 @@ Executable portable dihasilkan sebagai `build/bin/ReCall.exe`. Opsi `embed` meny
 
 ## Perilaku background
 
-Menutup jendela tidak menghentikan aplikasi; ReCall menyembunyikan jendela dan mempertahankan scheduler alarm. Gunakan menu **Keluar** pada ikon ReCall di system tray untuk menghentikan aplikasi sepenuhnya.
+Menutup jendela tidak menghentikan aplikasi; ReCall menyembunyikan jendela dan mempertahankan scheduler alarm. Gunakan menu **Keluar** pada ikon ReCall di system tray untuk menghentikan aplikasi sepenuhnya. Jalur keluar eksplisit ini tidak dicegat oleh perilaku "tutup ke tray".

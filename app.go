@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"os"
 	"path/filepath"
+	"sync/atomic"
 	"time"
 
 	"ReCall/internal/model"
@@ -20,6 +21,7 @@ type App struct {
 	repo      *repository.SQLiteRepository
 	scheduler *service.Scheduler
 	startErr  error
+	quit      atomic.Bool
 }
 
 func NewApp() *App { return &App{} }
@@ -108,7 +110,20 @@ func (a *App) ShowWindow() {
 	runtime.WindowUnminimise(a.ctx)
 }
 
-func (a *App) Quit() { runtime.Quit(a.ctx) }
+// beforeClose distinguishes a window close (hide to tray) from an explicit
+// application exit. Returning true cancels Wails' close operation.
+func (a *App) beforeClose(context.Context) bool {
+	if a.quit.Load() {
+		return false
+	}
+	a.HideWindow()
+	return true
+}
+
+func (a *App) Quit() {
+	a.quit.Store(true)
+	runtime.Quit(a.ctx)
+}
 
 func (a *App) notify(agenda model.Agenda) {
 	start, _ := time.Parse(time.RFC3339, agenda.StartAt)
