@@ -1,16 +1,16 @@
 # Graph Report - ReCall  (2026-07-26)
 
 ## Corpus Check
-- 28 files · ~11,641 words
+- 29 files · ~11,739 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 271 nodes · 301 edges · 25 communities (18 shown, 7 thin omitted)
+- 274 nodes · 314 edges · 25 communities (17 shown, 8 thin omitted)
 - Extraction: 97% EXTRACTED · 3% INFERRED · 0% AMBIGUOUS · INFERRED: 8 edges (avg confidence: 0.72)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `08e60a78`
+- Built from commit: `9a2714e1`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -36,6 +36,7 @@
 - ReCall v0.1.2
 - alarm_sound_windows.go
 - models.ts
+- App.js
 
 ## God Nodes (most connected - your core abstractions)
 1. `App` - 18 edges
@@ -44,10 +45,10 @@
 4. `Scheduler` - 9 edges
 5. `ReCall` - 8 edges
 6. `renderCalendar()` - 7 edges
-7. `Changelog` - 6 edges
+7. `load()` - 6 edges
 8. `Open()` - 6 edges
-9. `key()` - 5 edges
-10. `load()` - 5 edges
+9. `Changelog` - 6 edges
+10. `key()` - 5 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `App` --references--> `SQLiteRepository`  [EXTRACTED]
@@ -64,11 +65,11 @@
 ## Import Cycles
 - None detected.
 
-## Communities (25 total, 7 thin omitted)
+## Communities (25 total, 8 thin omitted)
 
 ### Community 1 - "main.ts"
-Cohesion: 0.20
-Nodes (15): addDays(), Agenda, blocks(), esc(), fmt(), iso(), key(), load() (+7 more)
+Cohesion: 0.14
+Nodes (20): addDays(), Agenda, blocks(), esc(), fmt(), iso(), key(), load() (+12 more)
 
 ### Community 2 - "App"
 Cohesion: 0.13
@@ -112,7 +113,7 @@ Nodes (8): Build portable Windows, Fitur, Menjalankan untuk pengembangan, Penguj
 
 ### Community 17 - "Changelog"
 Cohesion: 0.15
-Nodes (12): [0.1.0] - 2026-07-26, [0.1.1] - 2026-07-26, [0.1.2] - 2026-07-26, [0.1.3] - 2026-07-26, Added, Added, Changelog, Fixed (+4 more)
+Nodes (12): [0.1.0] - 2026-07-26, [0.1.1] - 2026-07-26, [0.1.2] - 2026-07-26, [0.1.3] - 2026-07-26, [0.1.4] - 2026-07-26, Added, Added, Changelog (+4 more)
 
 ### Community 19 - "ReCall v0.1.1"
 Cohesion: 0.40
@@ -123,24 +124,24 @@ Cohesion: 0.50
 Nodes (3): Pengembangan, Perbaikan, ReCall v0.1.2
 
 ## Knowledge Gaps
-- **81 isolated node(s):** `Fixed`, `Fixed`, `Added`, `Fixed`, `Fixed` (+76 more)
+- **82 isolated node(s):** `name`, `private`, `version`, `dev`, `build` (+77 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **7 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **8 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `App` connect `App` to `Scheduler`, `SQLiteRepository`?**
-  _High betweenness centrality (0.020) - this node is a cross-community bridge._
+  _High betweenness centrality (0.019) - this node is a cross-community bridge._
 - **Why does `SQLiteRepository` connect `SQLiteRepository` to `Scheduler`, `App`?**
   _High betweenness centrality (0.014) - this node is a cross-community bridge._
 - **Why does `Scheduler` connect `Scheduler` to `App`, `SQLiteRepository`?**
   _High betweenness centrality (0.007) - this node is a cross-community bridge._
-- **What connects `Fixed`, `Fixed`, `Added` to the rest of the system?**
-  _81 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **What connects `name`, `private`, `version` to the rest of the system?**
+  _82 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `runtime.js` be split into smaller, more focused modules?**
   _Cohesion score 0.03076923076923077 - nodes in this community are weakly interconnected._
+- **Should `main.ts` be split into smaller, more focused modules?**
+  _Cohesion score 0.1396011396011396 - nodes in this community are weakly interconnected._
 - **Should `App` be split into smaller, more focused modules?**
   _Cohesion score 0.13043478260869565 - nodes in this community are weakly interconnected._
-- **Should `compilerOptions` be split into smaller, more focused modules?**
-  _Cohesion score 0.09523809523809523 - nodes in this community are weakly interconnected._

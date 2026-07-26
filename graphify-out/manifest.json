@@ -30,32 +30,32 @@
     "semantic_hash": "0d6af7d72ca479005fc63f0f759c00b6"
   },
   "frontend/wailsjs/go/main/App.d.ts": {
-    "mtime": 1785039852.5655508,
+    "mtime": 1785040212.2779562,
     "ast_hash": "0d36bfa11a35e0f57080fe288fdd84c8",
     "semantic_hash": ""
   },
   "frontend/wailsjs/go/main/App.js": {
-    "mtime": 1785039852.5650105,
+    "mtime": 1785040212.27738,
     "ast_hash": "a6c00ec2a702a8c41cb3ac75a3d55ac9",
     "semantic_hash": ""
   },
   "frontend/wailsjs/go/models.ts": {
-    "mtime": 1785039852.5660903,
+    "mtime": 1785040212.2784975,
     "ast_hash": "37bbb5ce5e4b96b037440d153fd24c98",
     "semantic_hash": "37bbb5ce5e4b96b037440d153fd24c98"
   },
   "frontend/wailsjs/runtime/package.json": {
-    "mtime": 1785039854.858804,
+    "mtime": 1785040215.0917702,
     "ast_hash": "a79e9c39ebcda0fdeb14a44939bc489e",
     "semantic_hash": "a79e9c39ebcda0fdeb14a44939bc489e"
   },
   "frontend/wailsjs/runtime/runtime.d.ts": {
-    "mtime": 1785039854.859351,
+    "mtime": 1785040215.092312,
     "ast_hash": "dcd9fca4af1912f552547c22f315c25e",
     "semantic_hash": "dcd9fca4af1912f552547c22f315c25e"
   },
   "frontend/wailsjs/runtime/runtime.js": {
-    "mtime": 1785039854.8598793,
+    "mtime": 1785040215.0929163,
     "ast_hash": "efc7f0ddc7f96e446ad0252df27b477f",
     "semantic_hash": "efc7f0ddc7f96e446ad0252df27b477f"
   },
@@ -95,8 +95,8 @@
     "semantic_hash": "296b3c38329e31f98030d348ad20936a"
   },
   "wails.json": {
-    "mtime": 1785039788.346054,
-    "ast_hash": "8b332ffa3e1f69b618fb28542933c0bf",
+    "mtime": 1785040167.9419808,
+    "ast_hash": "ba2af44af0feaef49637c635300726e7",
     "semantic_hash": ""
   },
   "AGENTS.md": {
@@ -105,8 +105,8 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1785039959.9955542,
-    "ast_hash": "9a14bd3f010b16aac328f003d718c934",
+    "mtime": 1785040167.9419808,
+    "ast_hash": "fa19326f8c2fd536035f32ec960b36f3",
     "semantic_hash": ""
   },
   "README.md": {
@@ -152,6 +152,11 @@
   "docs/releases/v0.1.3.md": {
     "mtime": 1785039163.5184107,
     "ast_hash": "3647243d15a7c059a9def4e52458bdd4",
+    "semantic_hash": ""
+  },
+  "docs/releases/v0.1.4.md": {
+    "mtime": 1785040167.949956,
+    "ast_hash": "68140e33c731846856da8b6ec0d9f025",
     "semantic_hash": ""
   }
 }
