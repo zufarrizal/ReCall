@@ -2,6 +2,12 @@
 
 Semua perubahan penting ReCall dicatat di file ini.
 
+## [Unreleased]
+
+### Fixed
+
+- Area kolom kanan kalender Minggu tidak lagi menjadi gelap saat digeser horizontal pada jendela yang tidak dimaksimalkan.
+
 ## [0.1.3] - 2026-07-26
 
 ### Fixed

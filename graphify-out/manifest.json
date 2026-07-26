@@ -15,8 +15,8 @@
     "semantic_hash": "cbe227ce39e1b741423fe7a399296852"
   },
   "frontend/src/main.ts": {
-    "mtime": 1785038609.3646815,
-    "ast_hash": "f048167134b47ce58720ab29cfbe94b5",
+    "mtime": 1785039776.2419076,
+    "ast_hash": "4b52b4594fd7ede4a6a2e3589b27df26",
     "semantic_hash": ""
   },
   "frontend/src/vite-env.d.ts": {
@@ -30,32 +30,32 @@
     "semantic_hash": "0d6af7d72ca479005fc63f0f759c00b6"
   },
   "frontend/wailsjs/go/main/App.d.ts": {
-    "mtime": 1785039216.3057911,
+    "mtime": 1785039852.5655508,
     "ast_hash": "0d36bfa11a35e0f57080fe288fdd84c8",
     "semantic_hash": ""
   },
   "frontend/wailsjs/go/main/App.js": {
-    "mtime": 1785039216.305249,
+    "mtime": 1785039852.5650105,
     "ast_hash": "a6c00ec2a702a8c41cb3ac75a3d55ac9",
     "semantic_hash": ""
   },
   "frontend/wailsjs/go/models.ts": {
-    "mtime": 1785039216.3063302,
+    "mtime": 1785039852.5660903,
     "ast_hash": "37bbb5ce5e4b96b037440d153fd24c98",
     "semantic_hash": "37bbb5ce5e4b96b037440d153fd24c98"
   },
   "frontend/wailsjs/runtime/package.json": {
-    "mtime": 1785039219.0629804,
+    "mtime": 1785039854.858804,
     "ast_hash": "a79e9c39ebcda0fdeb14a44939bc489e",
     "semantic_hash": "a79e9c39ebcda0fdeb14a44939bc489e"
   },
   "frontend/wailsjs/runtime/runtime.d.ts": {
-    "mtime": 1785039219.0635233,
+    "mtime": 1785039854.859351,
     "ast_hash": "dcd9fca4af1912f552547c22f315c25e",
     "semantic_hash": "dcd9fca4af1912f552547c22f315c25e"
   },
   "frontend/wailsjs/runtime/runtime.js": {
-    "mtime": 1785039219.064044,
+    "mtime": 1785039854.8598793,
     "ast_hash": "efc7f0ddc7f96e446ad0252df27b477f",
     "semantic_hash": "efc7f0ddc7f96e446ad0252df27b477f"
   },
@@ -95,7 +95,7 @@
     "semantic_hash": "296b3c38329e31f98030d348ad20936a"
   },
   "wails.json": {
-    "mtime": 1785039163.5184107,
+    "mtime": 1785039788.346054,
     "ast_hash": "8b332ffa3e1f69b618fb28542933c0bf",
     "semantic_hash": ""
   },
@@ -105,8 +105,8 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1785039163.5184107,
-    "ast_hash": "c70a737ccd8a6f18563d04686ca0ba73",
+    "mtime": 1785039959.9955542,
+    "ast_hash": "9a14bd3f010b16aac328f003d718c934",
     "semantic_hash": ""
   },
   "README.md": {
