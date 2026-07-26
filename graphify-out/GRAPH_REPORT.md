@@ -1,16 +1,16 @@
 # Graph Report - ReCall  (2026-07-26)
 
 ## Corpus Check
-- 29 files · ~11,739 words
+- 31 files · ~12,149 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 274 nodes · 314 edges · 25 communities (17 shown, 8 thin omitted)
-- Extraction: 97% EXTRACTED · 3% INFERRED · 0% AMBIGUOUS · INFERRED: 8 edges (avg confidence: 0.72)
+- 285 nodes · 318 edges · 26 communities (18 shown, 8 thin omitted)
+- Extraction: 97% EXTRACTED · 3% INFERRED · 0% AMBIGUOUS · INFERRED: 9 edges (avg confidence: 0.73)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `9a2714e1`
+- Built from commit: `774fdbc4`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -44,11 +44,11 @@
 3. `SQLiteRepository` - 13 edges
 4. `Scheduler` - 9 edges
 5. `ReCall` - 8 edges
-6. `renderCalendar()` - 7 edges
-7. `load()` - 6 edges
+6. `Changelog` - 7 edges
+7. `renderCalendar()` - 7 edges
 8. `Open()` - 6 edges
-9. `Changelog` - 6 edges
-10. `key()` - 5 edges
+9. `scripts` - 5 edges
+10. `layoutOverlappingAgendas()` - 5 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `App` --references--> `SQLiteRepository`  [EXTRACTED]
@@ -59,17 +59,17 @@
   app_test.go → app.go
 - `main()` --calls--> `NewApp()`  [INFERRED]
   main.go → app.go
-- `NewScheduler()` --references--> `SQLiteRepository`  [EXTRACTED]
-  internal/service/scheduler.go → internal/repository/sqlite.go
+- `layoutOverlappingAgendas()` --indirect_call--> `agenda()`  [INFERRED]
+  frontend/src/calendar-layout.ts → frontend/tests/calendar-layout.test.ts
 
 ## Import Cycles
 - None detected.
 
-## Communities (25 total, 8 thin omitted)
+## Communities (26 total, 8 thin omitted)
 
 ### Community 1 - "main.ts"
 Cohesion: 0.14
-Nodes (20): addDays(), Agenda, blocks(), esc(), fmt(), iso(), key(), load() (+12 more)
+Nodes (20): CalendarInterval, layoutOverlappingAgendas(), PositionedAgenda, TimedAgenda, addDays(), Agenda, blocks(), esc() (+12 more)
 
 ### Community 2 - "App"
 Cohesion: 0.13
@@ -88,8 +88,8 @@ Cohesion: 0.21
 Nodes (8): DB, Agenda, Context, Open(), T, TestSQLiteCRUDAndDue(), SQLiteRepository, Time
 
 ### Community 6 - "frontend/package.json"
-Cohesion: 0.15
-Nodes (12): devDependencies, typescript, vite, name, private, scripts, build, dev (+4 more)
+Cohesion: 0.13
+Nodes (14): devDependencies, typescript, vite, name, private, scripts, build, dev (+6 more)
 
 ### Community 7 - "wails.json"
 Cohesion: 0.17
@@ -112,8 +112,8 @@ Cohesion: 0.22
 Nodes (8): Build portable Windows, Fitur, Menjalankan untuk pengembangan, Pengujian, Perilaku background, Peta kode Graphify, ReCall, Teknologi dan arsitektur
 
 ### Community 17 - "Changelog"
-Cohesion: 0.15
-Nodes (12): [0.1.0] - 2026-07-26, [0.1.1] - 2026-07-26, [0.1.2] - 2026-07-26, [0.1.3] - 2026-07-26, [0.1.4] - 2026-07-26, Added, Added, Changelog (+4 more)
+Cohesion: 0.13
+Nodes (14): [0.1.0] - 2026-07-26, [0.1.1] - 2026-07-26, [0.1.2] - 2026-07-26, [0.1.3] - 2026-07-26, [0.1.4] - 2026-07-26, Added, Added, Added (+6 more)
 
 ### Community 19 - "ReCall v0.1.1"
 Cohesion: 0.40
@@ -124,7 +124,7 @@ Cohesion: 0.50
 Nodes (3): Pengembangan, Perbaikan, ReCall v0.1.2
 
 ## Knowledge Gaps
-- **82 isolated node(s):** `name`, `private`, `version`, `dev`, `build` (+77 more)
+- **88 isolated node(s):** `Added`, `Fixed`, `Fixed`, `Added`, `Fixed` (+83 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **8 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -132,16 +132,16 @@ Nodes (3): Pengembangan, Perbaikan, ReCall v0.1.2
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `App` connect `App` to `Scheduler`, `SQLiteRepository`?**
-  _High betweenness centrality (0.019) - this node is a cross-community bridge._
+  _High betweenness centrality (0.018) - this node is a cross-community bridge._
 - **Why does `SQLiteRepository` connect `SQLiteRepository` to `Scheduler`, `App`?**
-  _High betweenness centrality (0.014) - this node is a cross-community bridge._
+  _High betweenness centrality (0.013) - this node is a cross-community bridge._
 - **Why does `Scheduler` connect `Scheduler` to `App`, `SQLiteRepository`?**
-  _High betweenness centrality (0.007) - this node is a cross-community bridge._
-- **What connects `name`, `private`, `version` to the rest of the system?**
-  _82 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _High betweenness centrality (0.006) - this node is a cross-community bridge._
+- **What connects `Added`, `Fixed`, `Fixed` to the rest of the system?**
+  _88 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `runtime.js` be split into smaller, more focused modules?**
   _Cohesion score 0.03076923076923077 - nodes in this community are weakly interconnected._
 - **Should `main.ts` be split into smaller, more focused modules?**
-  _Cohesion score 0.1396011396011396 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.14153846153846153 - nodes in this community are weakly interconnected._
 - **Should `App` be split into smaller, more focused modules?**
   _Cohesion score 0.13043478260869565 - nodes in this community are weakly interconnected._

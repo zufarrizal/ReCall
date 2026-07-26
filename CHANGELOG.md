@@ -2,6 +2,12 @@
 
 Semua perubahan penting ReCall dicatat di file ini.
 
+## [Unreleased]
+
+### Added
+
+- Agenda yang waktunya bertumpuk pada hari yang sama kini ditampilkan berdampingan dan tetap dapat dibuka satu per satu.
+
 ## [0.1.4] - 2026-07-26
 
 ### Fixed
