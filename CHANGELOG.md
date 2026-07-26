@@ -2,7 +2,7 @@
 
 Semua perubahan penting ReCall dicatat di file ini.
 
-## [Unreleased]
+## [0.1.1] - 2026-07-26
 
 ### Fixed
 
