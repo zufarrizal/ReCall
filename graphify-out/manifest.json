@@ -30,32 +30,32 @@
     "semantic_hash": "0d6af7d72ca479005fc63f0f759c00b6"
   },
   "frontend/wailsjs/go/main/App.d.ts": {
-    "mtime": 1785042702.9120498,
+    "mtime": 1785043617.8104851,
     "ast_hash": "a44883b1a74c3463a27bcdc2877dddd4",
     "semantic_hash": ""
   },
   "frontend/wailsjs/go/main/App.js": {
-    "mtime": 1785042702.9115334,
+    "mtime": 1785043617.8099506,
     "ast_hash": "ef10bf67ab774ed3c204a9743b6bcf6e",
     "semantic_hash": ""
   },
   "frontend/wailsjs/go/models.ts": {
-    "mtime": 1785042942.138129,
-    "ast_hash": "0ed1da5bf3a96a331b80206a11cb2c15",
+    "mtime": 1785043636.529856,
+    "ast_hash": "6877befbb3a819a1bac17a9cf918d1a3",
     "semantic_hash": ""
   },
   "frontend/wailsjs/runtime/package.json": {
-    "mtime": 1785042705.4167085,
+    "mtime": 1785043620.3776453,
     "ast_hash": "a79e9c39ebcda0fdeb14a44939bc489e",
     "semantic_hash": "a79e9c39ebcda0fdeb14a44939bc489e"
   },
   "frontend/wailsjs/runtime/runtime.d.ts": {
-    "mtime": 1785042705.4172473,
+    "mtime": 1785043620.3781674,
     "ast_hash": "dcd9fca4af1912f552547c22f315c25e",
     "semantic_hash": "dcd9fca4af1912f552547c22f315c25e"
   },
   "frontend/wailsjs/runtime/runtime.js": {
-    "mtime": 1785042705.417781,
+    "mtime": 1785043620.3781674,
     "ast_hash": "efc7f0ddc7f96e446ad0252df27b477f",
     "semantic_hash": "efc7f0ddc7f96e446ad0252df27b477f"
   },
@@ -95,8 +95,8 @@
     "semantic_hash": "296b3c38329e31f98030d348ad20936a"
   },
   "wails.json": {
-    "mtime": 1785040167.9419808,
-    "ast_hash": "ba2af44af0feaef49637c635300726e7",
+    "mtime": 1785043357.898998,
+    "ast_hash": "37a3379448a0bbacecf5323414b36adc",
     "semantic_hash": ""
   },
   "AGENTS.md": {
@@ -105,8 +105,8 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1785042617.7968729,
-    "ast_hash": "8d66af3df155686feefe3185860f3cd2",
+    "mtime": 1785043357.898998,
+    "ast_hash": "896c7b19b32f8cdc3a7beb7429a63f49",
     "semantic_hash": ""
   },
   "README.md": {
@@ -187,6 +187,11 @@
   "internal/model/color_category_test.go": {
     "mtime": 1785042273.700031,
     "ast_hash": "e2647bdcdfdb303f12b5ceb164533f80",
+    "semantic_hash": ""
+  },
+  "docs/releases/v0.2.0.md": {
+    "mtime": 1785043357.898998,
+    "ast_hash": "6e4e8958282d3ce053bc7c4188b7a5c5",
     "semantic_hash": ""
   }
 }

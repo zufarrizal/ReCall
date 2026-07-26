@@ -1,16 +1,16 @@
 # Graph Report - ReCall  (2026-07-26)
 
 ## Corpus Check
-- 35 files · ~14,309 words
+- 36 files · ~14,475 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 319 nodes · 392 edges · 27 communities (21 shown, 6 thin omitted)
+- 327 nodes · 399 edges · 28 communities (22 shown, 6 thin omitted)
 - Extraction: 97% EXTRACTED · 3% INFERRED · 0% AMBIGUOUS · INFERRED: 13 edges (avg confidence: 0.73)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `9ba4f20c`
+- Built from commit: `e63aa93d`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -39,6 +39,7 @@
 - App.js
 - calendar-layout.ts
 - TestColorCategoryValidate
+- ReCall v0.2.0
 
 ## God Nodes (most connected - your core abstractions)
 1. `App` - 20 edges
@@ -67,7 +68,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (27 total, 6 thin omitted)
+## Communities (28 total, 6 thin omitted)
 
 ### Community 1 - "main.ts"
 Cohesion: 0.10
@@ -94,8 +95,8 @@ Cohesion: 0.13
 Nodes (14): devDependencies, typescript, vite, name, private, scripts, build, dev (+6 more)
 
 ### Community 7 - "wails.json"
-Cohesion: 0.17
-Nodes (11): author, email, name, frontend:build, frontend:dev:serverUrl, frontend:dev:watcher, frontend:install, name (+3 more)
+Cohesion: 0.13
+Nodes (14): author, email, name, frontend:build, frontend:dev:serverUrl, frontend:dev:watcher, frontend:install, info (+6 more)
 
 ### Community 8 - "runtime.d.ts"
 Cohesion: 0.25
@@ -123,7 +124,7 @@ Nodes (8): Build portable Windows, Fitur, Menjalankan untuk pengembangan, Penguj
 
 ### Community 17 - "Changelog"
 Cohesion: 0.12
-Nodes (15): [0.1.0] - 2026-07-26, [0.1.1] - 2026-07-26, [0.1.2] - 2026-07-26, [0.1.3] - 2026-07-26, [0.1.4] - 2026-07-26, Added, Added, Added (+7 more)
+Nodes (16): [0.1.0] - 2026-07-26, [0.1.1] - 2026-07-26, [0.1.2] - 2026-07-26, [0.1.3] - 2026-07-26, [0.1.4] - 2026-07-26, [0.2.0] - 2026-07-26, Added, Added (+8 more)
 
 ### Community 19 - "ReCall v0.1.1"
 Cohesion: 0.40
@@ -141,8 +142,12 @@ Nodes (3): Agenda, ColorCategory, model
 Cohesion: 0.38
 Nodes (5): CalendarInterval, layoutOverlappingAgendas(), PositionedAgenda, TimedAgenda, agenda()
 
+### Community 27 - "ReCall v0.2.0"
+Cohesion: 0.50
+Nodes (3): Fitur baru, Perubahan, ReCall v0.2.0
+
 ## Knowledge Gaps
-- **91 isolated node(s):** `name`, `private`, `type`, `version`, `dev` (+86 more)
+- **96 isolated node(s):** `name`, `private`, `type`, `version`, `dev` (+91 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **6 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -150,15 +155,15 @@ Nodes (5): CalendarInterval, layoutOverlappingAgendas(), PositionedAgenda, Timed
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `App` connect `App` to `Scheduler`, `SQLiteRepository`?**
-  _High betweenness centrality (0.019) - this node is a cross-community bridge._
+  _High betweenness centrality (0.018) - this node is a cross-community bridge._
 - **Why does `SQLiteRepository` connect `SQLiteRepository` to `Scheduler`, `App`?**
-  _High betweenness centrality (0.015) - this node is a cross-community bridge._
+  _High betweenness centrality (0.014) - this node is a cross-community bridge._
 - **Why does `Scheduler` connect `Scheduler` to `App`, `SQLiteRepository`?**
-  _High betweenness centrality (0.006) - this node is a cross-community bridge._
+  _High betweenness centrality (0.005) - this node is a cross-community bridge._
 - **Are the 4 inferred relationships involving `Open()` (e.g. with `TestSQLiteColorCategoriesCanBeRenamed()` and `TestSQLiteColorCategoryNamePersistsAfterReopen()`) actually correct?**
   _`Open()` has 4 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `name`, `private`, `type` to the rest of the system?**
-  _91 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _96 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `runtime.js` be split into smaller, more focused modules?**
   _Cohesion score 0.03076923076923077 - nodes in this community are weakly interconnected._
 - **Should `main.ts` be split into smaller, more focused modules?**

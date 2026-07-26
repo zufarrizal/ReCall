@@ -2,7 +2,7 @@
 
 Semua perubahan penting ReCall dicatat di file ini.
 
-## [Unreleased]
+## [0.2.0] - 2026-07-26
 
 ### Added
 
@@ -13,6 +13,10 @@ Semua perubahan penting ReCall dicatat di file ini.
 ### Changed
 
 - Pilihan warna pada formulir dan legenda kalender kini dibaca dari database, bukan nama yang ditulis langsung di frontend.
+
+### Fixed
+
+- Metadata versi pada executable Windows kini mengikuti versi rilis dari konfigurasi `info.productVersion` Wails.
 
 ## [0.1.4] - 2026-07-26
 
