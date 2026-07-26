@@ -2,6 +2,12 @@
 
 Semua perubahan penting ReCall dicatat di file ini.
 
+## [0.1.3] - 2026-07-26
+
+### Fixed
+
+- Header hari dan badan grid pada tampilan minggu kini tetap sejajar saat kalender digeser horizontal.
+
 ## [0.1.2] - 2026-07-26
 
 ### Added
